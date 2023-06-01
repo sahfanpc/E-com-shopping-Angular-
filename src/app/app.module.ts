@@ -6,17 +6,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DetailModuleModule } from './detail-module/detail-module.module';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule
-  ],
+  declarations: [AppComponent],
+  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { 
-  
-}
+export class AppModule {}
