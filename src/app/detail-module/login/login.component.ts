@@ -5,29 +5,52 @@ import {
   FormsModule,
   ReactiveFormsModule,
   Validators,
-  ValidatorFn
+  ValidatorFn,
 } from '@angular/forms';
 import { from } from 'rxjs';
-import { passwordValid} from '../custom-valid';
-// import 'animate.css';
+// custom-vallidation
+import { passwordRegexModel, passwordValid } from '../custom-valid';
+import {
+  MatSnackBarHorizontalPosition,
+  MatSnackBarVerticalPosition,
+  MatSnackBar,
+} from '@angular/material/snack-bar';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss'],
 })
 export class LoginComponent {
-  emailFormControl = new FormControl('', [Validators.required, Validators.email]);
-  passwordFormControl = new FormControl('', [Validators.required]);
-  // emailFormControl = new FormControl('', [
-  //   Validators.required,
-  //   Validators.email,
-  // ]);
-  // passwordFormControl = new FormControl('', [
-  //   Validators.required,
-  //   passwordValid,
-  // ]);
+  // login
+  loginform = this.fb.group({
+    email: ['', [Validators.required, Validators.email]],
+    password: ['', [Validators.required, passwordRegexModel.validator]],
+  });
+  // register
+  registerform = this.fb.group({
+    regemail: ['', [Validators.required, Validators.email]],
+    regpassword: ['', [Validators.required, passwordRegexModel.validator]],
+    username: ['', [Validators.required]],
+    number: ['', [Validators.required]],
+    pin: ['', [Validators.required]],
+    address: ['', [Validators.required]],
+    place: ['', [Validators.required]],
+    confirmpassword: ['', [Validators.required]],
+  });
+  private _snackBar: any;
+  horizontalPosition: MatSnackBarHorizontalPosition = 'start';
+  verticalPosition: MatSnackBarVerticalPosition = 'bottom';
   constructor(private fb: FormBuilder) {}
-  // Custom password validator function
 
-  
+  // register-submit
+  Register(value: any) {
+    if (this.registerform.valid) {
+      alert('gbgbgfb');
+    } else {
+      // this.snackBar.open('Cannonball!!', 'Splash', {
+      //   horizontalPosition: this.horizontalPosition,
+      //   verticalPosition: this.verticalPosition,
+      // });
+    }
+  }
 }

@@ -19,3 +19,14 @@ export function passwordValid(
   return of(null);
 }
 // ////////////////////////////////////////////
+import { Validators } from '@angular/forms';
+
+const passwordPattern = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
+// const minlength = /.{8,}/;
+const passwordValidator = Validators.pattern(passwordPattern);
+
+export const passwordRegexModel = {
+  pattern: passwordPattern,
+  validator: passwordValidator,
+  // length: minlength,
+};

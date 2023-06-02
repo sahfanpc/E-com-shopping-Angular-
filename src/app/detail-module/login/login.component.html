@@ -1,11 +1,7 @@
-<!-- <section class="main-sec">
-    <aside class="left-main-sec"></aside>
-    <aside class="right-main-sec"></aside>
-  </section> -->
-
 <section>
   <aside class="main-sec">
     <aside class="left-main-sec">
+      <!-- design part of the leftside -->
       <aside aria-label="" class="left-sec-container">
         <p class="shop-text">shopping.</p>
         <svg xmlns="http://www.w3.org/2000/svg" width="400" height="200" viewBox="-25 -25 250 250" class="float">
@@ -27,78 +23,128 @@
       </aside>
     </aside>
     <aside class="right-main-sec">
+      <!-- design part - rightside-->
       <aside class="right-sec-container">
         <mat-tab-group animationDuration="2000ms">
           <mat-tab label="Login Account">
             <div class="login-container">
               <section class="login">
-                <form class="form-login">
-                  <mat-form-field class="example-full-width">
+                <!-- login-form -->
+                <form class="form-login" [formGroup]="loginform">
+
+                  <!-- email -->
+                  <mat-form-field class="example-full-width" appearance="outline">
                     <mat-label>Email</mat-label>
-                    <input type="email" matInput [formControl]="emailFormControl"  placeholder=" pat@example.com">
-                    <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
-                        Please enter a valid email address
-                      </mat-error>
-                      <mat-error *ngIf="emailFormControl.hasError('required')">
-                        Email is <strong>required</strong>
-                      </mat-error>
-                    
-                  </mat-form-field>
-
-                  <mat-form-field class="example-full-width">
-                    <mat-label>password</mat-label>
-                    <input type="password" matInput [formControl]="passwordFormControl" placeholder="Password">
-                    <mat-error
-                      *ngIf="passwordFormControl.hasError('passwordValid') && !passwordFormControl.hasError('required')">
-                      include character,uppercase and number,
+                    <input type="email" matInput formControlName="email" placeholder=" pat@example.com">
+                    <mat-error *ngIf="loginform.controls.email.touched && loginform.controls.email.errors ">
+                      Email is<strong>required</strong>
                     </mat-error>
-                    <mat-error *ngIf="passwordFormControl.hasError('required')">
-                        password is <strong>required</strong>
-                      </mat-error>
-                   
                   </mat-form-field>
-
-
+                  <!-- password -->
+                  <mat-form-field class="example-full-width" appearance="outline">
+                    <mat-label>password</mat-label>
+                    <input type="password" matInput formControlName="password" placeholder="Password">
+                    <mat-error
+                      *ngIf="loginform.controls.password.touched &&loginform.controls.password.errors && loginform.controls.password.errors['pattern']">
+                      at least one
+                      uppercase,lowercase,digit,8char.
+                    </mat-error>
+                  </mat-form-field>
                   <button mat-raised-button color="primary" type="submit" class="login-button">Log In</button>
                   <a href="#" class="forgot-link">Forgot your Password?</a>
                 </form>
               </section>
             </div>
           </mat-tab>
-          <mat-tab label="Create Account"><div class="login-container">
-            <section class="login">
-              <form class="form-login">
-                <mat-form-field class="example-full-width">
-                  <mat-label>Email</mat-label>
-                  <input type="email" matInput [formControl]="emailFormControl"  placeholder=" pat@example.com">
-                  <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
-                      Please enter a valid email address
-                    </mat-error>
-                    <mat-error *ngIf="emailFormControl.hasError('required')">
-                      Email is <strong>required</strong>
-                    </mat-error>
-                  
-                </mat-form-field>
+          <mat-tab label="Create Account">
+            <div class="register-container">
+              <section class="register">
+                <!-- register-form -->
+                <form class="form-register" [formGroup]="registerform">
+                  <aside aria-label="" class="devided-sec">
+                    <!-- username -->
+                    <mat-form-field class="example-full-width" appearance="outline">
+                      <mat-label>User Name</mat-label>
+                      <input type="text" matInput formControlName="username" placeholder=" UserName">
+                      <mat-error
+                        *ngIf="registerform.controls.username.touched && registerform.controls.username.errors ">
+                        Username is<strong>required</strong>
+                      </mat-error>
+                    </mat-form-field>
+                    <!-- email -->
+                    <mat-form-field class="example-full-width" appearance="outline">
+                      <mat-label>Email</mat-label>
+                      <input type="email" matInput formControlName="regemail" placeholder=" pat@example.com">
+                      <mat-error
+                        *ngIf="registerform.controls.regemail.touched && registerform.controls.regemail.errors">
+                        Email is<strong>required</strong>
+                      </mat-error>
+                    </mat-form-field>
+                  </aside>
+                  <aside aria-label="" class="devided-sec">
+                    <!-- phone number -->
+                    <mat-form-field class="example-full-width" appearance="outline">
+                      <mat-label>Phone Number</mat-label>
+                      <input type="number" matInput formControlName="number" placeholder="+91">
+                      <mat-error *ngIf="registerform.controls.number.touched && registerform.controls.number.errors ">
+                        Number is<strong>required</strong>
+                      </mat-error>
+                    </mat-form-field>
+                    <!-- pin -->
+                    <mat-form-field class="example-full-width" appearance="outline">
+                      <mat-label>Pin</mat-label>
+                      <input type="number" matInput formControlName="pin" placeholder=" 67361">
+                      <mat-error *ngIf="registerform.controls.pin.touched && registerform.controls.pin.errors ">
+                        pin is<strong>required</strong>
+                      </mat-error>
+                    </mat-form-field>
+                  </aside>
+                  <aside aria-label="" class="devided-sec">
 
-                <mat-form-field class="example-full-width">
-                  <mat-label>password</mat-label>
-                  <input type="password" matInput [formControl]="passwordFormControl" placeholder="Password">
-                  <mat-error
-                    *ngIf="passwordFormControl.hasError('passwordValid') && !passwordFormControl.hasError('required')">
-                    include character,uppercase and number,
-                  </mat-error>
-                  <mat-error *ngIf="passwordFormControl.hasError('required')">
-                      password is <strong>required</strong>
-                    </mat-error>
-                 
-                </mat-form-field>
+                    <!-- place -->
+                    <mat-form-field class="example-full-width" appearance="outline">
+                      <mat-label>Place</mat-label>
+                      <input type="text" matInput formControlName="place" placeholder="Place">
+                      <mat-error *ngIf="registerform.controls.place.touched && registerform.controls.place.errors ">
+                        place is<strong>required</strong>
+                      </mat-error>
+                    </mat-form-field>
+                    <!-- address -->
+                    <mat-form-field class="example-full-width" appearance="outline">
+                      <mat-label>Address</mat-label>
+                      <input type="text" matInput formControlName="address" placeholder=" Address">
+                      <mat-error *ngIf="registerform.controls.address.touched && registerform.controls.address.errors ">
+                        Address is<strong>required</strong>
+                      </mat-error>
+                    </mat-form-field>
+                  </aside>
+                  <aside aria-label="" class="devided-sec">
+                    <!-- password -->
+                    <mat-form-field class="example-full-width" appearance="outline">
+                      <mat-label>password</mat-label>
+                      <input type="password" matInput formControlName="regpassword" placeholder="Password">
+                      <mat-error
+                        *ngIf="registerform.controls.regpassword.touched && registerform.controls.regpassword.errors ">
+                        uppercase,lowercase,digit,8char.
+                      </mat-error>
+                    </mat-form-field>
+                    <!-- confirm password -->
+                    <mat-form-field class="example-full-width" appearance="outline">
+                      <mat-label>Confirm Password</mat-label>
+                      <input type="password" matInput formControlName="confirmpassword" placeholder=" confirm Psd">
+                      <mat-error
+                        *ngIf="registerform.controls.confirmpassword.touched && registerform.controls.confirmpassword.errors ">
+                        password is<strong>required</strong>
+                      </mat-error>
+                    </mat-form-field>
 
-
-                <button mat-raised-button color="primary" type="submit" class="login-button">Log In</button>
-                <a href="#" class="forgot-link">Forgot your Password?</a>
-              </form>
-            </section>
-          </div></mat-tab>
+                  </aside>
+                  <button mat-raised-button color="primary" type="submit" (click)="Register(registerform.value)"
+                    class="register-button">Submit</button>
+                </form>
+              </section>
+            </div>
+          </mat-tab>
         </mat-tab-group>
 
       </aside>
