@@ -32,35 +32,30 @@
           <mat-tab label="Login Account">
             <div class="login-container">
               <section class="login">
-                <form class="form-login" [formGroup]="loginform">
+                <form class="form-login">
                   <mat-form-field class="example-full-width">
                     <mat-label>Email</mat-label>
-                    <input type="email" matInput formControlName="email" placeholder=" pat@example.com">
-                    <!-- <mat-error *ngIf="loginform.hasError('emailFormControl') && !loginform.hasError('required')">
-                      Please enter a valid email address
-                    </mat-error> -->
-                    <mat-error *ngIf="this.loginform.get('email')?.hasError('required')">
-                      Email is <strong>required</strong>
-                    </mat-error>
-                    <mat-error
-                      *ngIf="this.loginform.get('email')?.hasError!('required') && this.loginform.get('email')?.hasError('email')">
-                      please enter validEmail
-                    </mat-error>
+                    <input type="email" matInput [formControl]="emailFormControl"  placeholder=" pat@example.com">
+                    <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+                        Please enter a valid email address
+                      </mat-error>
+                      <mat-error *ngIf="emailFormControl.hasError('required')">
+                        Email is <strong>required</strong>
+                      </mat-error>
+                    
                   </mat-form-field>
 
                   <mat-form-field class="example-full-width">
                     <mat-label>password</mat-label>
-                    <input type="password" matInput formControlName="password" placeholder="include uppercase,number">
-                    <!-- <mat-error
-                      *ngIf="loginform.passwordFormControl.hasError('invalidPassword') && !loginform.passwordFormControl.hasError('required')">
-                      include character,uppercase and number,
-                    </mat-error> -->
-                    <mat-error *ngIf="this.loginform.get('password')?.hasError('this.passwordValid')">
+                    <input type="password" matInput [formControl]="passwordFormControl" placeholder="Password">
+                    <mat-error
+                      *ngIf="passwordFormControl.hasError('passwordValid') && !passwordFormControl.hasError('required')">
                       include character,uppercase and number,
                     </mat-error>
-                    <mat-error *ngIf="this.loginform.get('password')?.hasError('required')">
-                      password is <strong>required</strong>
-                    </mat-error>
+                    <mat-error *ngIf="passwordFormControl.hasError('required')">
+                        password is <strong>required</strong>
+                      </mat-error>
+                   
                   </mat-form-field>
 
 
@@ -70,7 +65,40 @@
               </section>
             </div>
           </mat-tab>
-          <mat-tab label="Create Account">Register</mat-tab>
+          <mat-tab label="Create Account"><div class="login-container">
+            <section class="login">
+              <form class="form-login">
+                <mat-form-field class="example-full-width">
+                  <mat-label>Email</mat-label>
+                  <input type="email" matInput [formControl]="emailFormControl"  placeholder=" pat@example.com">
+                  <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+                      Please enter a valid email address
+                    </mat-error>
+                    <mat-error *ngIf="emailFormControl.hasError('required')">
+                      Email is <strong>required</strong>
+                    </mat-error>
+                  
+                </mat-form-field>
+
+                <mat-form-field class="example-full-width">
+                  <mat-label>password</mat-label>
+                  <input type="password" matInput [formControl]="passwordFormControl" placeholder="Password">
+                  <mat-error
+                    *ngIf="passwordFormControl.hasError('passwordValid') && !passwordFormControl.hasError('required')">
+                    include character,uppercase and number,
+                  </mat-error>
+                  <mat-error *ngIf="passwordFormControl.hasError('required')">
+                      password is <strong>required</strong>
+                    </mat-error>
+                 
+                </mat-form-field>
+
+
+                <button mat-raised-button color="primary" type="submit" class="login-button">Log In</button>
+                <a href="#" class="forgot-link">Forgot your Password?</a>
+              </form>
+            </section>
+          </div></mat-tab>
         </mat-tab-group>
 
       </aside>

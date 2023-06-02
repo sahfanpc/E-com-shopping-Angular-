@@ -126,6 +126,7 @@ section {
             border-radius: 0.3rem;
             box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
               rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+              border: 1px solid rgba(211, 206, 206, 0.493);
             .form-login {
               display: flex;
               justify-content: center;
@@ -140,12 +141,7 @@ section {
                 }
                 .mdc-text-field--filled:not(.mdc-text-field--disabled) {
                   background-color: white;
-                  border: 1px solid rgb(161, 158, 158);
-                }
-                .mdc-text-field--invalid:not(.mdc-text-field--disabled)
-                  .mdc-line-ripple {
-                  border-bottom: none;
-                  background-color: none;
+                  border: 1px solid rgba(161, 158, 158, 0.808);
                 }
                 .mdc-line-ripple::before {
                   border-bottom: none;
@@ -153,6 +149,7 @@ section {
                 .mat-mdc-form-field-error {
                   font-size: 0.7rem;
                 }
+
               }
             }
           }

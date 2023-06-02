@@ -1,7 +1,8 @@
 import { AbstractControl, ValidationErrors } from '@angular/forms';
+// import{Validators,ValidatorFn} from '@angular/forms'
 // import { FormControl, FormGroup, Validators } from '@angular/forms';
 // import { Component } from '@angular/core';
-import { Observable, of } from 'rxjs';
+import { Observable, from, of } from 'rxjs';
 
 export function passwordValid(
   control: AbstractControl
@@ -17,3 +18,4 @@ export function passwordValid(
   // Emit null, to indicate no error occurred.
   return of(null);
 }
+// ////////////////////////////////////////////
