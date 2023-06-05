@@ -1,4 +1,5 @@
 @import "../../../assets/scss/base/mixins";
+@import "../../../assets/scss/base/variables";
 * {
   box-sizing: border-box;
 }
@@ -11,10 +12,17 @@ section {
   .main-sec {
     @include wth-ht-bg(100%, 100%, none);
     display: flex;
+    @media only #{$desktop-max-lg-1000} {
+      flex-direction: column;
+    }
     .left-main-sec {
       @include main-flex(flex-end, center);
       @include wth-ht-bg(50%, 100%, none);
       background: linear-gradient(135deg, #061c7ee7, #5a288bea);
+      @media only #{$desktop-max-lg-1000} {
+        width: 100%;
+        justify-content: center;
+      }
       .left-sec-container {
         @include main-flex(flex-end, none);
         @include wth-ht-bg(78%, 73%, none);
@@ -25,19 +33,29 @@ section {
         font-family: "Poppins", sans-serif;
         box-shadow: rgba(67, 70, 71, 0.3) 0px 1px 2px 0px,
           rgba(70, 73, 75, 0.15) 0px 2px 6px 2px;
+        @media only #{$desktop-max-lg-1000} {
+          height: 100%;
+        }
         .text-condent {
-          font-size: 3rem;
+          font-size: 4rem;
           font-weight: 700;
           color: white;
           font-style: italic;
           font-size: 700;
           padding-left: 4rem;
+          @media only #{$desktop-max-lg-1278} {
+            font-size: 3.5rem;
+          }
         }
         .shop-text {
           position: absolute;
           top: 2rem;
           left: 2rem;
           color: wheat;
+          font-size: 1.5rem;
+          @media only #{$desktop-max-lg-1278} {
+            font-size: 1.2rem;
+          }
         }
         .shop-text-lastcontent {
           @include main-flex(center, flex-end);
@@ -45,12 +63,20 @@ section {
           flex-direction: column;
           padding-bottom: 1rem;
           font-weight: 400;
+          font-size: 1.6rem;
+          @media only #{$desktop-max-lg-1278} {
+            font-size: 1.3rem;
+          }
         }
         .float {
           animation-name: ani-float;
           animation-duration: 3s;
           animation-iteration-count: infinite;
           animation-timing-function: ease-in-out;
+          @media only #{$desktop-max-lg-1278} {
+            width: 18rem;
+            height: 14rem;
+          }
         }
 
         @keyframes ani-float {
@@ -58,7 +84,7 @@ section {
             transform: translate(0, 0px);
           }
           50% {
-            transform: translate(0, 20px);
+            transform: translate(0, 50px);
           }
           100% {
             transform: translate(0, -0px);
@@ -69,19 +95,30 @@ section {
     .right-main-sec {
       @include main-flex(flex-start, center);
       @include wth-ht-bg(50%, 100%, white);
+      @media only #{$desktop-max-lg-1000} {
+        width: 100%;
+        justify-content: center;
+      }
       .right-sec-container {
         @include wth-ht-bg(78%, 73%, white);
         box-shadow: rgba(67, 70, 71, 0.3) 0px 1px 2px 0px,
           rgba(70, 73, 75, 0.15) 0px 2px 6px 2px;
+        @media only #{$desktop-max-lg-1000} {
+          height: 100%;
+        }
         .login-container {
           @include main-flex(center, center);
           @include wth-ht-bg(100%, 65vh, none);
           .login {
-            @include wth-ht-bg(19rem, 22rem, none);
+            @include wth-ht-bg(23rem, 27rem, none);
             border-radius: 0.3rem;
             box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
               rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
             border: 1px solid rgba(211, 206, 206, 0.493);
+            @media only #{$desktop-max-lg-1278} {
+              width: 24rem;
+              height: 24rem;
+            }
             .form-login {
               @include main-flex(center, center);
               flex-direction: column;
@@ -112,20 +149,42 @@ section {
         .register-container {
           @include main-flex(center, center);
           @include wth-ht-bg(100%, 65vh, none);
+          // overflow-y: scroll;
           .register {
-            @include wth-ht-bg(28rem, 26rem, white);
+            @include wth-ht-bg(30rem, 30rem, rgb(255, 255, 255));
             border-radius: 0.3rem;
             box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
               rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
             border: 1px solid rgba(211, 206, 206, 0.493);
+            overflow-y: scroll;
+            @media only #{$desktop-max-lg-1278} {
+              width: 24rem;
+              // margin-top: 2rem;
+              height: 24rem;
+            }
+            @media only #{$desktop-max-lg-1000} {
+              width: 40rem;
+            }
             .form-register {
               @include main-flex(center, center);
               width: 100%;
               flex-direction: column;
+              @media only #{$desktop-max-lg-1278} {
+                height: 46rem;
+                margin-top: 20rem;
+              }
+              @media only #{$desktop-max-lg-1000} {
+                height: 20rem;
+                margin-top: 0;
+              }
               ::ng-deep {
                 .mat-mdc-form-field-infix {
                   min-width: 8rem;
                   min-height: 50px;
+                  @media only #{$desktop-max-lg-1278} {
+                    min-width: 15rem;
+                    min-height: 56px;
+                  }
                 }
                 .mat-mdc-form-field-error {
                   font-size: 0.7rem;
@@ -140,6 +199,12 @@ section {
               .devided-sec {
                 display: flex;
                 gap: 0.3rem;
+                @media only #{$desktop-max-lg-1278} {
+                  flex-direction: column;
+                }
+                @media only #{$desktop-max-lg-1000} {
+                  flex-direction: row;
+                }
               }
             }
           }
