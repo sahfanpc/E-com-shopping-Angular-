@@ -1,0 +1,116 @@
+.main {
+  .navbar {
+    height: 3.6rem;
+    .nav-container {
+      //   padding: 1.3rem;
+      position: fixed;
+      width: 100%;
+      background-color: rgba(18, 109, 184, 0.867);
+      .center-content {
+        margin: 0 auto;
+        width: 80rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        padding: 0.6rem;
+        .left-content {
+          display: flex;
+          gap: 2rem;
+          align-items: center;
+          .nav-text {
+            color: white;
+            font-size: 1.7rem;
+            font-weight: 600;
+          }
+          .search {
+            box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+            .input-container {
+              display: -ms-flexbox;
+              display: flex;
+              width: 25rem;
+              border: 1px ridge #e7eaf4;
+              border-radius: 3px;
+              position: relative;
+              border: 1px solid #e7eaf4;
+              background-color: #ffffff;
+            }
+
+            .icon {
+              padding: 10px 0px;
+              min-width: 19.3rem;
+              text-align: center;
+            }
+
+            .material-icons-outlined {
+              color: #a7a7a7;
+              position: relative;
+              right: 7.8rem;
+              transform: rotate(0deg);
+              transition: 0.2s;
+              font-size: 1.1rem;
+            }
+
+            .input-container:hover .material-icons-outlined {
+              transition: 0.2s;
+              transform: rotatey(180deg);
+              -webkit-transform: rotatey(180deg);
+              -ms-transform: rotatey(180deg);
+            }
+
+            .input-field {
+              width: 20rem;
+              padding: 10px;
+              outline: none;
+              border: none;
+              background: transparent;
+              position: relative;
+              right: 17rem;
+            }
+            ::placeholder {
+              color: #a7a7a7;
+              font-size: 0.8rem;
+            }
+          }
+        }
+        .right-content {
+          display: flex;
+          gap: 3rem;
+          align-items: center;
+          a {
+            text-decoration: none;
+            color: white;
+          }
+          .seller {
+          }
+          .more {
+            display: flex;
+            align-items: center;
+          }
+          .cart {
+            display: flex;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+  .down-nav {
+    width: 100%;
+    .down-nav-container {
+      margin: 0 auto;
+      width: 80rem;
+      background-color: rebeccapurple;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      //   gap: 4rem;
+      padding: 1rem;
+      //   height: 2rem;
+      .card {
+        width: 5rem;
+        height: 7rem;
+      }
+    }
+  }
+}

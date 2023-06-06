@@ -7,6 +7,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { ShoppingDashboardComponent } from './shopping-dashboard/shopping-dashboard.component';
+import { RouterLink } from '@angular/router';
+import { MatCardModule } from '@angular/material/card';
 @NgModule({
   declarations: [LoginComponent, ShoppingDashboardComponent],
   imports: [
@@ -18,6 +20,8 @@ import { ShoppingDashboardComponent } from './shopping-dashboard/shopping-dashbo
     MatButtonModule,
     ReactiveFormsModule,
     MatSnackBarModule,
+    RouterLink,
+    MatCardModule,
   ],
 })
 export class DetailModuleModule {}
