@@ -101,12 +101,16 @@ section {
     .right-main-sec {
       @include main-flex(flex-start, center);
       @include wth-ht-bg(50%, 100%, rgb(199, 213, 222));
+      background-image: url("../../../assets/two-happy-girls-sweaters-having-fun-with-shopping-trolley-megaphone-white-wall.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
       @media only #{$desktop-max-lg-1000} {
         width: 100%;
         justify-content: center;
       }
       .right-sec-container {
-        @include wth-ht-bg(78%, 73%, white);
+        @include wth-ht-bg(78%, 73%, none);
         box-shadow: rgba(67, 70, 71, 0.3) 0px 1px 2px 0px,
           rgba(70, 73, 75, 0.15) 0px 2px 6px 2px;
         @media only #{$desktop-max-lg-1278} {
@@ -126,7 +130,7 @@ section {
           @include main-flex(center, center);
           @include wth-ht-bg(100%, 65vh, none);
           .login {
-            @include wth-ht-bg(23rem, 27rem, none);
+            @include wth-ht-bg(23rem, 27rem, white);
             border-radius: 0.3rem;
             box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
               rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
