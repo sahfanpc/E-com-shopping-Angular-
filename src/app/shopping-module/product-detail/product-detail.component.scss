@@ -38,7 +38,7 @@
             }
 
             .icon {
-              padding: 10px 0px;
+              padding: 13px 0px;
               min-width: 19.3rem;
               text-align: center;
             }
@@ -110,14 +110,26 @@
       justify-content: space-between;
       align-items: center;
       //   gap: 4rem;
-      padding-top: 1rem;
+      padding: 1rem;
       height: 8rem;
       .card {
         width: 5.4rem;
-        height: 7rem;
+        // height: 7rem;
+        // background-color: red;
 
         .example-card {
-          height: 6rem;
+          height: 6.2rem;
+          // background-color: green;
+
+          mat-card-content {
+            padding: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+            font-family: "Poppins", sans-serif;
+            font-size: 0.8rem;
+          }
         }
       }
       .card:hover {
@@ -160,28 +172,106 @@
       }
     }
   }
-  .slider-sec1 {
+  .slider {
     width: 100%;
-    height: 30rem;
-    background-color: rgb(14, 13, 14);
-    // background-image: url("../../../assets/two-happy-girls-sweaters-having-fun-with-shopping-trolley-megaphone-white-wall.jpg");
-    // background-repeat: no-repeat;
-    // background-position: center;
-    // background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 29rem;
+    background-color: rgba(202, 204, 207, 0.37);
+    padding: 0.5rem 0;
     .slider-sec {
-      width: 100%;
-      height: 30rem;
-      background-color: rgb(24, 23, 24);
-      display: flex;
-      justify-content: center;
-      // align-items: center;
-      img {
-        width: 85rem;
-        height: 28rem;
+      width: 99%;
+      // height: 30rem;
+      margin: 0 auto;
+      // background-color: red;
+      // border-radius: 0.9rem;
+      .carousel {
+        .carousel-control-prev-icon {
+          width: 5rem;
+          height: 5rem;
+        }
+        .carousel-control-next-icon {
+          width: 5rem;
+          height: 5rem;
+        }
+        // height: 30rem;
+        .carousel-inner {
+          height: 28rem;
+          .carousel-item {
+            img {
+              height: 28rem;
+              width: 100%;
+              border-radius: 0.5rem;
+              // object-fit: contain;
+            }
+          }
+        }
       }
+    }
+  }
+  .product-container {
+    // border: 4px solid rgba(128, 128, 128, 0.399);
+    padding: 0rem 0.8rem;
+    background-color: rgba(202, 204, 207, 0.37);
+    // padding: 0.3rem;
+    color: grey;
+
+    .first-div {
+      background-color: white;
+      display: flex;
+      height: 22rem;
+      overflow-x: scroll;
+      gap: 3rem;
+      padding: 0.6rem 0;
+      // border: 4px solid red;
+
+      .product-card {
+        // border: 1px solid red;
+        // width: 20rem;
+        // border: none;
+        box-shadow: none;
+        padding: 0.5rem 1rem;
+        display: flex;
+        gap: 1.6rem;
+        line-height: 1.6rem;
+
+        img {
+          width: 10rem;
+          height: 11rem;
+        }
+        // #first-row {
+        //   width: 13rem;
+        //   height: 11rem;
+        // }
+        .text-sec {
+          text-align: center;
+        }
+        // overflow-x: scroll;
+      }
+      .product-card:hover {
+        // border: 1px solid red;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        img {
+          height: 11.5rem;
+          width: 11rem;
+          transition: 2s;
+        }
+      }
+    }
+    ::-webkit-scrollbar {
+      height: 5px;
+    }
+    /* Track */
+    ::-webkit-scrollbar-track {
+      background: rgb(248, 246, 246);
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: rgba(101, 91, 88, 0.562);
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: #e87373;
     }
   }
 }

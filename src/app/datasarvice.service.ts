@@ -1,12 +1,16 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+// import { Data } from './data';
+import { Data } from './datas';
 
 @Injectable({
   providedIn: 'root',
 })
 export class DatasarviceService {
-  Userdatas: Array<any> = [];
-  alertcheck: any;
+  products = Data; //all products
+  Userdatas: Array<any> = []; //datas of users
+  alertcheck: any; //using check true or false for alert
+  product: any; //current product detail
   constructor(private http: HttpClient) {}
   // user detail
   userData(value: any) {
@@ -36,5 +40,10 @@ export class DatasarviceService {
       this.alertcheck = false;
     }
     return this.alertcheck;
+  }
+  //
+  descriptionProduct(data: any) {
+    this.product = data;
+    // console.log(this.product);
   }
 }
