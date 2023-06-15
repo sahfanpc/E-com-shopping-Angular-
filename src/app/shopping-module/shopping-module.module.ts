@@ -10,11 +10,16 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from '../app-routing.module';
 import { DescriptionProductComponent } from './description-product/description-product.component';
 import { MatBadgeModule } from '@angular/material/badge';
+import { CartPageComponent } from './cart-page/cart-page.component';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatDividerModule } from '@angular/material/divider';
+
 // import { UpperCasePipe } from '@angular/common';
 @NgModule({
   declarations: [
     ProductDetailComponent,
     DescriptionProductComponent,
+    CartPageComponent,
     // UpperCasePipe,
   ],
   imports: [
@@ -30,6 +35,8 @@ import { MatBadgeModule } from '@angular/material/badge';
     NgForOf,
     AppRoutingModule,
     MatBadgeModule,
+    MatTabsModule,
+    MatDividerModule,
   ],
 })
 export class ShoppingModuleModule {}

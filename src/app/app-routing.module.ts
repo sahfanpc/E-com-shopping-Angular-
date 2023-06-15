@@ -5,6 +5,7 @@ import { ShoppingDashboardComponent } from './detail-module/shopping-dashboard/s
 import { ProductDetailComponent } from './shopping-module/product-detail/product-detail.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { DescriptionProductComponent } from './shopping-module/description-product/description-product.component';
+import { CartPageComponent } from './shopping-module/cart-page/cart-page.component';
 // import { CarouselComponent } from './shopping-module/carousel/carousel.component';
 
 const routes: Routes = [
@@ -12,6 +13,7 @@ const routes: Routes = [
   // { path: 'shopping-dashboard', component: ShoppingDashboardComponent },
   { path: '', component: ProductDetailComponent }, //product-detail
   { path: 'description-product', component: DescriptionProductComponent }, //description-product
+  { path: 'cart-page', component: CartPageComponent },
 ];
 
 @NgModule({

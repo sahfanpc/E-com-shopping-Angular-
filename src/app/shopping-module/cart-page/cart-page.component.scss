@@ -1,0 +1,148 @@
+.main {
+  height: 100vh;
+  position: relative;
+  .header {
+    background-color: #f4f6f5f3;
+    height: calc(100vh - 7rem);
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .header-sec {
+      border-radius: 0.3rem;
+      overflow: hidden;
+      width: 85%;
+      height: 80%;
+      background-color: white;
+      display: flex;
+      justify-content: space-between;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+      .left-part {
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+          rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        // border: 1px solid r;
+        width: 56rem;
+        height: 100%;
+        // background-color: rgb(130, 121, 108);
+
+        ::ng-deep {
+          .mat-mdc-tab-group.mat-mdc-tab-group-stretch-tabs
+            > .mat-mdc-tab-header
+            .mat-mdc-tab {
+            height: 4rem;
+            font-size: 1.4rem;
+          }
+        }
+        .cart-box {
+          width: 100%;
+          height: 32rem;
+          //   background-color: rgba(127, 255, 212, 0.749);
+          position: relative;
+          .card-header {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: calc(100% - 5rem);
+            // background-color: rgba(234, 230, 230, 0.549);
+
+            .head {
+              display: flex;
+              justify-content: space-between;
+              background-color: rgba(234, 230, 230, 0.549);
+              box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+                rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+              //   align-items: center;
+              width: 100%;
+              padding: 1rem;
+              box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+              height: 4rem;
+            }
+            .cart-body {
+              width: 100%;
+              height: calc(100% - 4rem);
+              overflow-y: scroll;
+              //   background-color: forestgreen;
+              .cart-card {
+                height: 18rem;
+                // background-color: rgba(218, 181, 181, 0.893);
+                display: flex;
+                justify-content: flex-start;
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+                .cart-cardsec {
+                  width: 34rem;
+                  height: 100%;
+                  background-color: red;
+                  display: flex;
+                  gap: 1.5rem;
+                  .image {
+                    width: 30%;
+                    height: 100%;
+                    background-color: white;
+                  }
+                  .content {
+                    width: 70%;
+                    height: 100%;
+                    background-color: rgba(0, 0, 0, 0.504);
+                    position: relative;
+                    .top {
+                    }
+                    .bottom {
+                      position: absolute;
+                      bottom: 0;
+                    }
+                  }
+                }
+              }
+            }
+            // padding: ;
+          }
+
+          .cart-footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 5rem;
+            // background-color: rgba(137, 43, 226, 0.636);
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 1.5rem;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+              rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            // position: fixed;
+          }
+        }
+      }
+      .right-part {
+        width: 27rem;
+        height: 65%;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        // background-color: cadetblue;
+      }
+    }
+  }
+  .foot {
+    height: 7rem;
+    // border-top: 1px solid rgba(0, 0, 0, 0.559);
+    .footer {
+      height: 7rem;
+      border-top: 1px solid rgba(121, 119, 119, 0.559);
+      background-color: #f4f6f5f3;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .footer-content {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

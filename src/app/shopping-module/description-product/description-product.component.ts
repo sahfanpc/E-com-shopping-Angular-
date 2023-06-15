@@ -19,9 +19,21 @@ export class DescriptionProductComponent {
     this.function();
   }
 
+  // for get the sinlge rpoduct data
   function() {
     this.description = this.db.product;
     this.price = 2 * this.description.price;
-    // console.log(price, 'jnjn');
+  }
+  // routing to cart-page
+  Cart() {
+    // console.log(this.description);
+
+    const check = this.db.Cart(this.description);
+    // this.router.navigateByUrl('cart-page');
+    if (check) {
+      alert('added');
+    } else {
+      alert('allready exist');
+    }
   }
 }

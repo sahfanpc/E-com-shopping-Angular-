@@ -11,6 +11,8 @@ export class DatasarviceService {
   Userdatas: Array<any> = []; //datas of users
   alertcheck: any; //using check true or false for alert
   product: any; //current product detail
+  cart: Array<any> = [];
+  cartalert: any;
   constructor(private http: HttpClient) {}
   // user detail
   userData(value: any) {
@@ -41,9 +43,31 @@ export class DatasarviceService {
     }
     return this.alertcheck;
   }
-  //
+  //single product detail
   descriptionProduct(data: any) {
     this.product = data;
     // console.log(this.product);
+  }
+
+  // cart
+  Cart(data: any) {
+    // console.log(data, 'cart');
+    if (this.cart.length == 0) {
+      this.cart.push(data);
+      this.cartalert = true;
+    } else {
+      const check = this.cart.filter(
+        (e: any) => e.id == data.id && e.base == data.base
+      );
+      if (check.length == 0) {
+        this.cart.push(data);
+        this.cartalert = true;
+      } else {
+        // console.log('already exist');
+        this.cartalert = false;
+      }
+    }
+    console.log(this.cart, 'service cart');
+    return this.cartalert;
   }
 }

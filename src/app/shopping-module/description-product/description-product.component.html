@@ -8,25 +8,58 @@
         <p style="font-size: 2rem;font-family: Poppins, sans-serif;font-weight: 700;">{{description.base}}</p>
 
         <aside class="button-sec">
-            <button><span class="material-icons-outlined">
-                    shopping_cart
-                </span>ADD TO CART</button>
+            <button (click)="Cart()"><i class="fa-solid fa-cart-shopping fa-bounce" style="margin-right: .3rem;"></i>
+                ADD TO
+                CART</button>
             <button style="background-color: rgba(255, 162, 0, 0.964)"><span class="material-icons-outlined">
                     flash_on
                 </span>BUY NOW</button>
         </aside>
     </section>
     <section class="description-sec">
+        <nav class="nav-bar">
+            <div class="nav-share" style="font-size: 1.2rem;">Share <i class="fa-solid fa-share"></i></div>
+        </nav><br>
         <p style="font-size: 1.7rem;font-weight: 500;">{{description.title |uppercase}}</p>
-        <p style="color:green;font-size: 1.1rem;font-weight: 500;">special price</p>
+        <p style="color:green;font-size: 1.3rem;font-weight: 500;">special price</p>
         <p style="font-size: 1.8rem;font-weight: 800;"><span class="material-icons-outlined">
                 currency_rupee
-            </span> {{description.price}}<del>
+            </span> {{description.price}}<del
+                style="margin-left: 1rem;font-size: 1.4rem;font-weight: 600;color: rgba(128, 128, 128, 0.838);">
                 {{price}}
             </del></p>
-        <p>{{description.ideal}}</p>
-        <p>{{description.category}}</p>
-        <p>{{description.description}}</p>
+        <aside class="contents">
+            <p>{{description.ideal}}</p>
+            <p>{{description.category}}</p>
+            <p style="line-height: 1.6rem;">{{description.description}}</p>
+
+        </aside>
+        <aside class="offer-sec">
+            <li>
+                <i class="fa-sharp fa-solid fa-circle-check"></i><strong>Special price</strong>get extra 12%
+                off(price inclusive of cashback)
+            </li>
+            <li>
+                <i class="fa-sharp fa-solid fa-circle-check"></i> <strong>Bank Offer</strong>10% on instant discount on
+                HDFC
+                bank credit card EMI taxins up to rs
+                1000
+            </li>
+            <li>
+                <i class="fa-sharp fa-solid fa-circle-check"></i> <strong>Bank Offer</strong>15% on instant discount on
+                HDFC
+                bank credit card EMI taxins up to rs
+                6000
+            </li>
+            <li>
+                <i class="fa-sharp fa-solid fa-circle-check"></i> <strong>Bank Offer</strong>extra 400 discount on HDFC
+                bank
+                credit card EMI with credit value rs
+                25000
+            </li>
+            <li><a href="#" style="text-decoration: none;">More Details</a></li>
+
+        </aside>
     </section>
 </section>
 
