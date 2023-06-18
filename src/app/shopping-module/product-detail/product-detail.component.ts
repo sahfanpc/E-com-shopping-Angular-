@@ -6,7 +6,7 @@ import { MatStepperModule } from '@angular/material/stepper';
 import { NgForOf } from '@angular/common';
 import { IvyCarouselModule } from 'angular-responsive-carousel/public-api';
 import { DatasarviceService } from 'src/app/datasarvice.service';
-import { Router } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-product-detail',
@@ -22,6 +22,7 @@ import { Router } from '@angular/router';
     ReactiveFormsModule,
     MatButtonModule,
     NgForOf,
+    RouterLink
   ], // Add CUSTOM_ELEMENTS_SCHEMA
 })
 export class ProductDetailComponent {

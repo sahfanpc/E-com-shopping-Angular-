@@ -1,6 +1,6 @@
 <section class="main">
     <section class="header">
-        <aside class="header-sec">
+        <aside class="header-sec" >
             <section class="left-part">
                 <mat-tab-group animationDuration="0ms">
                     <mat-tab label="Shopping cart product">
@@ -12,14 +12,18 @@
                                         Delivary </button>
                                 </aside>
                                 <aside class="cart-body">
-                                    <aside class="cart-card">
-                                        <aside class="cart-cardsec">
-                                            <aside class="image">
-                                                <img src="" alt="">
+                                    <aside class="cart-card"  *ngFor="let item of cartdata" >
+                                        <aside class="cart-cardsec" >
+                                            <aside class="image" (click)="submit(item)">
+                                                <img src="{{item.image}}" alt="" width="100%"height="90%">
                                             </aside>
                                             <aside class="content">
-                                                <aside class="top"></aside>
-                                                <aside class="bottom">
+                                                <aside class="top" style="line-height: 2rem;line-height: 2rem;">
+                                                    <!-- <p style="font-size: 2rem;font-weight: 600;">{{item.title}}</p> -->
+                                                    <p style="font-size: 1.3rem;color: rgba(158, 156, 156, 0.904);font-weight: 300;">{{item.description}}</p>
+                                                    <p style="font-size: 2rem; font-weight: 500;"><i class="fa-solid fa-indian-rupee-sign" style="margin-right:1rem;"></i>{{ item.price}}</p>
+                                                </aside>
+                                                <aside class="bottom" style="font-size: 1.5rem;">
                                                     <button mat-button>SAVE FOR LATE</button>
                                                     <button mat-button>REMOVE</button>
                                                 </aside>
@@ -43,30 +47,30 @@
             </section>
             <section class="right-part">
                 <mat-list>
-                    <mat-list-item>
+                    <aside style="height: 4rem;display: flex;align-items: center;padding: 1.3rem">
                         <h3 style="color:rgba(128, 128, 128, 0.899)">PRICE DETAILS</h3>
-                    </mat-list-item>
+                    </aside>
                     <mat-divider></mat-divider>
-                    <aside style="height: 12rem;display: flex;gap: 2rem;flex-direction: column;padding: 1.3rem 2rem;">
+                    <aside style="height: calc(100% - 20rem);display: flex;gap: 2rem;flex-direction: column;padding: 1.3rem 2rem;">
                         <aside style="display: flex;justify-content: space-between;">
-                            <span>Price(1 item)</span><span>price</span>
+                            <span>Price({{cartlength}} item)</span><span>{{cartprice}}</span>
                         </aside>
                         <aside style="display: flex;justify-content: space-between;">
-                            <span>Discound</span><span>price</span>
+                            <span>Discound</span><span>{{cartdiscount}}</span>
                         </aside>
-                        <aside style="display: flex;justify-content: space-between;">
-                            <span>Delivery Charges</span><span>price</span>
+                        <aside style="display: flex;justify-content: space-between;" [ngSwitch]="cartdata.length" >
+                            <span>Delivery Charges</span><span *ngSwitchCase="0">Nill</span><span *ngSwitchDefault>40</span>
                         </aside>
 
                     </aside>
                     <mat-divider></mat-divider>
-                    <aside style="display: flex;justify-content: space-between;padding: 1rem;font-size: 1.7rem;">
-                        <span>Total Amount</span><span>price</span>
+                    <aside style="display: flex;justify-content: space-between;padding: 1rem;font-size: 1.7rem;height: 5rem;" [ngSwitch]="cartdata.length">
+                        <span>Total Amount</span><span *ngSwitchCase="0">0</span><span *ngSwitchDefault>{{totalamount}}</span>
                     </aside>
                     <mat-divider></mat-divider>
-                    <mat-list-item>You will save ₹18,500 on this order</mat-list-item>
+                    <aside  style="height: 3rem;padding: 1rem;color: green;">You will save ₹18,500 on this order</aside>
                 </mat-list>
-                <p>Safe and Secure Payments.Easy returns.100% Authentic products.</p>
+                <p style="padding: 1rem;">Safe and Secure Payments.Easy returns.100% Authentic products.</p>
             </section>
 
         </aside>

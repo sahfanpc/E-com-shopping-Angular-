@@ -48,6 +48,10 @@ export class DatasarviceService {
     this.product = data;
     // console.log(this.product);
   }
+  description(data:any){
+    this.product=null;
+    this.product=data;
+  }
 
   // cart
   Cart(data: any) {
@@ -57,7 +61,7 @@ export class DatasarviceService {
       this.cartalert = true;
     } else {
       const check = this.cart.filter(
-        (e: any) => e.id == data.id && e.base == data.base
+        (e: any) => e.id == data.id && e.base == data.base && e.title == data.title
       );
       if (check.length == 0) {
         this.cart.push(data);
@@ -67,7 +71,11 @@ export class DatasarviceService {
         this.cartalert = false;
       }
     }
-    console.log(this.cart, 'service cart');
+    // console.log(this.cart, 'service cart');
     return this.cartalert;
+  }
+
+  getcart(){
+    return this.cart
   }
 }

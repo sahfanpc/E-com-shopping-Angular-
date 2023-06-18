@@ -14,6 +14,7 @@ import { UpperCasePipe, CurrencyPipe } from '@angular/common';
 export class DescriptionProductComponent {
   description: any;
   price: any;
+  alldata:any;
   constructor(private db: DatasarviceService, private router: Router) {}
   ngOnInit(): void {
     this.function();
@@ -22,13 +23,16 @@ export class DescriptionProductComponent {
   // for get the sinlge rpoduct data
   function() {
     this.description = this.db.product;
-    this.price = 2 * this.description.price;
+    this.price = 2.4 * this.description.price;
+    this.alldata = {id:this.description.id,price:this.description.price,bace:this.description.base,title:this.description.title,ideal:this.description.ideal,category:this.description.category,image:this.description.image,description:this.description.description,realprice:this.price}
+    console.log(this.alldata);
+    
   }
   // routing to cart-page
   Cart() {
     // console.log(this.description);
 
-    const check = this.db.Cart(this.description);
+    const check = this.db.Cart(this.alldata);
     // this.router.navigateByUrl('cart-page');
     if (check) {
       alert('added');
