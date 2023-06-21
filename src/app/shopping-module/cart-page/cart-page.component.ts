@@ -33,13 +33,13 @@ export class CartPageComponent {
   cartlength: any;
   cartprice: number = 0;
   realprice: number = 0;
-  cartdiscount: number = 0;
-  totalamount: number = 0;
+  // cartdiscount: number = 0;
+  // totalamount: number = 0;
   constructor(private db: DatasarviceService, private router: Router) {}
   ngOnInit() {
     this.getCartData();
-    this.cartdiscount = this.realprice - this.cartprice;
-    this.totalamount = this.cartprice + 40;
+    // this.cartdiscount = this.realprice - this.cartprice;
+    // this.totalamount = this.cartprice + 40;
   }
   getCartData() {
     this.cartdata = this.db.cart;
@@ -56,8 +56,12 @@ export class CartPageComponent {
     this.db.description(data);
     this.router.navigateByUrl('description-product');
   }
-  Remove(number: any) {
-    this.db.removeItem(number);
-    // console.log(data, 'remove');
+  Remove(index: number) {
+    this.cartprice -=this.cartdata[index].price;
+    this.realprice -=this.cartdata[index].realprice;
+    this.db.removeItem(index);
+    
+  
+    // console.log(this.cartdata[index].price, 'remove');
   }
 }

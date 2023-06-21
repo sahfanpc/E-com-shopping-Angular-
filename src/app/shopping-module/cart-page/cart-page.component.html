@@ -61,8 +61,8 @@
                         <aside style="display: flex;justify-content: space-between;">
                             <span>Price({{cartdata.length}} item)</span><span>{{cartprice}}</span>
                         </aside>
-                        <aside style="display: flex;justify-content: space-between;">
-                            <span>Discound</span><span>{{cartdiscount}}</span>
+                        <aside style="display: flex;justify-content: space-between;"  [ngSwitch]="cartdata.length">
+                            <span>Discound</span><span *ngSwitchCase="0">Nill</span><span *ngSwitchDefault>{{realprice - cartprice}}</span>
                         </aside>
                         <aside style="display: flex;justify-content: space-between;" [ngSwitch]="cartdata.length">
                             <span>Delivery Charges</span><span *ngSwitchCase="0">Nill</span><span
@@ -75,7 +75,7 @@
                         style="display: flex;justify-content: space-between;padding: 1rem;font-size: 1.7rem;height: 5rem;"
                         [ngSwitch]="cartdata.length">
                         <span>Total Amount</span><span *ngSwitchCase="0">0</span><span
-                            *ngSwitchDefault>{{totalamount}}</span>
+                            *ngSwitchDefault>{{cartprice + 40}}</span>
                     </aside>
                     <mat-divider></mat-divider>
                     <aside style="height: 3rem;padding: 1rem;color: green;">You will save ₹18,500 on this order</aside>
