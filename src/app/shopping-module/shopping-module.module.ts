@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule, NgFor, NgForOf } from '@angular/common';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
-import { MatCardModule } from '@angular/material/card';
+import { MatCard, MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatStepperModule } from '@angular/material/stepper';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -13,6 +13,7 @@ import { MatBadgeModule } from '@angular/material/badge';
 import { CartPageComponent } from './cart-page/cart-page.component';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatDividerModule } from '@angular/material/divider';
+import { ItemGroupComponent } from './item-group/item-group.component';
 
 // import { UpperCasePipe } from '@angular/common';
 @NgModule({
@@ -20,6 +21,7 @@ import { MatDividerModule } from '@angular/material/divider';
     ProductDetailComponent,
     DescriptionProductComponent,
     CartPageComponent,
+    ItemGroupComponent,
     // UpperCasePipe,
   ],
   imports: [

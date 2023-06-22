@@ -60,6 +60,113 @@
             <li><a href="#" style="text-decoration: none;">More Details</a></li>
 
         </aside>
+        <aside [ngSwitch]="description.type">
+            <aside class="size-section" *ngSwitchCase="'dress'">
+                <div>SIZE:</div>
+                <div class="container">
+                    <div class="radio-tile-group">
+                        <div class="input-container">
+                            <input id="walk" class="radio-button" type="radio" name="radio">
+                            <div class="radio-tile">
+
+                                <label for="walk" class="radio-tile-label">XS</label>
+                            </div>
+                        </div>
+
+                        <div class="input-container">
+                            <input id="bike" class="radio-button" type="radio" name="radio">
+                            <div class="radio-tile">
+
+                                <label for="bike" class="radio-tile-label">S</label>
+                            </div>
+                        </div>
+
+                        <div class="input-container">
+                            <input id="drive" class="radio-button" type="radio" name="radio">
+                            <div class="radio-tile">
+
+                                <label for="drive" class="radio-tile-label">M</label>
+                            </div>
+                        </div>
+                        <div class="input-container">
+                            <input id="drive" class="radio-button" type="radio" name="radio">
+                            <div class="radio-tile">
+
+                                <label for="drive" class="radio-tile-label">X</label>
+                            </div>
+                        </div>
+                        <div class="input-container">
+                            <input id="drive" class="radio-button" type="radio" name="radio">
+                            <div class="radio-tile">
+
+                                <label for="drive" class="radio-tile-label">L</label>
+                            </div>
+                        </div>
+                        <div class="input-container">
+                            <input id="drive" class="radio-button" type="radio" name="radio">
+                            <div class="radio-tile">
+
+                                <label for="drive" class="radio-tile-label">XL</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </aside>
+            <aside class="size-section" *ngSwitchCase="'boot'">
+                <div>SIZE:</div>
+                <div class="container">
+                    <div class="radio-tile-group">
+                        <div class="input-container">
+                            <input id="walk" class="radio-button" type="radio" name="radio">
+                            <div class="radio-tile" style="border-radius: 50%;">
+
+                                <label for="walk" class="radio-tile-label">6</label>
+                            </div>
+                        </div>
+
+                        <div class="input-container">
+                            <input id="bike" class="radio-button" type="radio" name="radio">
+                            <div class="radio-tile" style="border-radius: 50%;">
+
+                                <label for="bike" class="radio-tile-label">7</label>
+                            </div>
+                        </div>
+
+                        <div class="input-container">
+                            <input id="drive" class="radio-button" type="radio" name="radio">
+                            <div class="radio-tile" style="border-radius: 50%;">
+
+                                <label for="drive" class="radio-tile-label">8</label>
+                            </div>
+                        </div>
+                        <div class="input-container">
+                            <input id="drive" class="radio-button" type="radio" name="radio">
+                            <div class="radio-tile" style="border-radius: 50%;">
+
+                                <label for="drive" class="radio-tile-label">9</label>
+                            </div>
+                        </div>
+                        <div class="input-container">
+                            <input id="drive" class="radio-button" type="radio" name="radio">
+                            <div class="radio-tile" style="border-radius: 50%;">
+
+                                <label for="drive" class="radio-tile-label">10</label>
+                            </div>
+                        </div>
+                        <div class="input-container">
+                            <input id="drive" class="radio-button" type="radio" name="radio">
+                            <div class="radio-tile" style="border-radius: 50%;">
+
+                                <label for="drive" class="radio-tile-label">11</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </aside>
+
+        </aside>
     </section>
 </section>
 

@@ -13,6 +13,7 @@ export class DatasarviceService {
   product: any; //current product detail
   cart: Array<any> = [];
   cartalert: any;
+  Saparateddata: any;
   constructor(private http: HttpClient) {}
   // user detail
   userData(value: any) {
@@ -46,7 +47,7 @@ export class DatasarviceService {
   //single product detail
   descriptionProduct(data: any) {
     this.product = data;
-    // console.log(this.product);
+    // console.log(this.product, 'product');
   }
   description(data: any) {
     this.product = null;
@@ -81,5 +82,30 @@ export class DatasarviceService {
   }
   removeItem(index: any) {
     this.cart.splice(index, 1);
+  }
+
+  itemgroup(data: any) {
+    if (data == 'grosery') {
+      this.Saparateddata = this.products.grosery;
+      console.log(this.Saparateddata, 'ww');
+    } else if (data == 'home') {
+      this.Saparateddata = this.products.home;
+    } else if (data == 'appliance') {
+      this.Saparateddata = this.products.appliance;
+    } else if (data == 'fasion') {
+      this.Saparateddata = this.products.fasion;
+    } else if (data == 'laptop') {
+      this.Saparateddata = this.products.laptop;
+    } else if (data == 'mobile') {
+      this.Saparateddata = this.products.mobile;
+    } else if (data == 'protien') {
+      this.Saparateddata = this.products.protien;
+    } else if (data == 'toys') {
+      this.Saparateddata = this.products.toys;
+    } else {
+      console.log('nothing');
+    }
+    // const product = this.products.filter((e:any) => e==data)
+    console.log(data);
   }
 }

@@ -6,6 +6,7 @@ export const Data = {
       title: 'VERTAGO W Running Shoes',
       price: 939,
       ideal: 'women',
+      type: 'boot',
       category: ' Shoes For Women',
       description:
         'Your perfect pack for everyday use and walks in the forest. Stash your shoes in the padded sleeve, your everyday',
@@ -18,6 +19,7 @@ export const Data = {
       title: 'Adi Classic M Running Shoes',
       price: 999,
       ideal: 'Men',
+      type: 'boot',
       category: ' Shoes For men',
       description:
         'Your perfect pack for everyday use and walks in the forest. Stash your shoes in the padded sleeve, your everyday',
@@ -30,6 +32,7 @@ export const Data = {
       title: 'StreetAhead W Running Shoes',
       price: 1999,
       ideal: 'Women',
+      type: 'boot',
       category: 'Shoes For Women',
       description:
         'Your perfect pack for everyday use and walks in the forest. Stash your shoes in the padded sleeve, your everyday',
@@ -42,6 +45,7 @@ export const Data = {
       title: 'Adi Zoom W Running Shoes',
       price: 1199,
       ideal: 'Women',
+      type: 'boot',
       category: ' Shoes For Women',
       description:
         'Your perfect pack for everyday use and walks in the forest. Stash your shoes in the padded sleeve, your everyday',
@@ -54,6 +58,7 @@ export const Data = {
       title: 'Court Control W Tennis Shoes',
       price: 10009,
       ideal: 'men',
+      type: 'boot',
       category: ' Shoes For men',
       description:
         'Your perfect pack for everyday use and walks in the forest. Stash your shoes in the padded sleeve, your everyday',
@@ -66,6 +71,7 @@ export const Data = {
       title: 'REE-FUSION M Running Shoes For Men',
       price: 1500,
       ideal: 'men',
+      type: 'boot',
       category: ' Shoes For men',
       description:
         'Your perfect pack for everyday use and walks in the forest. Stash your shoes in the padded sleeve, your everyday',
@@ -78,6 +84,7 @@ export const Data = {
       title: 'Puma Harper Wns Sneakers',
       price: 9199,
       ideal: 'Women',
+      type: 'boot',
       category: ' Shoes For women',
       description:
         'Your perfect pack for everyday use and walks in the forest. Stash your shoes in the padded sleeve, your everyday',
@@ -90,6 +97,7 @@ export const Data = {
       title: 'Harper Wns Sneakers',
       price: 1999,
       ideal: 'Women',
+      type: 'boot',
       category: ' Shoes For Women',
       description:
         'Your perfect pack for everyday use and walks in the forest. Stash your shoes in the padded sleeve, your everyday',
@@ -102,6 +110,7 @@ export const Data = {
       title: 'Gina Wns Casuals',
       price: 1009,
       ideal: 'Women',
+      type: 'boot',
       category: ' Shoes For Women',
       description:
         'Your perfect pack for everyday use and walks in the forest. Stash your shoes in the padded sleeve, your everyday',
@@ -114,6 +123,7 @@ export const Data = {
       title: 'Hustle V2 Wns Running Shoes',
       price: 1199,
       ideal: 'men',
+      type: 'boot',
       category: ' Shoes For men',
       description:
         'Your perfect pack for everyday use and walks in the forest. Stash your shoes in the padded sleeve, your everyday',
@@ -126,6 +136,7 @@ export const Data = {
       title: 'Puma Buzz Wmn Casuals ',
       price: 3499,
       ideal: 'men',
+      type: 'boot',
       category: ' Shoes For men',
       description:
         'Your perfect pack for everyday use and walks in the forest. Stash your shoes in the padded sleeve, your everyday',
@@ -138,6 +149,7 @@ export const Data = {
       title: 'Adi Classic M Running Shoes',
       price: 2599,
       ideal: 'men',
+      type: 'boot',
       category: ' Shoes For men',
       description:
         'Your perfect pack for everyday use and walks in the forest. Stash your shoes in the padded sleeve, your everyday',
@@ -150,6 +162,7 @@ export const Data = {
       title: "NK Tanjun Women's Shoes Running Shoes",
       price: 2599,
       ideal: 'Women',
+      type: 'boot',
       category: ' Shoes For women',
       description:
         'Your perfect pack for everyday use and walks in the forest. Stash your shoes in the padded sleeve, your everyday',
@@ -162,6 +175,7 @@ export const Data = {
       title: 'Flex Experience Run 10 Running Shoes',
       price: 1099,
       ideal: 'Women',
+      type: 'boot',
       category: ' Shoes For women',
       description:
         'Your perfect pack for everyday use and walks in the forest. Stash your shoes in the padded sleeve, your everyday',
@@ -174,6 +188,7 @@ export const Data = {
       title: "Flex Experience Run 10 's Running Shoes",
       price: 2799,
       ideal: 'men',
+      type: 'boot',
       category: ' Shoes For men',
       description:
         'Your perfect pack for everyday use and walks in the forest. Stash your shoes in the padded sleeve, your everyday',
@@ -186,6 +201,7 @@ export const Data = {
       title: 'Revolution 6 Next Nature Road Running Shoes',
       price: 5599,
       ideal: 'men',
+      type: 'boot',
       category: ' Shoes For men',
       description:
         'Your perfect pack for everyday use and walks in the forest. Stash your shoes in the padded sleeve, your everyday',
@@ -198,6 +214,7 @@ export const Data = {
       title: 'Revolution 6 Nn Running Shoes',
       price: 1099,
       ideal: 'men',
+      type: 'boot',
       category: ' Shoes For men',
       description:
         'Your perfect pack for everyday use and walks in the forest. Stash your shoes in the padded sleeve, your everyday',
@@ -212,6 +229,7 @@ export const Data = {
       title: 'Slippers  ',
       price: 999,
       ideal: 'Men',
+      type: 'boot',
       category: ' chappel For men',
       description:
         'Your perfect pack for everyday use and walks in the forest. Stash your chappel in the padded sleeve, your everyday',
@@ -224,6 +242,7 @@ export const Data = {
       title: 'Slippers',
       price: 2099,
       ideal: 'Men',
+      type: 'boot',
       category: ' chappel For men',
       description:
         'Your perfect pack for everyday use and walks in the forest. Stash your chappel in the padded sleeve, your everyday',
@@ -236,6 +255,7 @@ export const Data = {
       title: 'Slippers',
       price: 1299,
       ideal: 'Men',
+      type: 'boot',
       category: ' chappel For men',
       description:
         'Your perfect pack for everyday use and walks in the forest. Stash your chappel in the padded sleeve, your everyday',
@@ -248,6 +268,7 @@ export const Data = {
       title: 'Slippers',
       price: 1999,
       ideal: 'Men',
+      type: 'boot',
       category: ' chappel For men',
       description:
         'Your perfect pack for everyday use and walks in the forest. Stash your chappel in the padded sleeve, your everyday',
@@ -260,6 +281,7 @@ export const Data = {
       title: 'Slippers',
       price: 899,
       ideal: 'Women',
+      type: 'boot',
       category: ' chappel For women',
       description:
         'Your perfect pack for everyday use and walks in the forest. Stash your chappel in the padded sleeve, your everyday',
@@ -272,6 +294,7 @@ export const Data = {
       title: 'Slippers',
       price: 699,
       ideal: 'Women',
+      type: 'boot',
       category: ' chappel For women',
       description:
         'Your perfect pack for everyday use and walks in the forest. Stash your chappel in the padded sleeve, your everyday',
@@ -284,6 +307,7 @@ export const Data = {
       title: 'Slippers',
       price: 499,
       ideal: 'Women',
+      type: 'boot',
       category: 'chappel For women',
       description:
         'Your perfect pack for everyday use and walks in the forest. Stash your chappel in the padded sleeve, your everyday',
@@ -298,6 +322,7 @@ export const Data = {
       title: 'socks  ',
       price: 109,
       ideal: 'Men',
+      type: 'boot',
       category: ' socks For men',
       description:
         'Your perfect pack for everyday use and walks in the forest. Stash your socks in the padded sleeve, your everyday',
@@ -310,6 +335,7 @@ export const Data = {
       title: 'socks  ',
       price: 199,
       ideal: 'Men',
+      type: 'boot',
       category: ' socks For men',
       description:
         'Your perfect pack for everyday use and walks in the forest. Stash your socks in the padded sleeve, your everyday',
@@ -322,6 +348,7 @@ export const Data = {
       title: 'socks  ',
       price: 909,
       ideal: 'Women',
+      type: 'boot',
       category: ' socks For women',
       description:
         'Your perfect pack for everyday use and walks in the forest. Stash your socks in the padded sleeve, your everyday',
@@ -336,6 +363,7 @@ export const Data = {
       title: 'MSI Core i5 11th Gen',
       price: 109,
       ideal: 'user',
+      type: 'lap',
       category:
         ' MSI Core i5 11th Gen - (8 GB/1 TB HDD/256 GB SSD/Windows 11 Home/4 GB Graphics/NVIDIA GeForce GTX 1650) GF63 Thin 11SC-1299IN Gaming Laptop  (15.6 Inch, Black, 1.86 Kg) ',
       description:
@@ -349,6 +377,7 @@ export const Data = {
       title: 'MSI Core i7 11th Gen',
       price: 109,
       ideal: 'user',
+      type: 'lap',
       category:
         ' MSI Core i7 11th Gen - (16 GB/512 GB SSD/Windows 11 Home/4 GB Graphics/NVIDIA GeForce RTX 3050) GF63 Thin 11UC-1293IN Gaming Laptop  (15.6 Inch, Black, 1.86 Kg)',
       description:
@@ -362,6 +391,7 @@ export const Data = {
       title: ' ASUS Vivobook 15 Core i3 11th Gen',
       price: 109,
       ideal: 'user',
+      type: 'lap',
       category:
         ' ASUS Vivobook 15 Core i3 11th Gen - (8 GB/512 GB SSD/Windows 11 Home) X515EA-EJ322WS | X515EA-EJ328WS Thin and Light Laptop  (15.6 Inch, Transparent Silver, 1.80 kg, With MS Office)',
       description:
@@ -375,6 +405,7 @@ export const Data = {
       title: 'realme Book (Slim) Core i3 11th Gen',
       price: 109,
       ideal: 'user',
+      type: 'lap',
       category:
         ' realme Book (Slim) Core i3 11th Gen - (8 GB/256 GB SSD/Windows 10 Home) RMNB1001 Thin and Light Laptop  (14 inch, Real Blue, 1.38 kg)',
       description:
@@ -388,6 +419,7 @@ export const Data = {
       title: 'ASUS Vivobook 15 Core i5 11th Gen ',
       price: 109,
       ideal: 'user',
+      type: 'lap',
       category:
         ' ASUS Vivobook 15 Core i5 11th Gen - (8 GB/512 GB SSD/Windows 11 Home) X515EA-EJ522WS Thin and Light Laptop  (15.6 Inch, Transparent Silver, 1.80 kg, With MS Office)',
       description:
@@ -401,6 +433,7 @@ export const Data = {
       title: 'HP 15s Intel Core i5 12th Gen',
       price: 109,
       ideal: 'user',
+      type: 'lap',
       category:
         'HP 15s Intel Core i5 12th Gen - (8 GB/512 GB SSD/Windows 11 Home) 15s-fq5111TU Thin and Light Laptop  (15.6 inch, Natural Silver, 1.69 Kg, With MS Office) ',
       description:
@@ -414,6 +447,7 @@ export const Data = {
       title: 'APPLE 2020 Macbook Air M1',
       price: 109,
       ideal: 'user',
+      type: 'lap',
       category:
         'APPLE 2020 Macbook Air M1 - (8 GB/256 GB SSD/Mac OS Big Sur) MGN63HN/A  (13.3 inch, Space Grey, 1.29 kg) ',
       description:
@@ -427,6 +461,7 @@ export const Data = {
       title: 'LapLenovo IdeaPad 3 Ryzen 5 Hexa Coretop',
       price: 109,
       ideal: 'user',
+      type: 'lap',
       category:
         'Lenovo IdeaPad 3 Ryzen 5 Hexa Core 5500U - (8 GB/512 GB SSD/Windows 11 Home) 15ALC6 Thin and Light Laptop  (15.6 inch, Arctic Grey, 1.65 kg, With MS Office) ',
       description:
@@ -442,6 +477,7 @@ export const Data = {
       title: 'SAMSUNG Galaxy F13 (Waterfall Blue, 64 GB)  (4 GB RAM)',
       price: 10009,
       ideal: 'user',
+      type: 'mobile',
       category:
         ' designed specifically to impress the entertainment fanatics. This smartphone features a terrific 16.62 cm (6.6) FHD+ LCD Display  50 MP Triple Camera  8 GB of RAM ',
       description:
@@ -455,6 +491,7 @@ export const Data = {
       title: 'GREENBERRI G370  (CORAL BLUE)  (4 GB RAM)',
       price: 1019,
       ideal: 'user',
+      type: 'mobile',
       category:
         ' designed specifically to impress the entertainment fanatics. This smartphone features a terrific 16.62 cm (6.6) FHD+ LCD Display  50 MP Triple Camera  8 GB of RAM ',
       description:
@@ -468,6 +505,7 @@ export const Data = {
       title: 'APPLE iPhone 13 (Blue, 128 GB)',
       price: 110110,
       ideal: 'user',
+      type: 'mobile',
       category:
         ' designed specifically to impress the entertainment fanatics. This smartphone features a terrific 16.62 cm (6.6) FHD+ LCD Display  50 MP Triple Camera  8 GB of RAM ',
       description:
@@ -481,6 +519,7 @@ export const Data = {
       title: 'MOTOROLA G32 (Mineral Gray, 128 GB)  (8 GB RAM)',
       price: 11000,
       ideal: 'user',
+      type: 'mobile',
       category:
         ' designed specifically to impress the entertainment fanatics. This smartphone features a terrific 16.62 cm (6.6) FHD+ LCD Display  50 MP Triple Camera  8 GB of RAM ',
       description:
@@ -494,6 +533,7 @@ export const Data = {
       title: 'Infinix SMART 7 (Azure Blue, 64 GB)  (4 GB RAM)',
       price: 10000,
       ideal: 'user',
+      type: 'mobile',
       category:
         ' designed specifically to impress the entertainment fanatics. This smartphone features a terrific 16.62 cm (6.6) FHD+ LCD Display  50 MP Triple Camera  8 GB of RAM ',
       description:
@@ -507,6 +547,7 @@ export const Data = {
       title: 'POCO C51 (Royal Blue, 64 GB)  (4 GB RAM)',
       price: 20019,
       ideal: 'user',
+      type: 'mobile',
       category:
         ' designed specifically to impress the entertainment fanatics. This smartphone features a terrific 16.62 cm (6.6) FHD+ LCD Display  50 MP Triple Camera  8 GB of RAM ',
       description:
@@ -520,6 +561,7 @@ export const Data = {
       title: 'GREENBERRI G370  (CORAL BLUE)  (4 GB RAM)',
       price: 10129,
       ideal: 'user',
+      type: 'mobile',
       category:
         ' designed specifically to impress the entertainment fanatics. This smartphone features a terrific 16.62 cm (6.6) FHD+ LCD Display  50 MP Triple Camera  8 GB of RAM ',
       description:
@@ -536,6 +578,7 @@ export const Data = {
         'SAMSUNG Galaxy Tab A8 4 GB RAM 64 GB ROM 10.5 inch with Wi-Fi+4G Tablet (Silver)',
       price: 11009,
       ideal: 'user',
+      type: 'mobile',
       category:
         ' designed specifically to impress the entertainment fanatics. This smartphone features a terrific 16.62 cm (6.6) FHD+ LCD Display  50 MP Triple Camera  8 GB of RAM ',
       description:
@@ -550,6 +593,7 @@ export const Data = {
         'realme Pad Mini 3 GB RAM 32 GB ROM 8.7 inch with Wi-Fi Only Tablet (Grey)',
       price: 15003,
       ideal: 'user',
+      type: 'mobile',
       category:
         ' designed specifically to impress the entertainment fanatics. This smartphone features a terrific 16.62 cm (6.6) FHD+ LCD Display  50 MP Triple Camera  8 GB of RAM ',
       description:
@@ -565,6 +609,7 @@ export const Data = {
       title: 'AS-IT-IS Nutrition Creatine Monohydrate ',
       price: 11009,
       ideal: 'user',
+      type: 'health',
       category:
         ' AS-IT-IS Nutrition Creatine Monohydrate | USA Labdoor Certified for Accuracy & Purity Creatine  (100 g, unflavored) Form: Powder Vegetarian Usage Pre-workout Protein Type: Creatine',
       description:
@@ -579,6 +624,7 @@ export const Data = {
         'MUSCLEBLAZE Super Gainer XXL Weight Gainers/Mass Gainers  (1 kg, Chocolate) ',
       price: 1109,
       ideal: 'user',
+      type: 'health',
       category:
         ' AS-IT-IS Nutrition Creatine Monohydrate | USA Labdoor Certified for Accuracy & Purity Creatine  (100 g, unflavored) Form: Powder Vegetarian Usage Pre-workout Protein Type: Creatine',
       description:
@@ -592,6 +638,7 @@ export const Data = {
       title: 'BIGMUSCLES NUTRITION Premium Gold Whey Whey Protein  ',
       price: 1119,
       ideal: 'user',
+      type: 'health',
       category:
         ' AS-IT-IS Nutrition Creatine Monohydrate | USA Labdoor Certified for Accuracy & Purity Creatine  (100 g, unflavored) Form: Powder Vegetarian Usage Pre-workout Protein Type: Creatine',
       description:
@@ -606,6 +653,7 @@ export const Data = {
         'Optimum Nutrition ON Micronized Creatine Powder, Supports Athletic Performance & Power, 83 serves Creatine ',
       price: 4409,
       ideal: 'user',
+      type: 'health',
       category:
         ' AS-IT-IS Nutrition Creatine Monohydrate | USA Labdoor Certified for Accuracy & Purity Creatine  (100 g, unflavored) Form: Powder Vegetarian Usage Pre-workout Protein Type: Creatine',
       description:
@@ -619,6 +667,7 @@ export const Data = {
       title: 'AS-IT-IS Nutrition Creatine Monohydrate ',
       price: 11509,
       ideal: 'user',
+      type: 'health',
       category:
         ' AS-IT-IS Nutrition Creatine Monohydrate | USA Labdoor Certified for Accuracy & Purity Creatine  (100 g, unflavored) Form: Powder Vegetarian Usage Pre-workout Protein Type: Creatine',
       description:
@@ -633,6 +682,7 @@ export const Data = {
         'Optimum Nutrition (ON) Gold Standard 100% Protein Powder - Primary Source Isolate Whey Protein  ',
       price: 3000,
       ideal: 'user',
+      type: 'health',
       category:
         ' AS-IT-IS Nutrition Creatine Monohydrate | USA Labdoor Certified for Accuracy & Purity Creatine  (100 g, unflavored) Form: Powder Vegetarian Usage Pre-workout Protein Type: Creatine',
       description:
@@ -646,6 +696,7 @@ export const Data = {
       title: 'AS-IT-IS Nutrition Creatine Monohydrate ',
       price: 4500,
       ideal: 'user',
+      type: 'health',
       category:
         ' AS-IT-IS Nutrition Creatine Monohydrate | USA Labdoor Certified for Accuracy & Purity Creatine  (100 g, unflavored) Form: Powder Vegetarian Usage Pre-workout Protein Type: Creatine',
       description:
@@ -659,6 +710,7 @@ export const Data = {
       title: 'BIGMUSCLES NUTRITION Essential Whey Protein  ',
       price: 2500,
       ideal: 'user',
+      type: 'health',
       category:
         ' BIGMUSCLES NUTRITION Essential Whey Protein | 24g Protein with Digestive Enzymes, Vitamin & Minerals Whey Protein) Form: Powder Vegetarian Usage Pre-workout Protein Type: Creatine',
       description:
@@ -674,6 +726,7 @@ export const Data = {
       title: ' Einstein Box Science Experiment Kit',
       price: 109,
       ideal: 'child',
+      type: 'toy',
       category:
         ' Einstein Box Science Experiment Kit | Chemistry Kit Toys for Boys and Girls Aged 6-12 Years Paper, Plastic Material No batteries Battery Width x Height: 240 mm x 330 mm',
       description:
@@ -687,6 +740,7 @@ export const Data = {
       title: ' LIBRA Cactus 120 Songs for Baby + Record Your Sound',
       price: 509,
       ideal: 'child',
+      type: 'toy',
       category:
         ' Einstein Box Science Experiment Kit | Chemistry Kit Toys for Boys and Girls Aged 6-12 Years Paper, Plastic Material No batteries Battery Width x Height: 240 mm x 330 mm',
       description:
@@ -701,6 +755,7 @@ export const Data = {
         ' FTAFAT Happy House Building Blocks, Learning/Educational Puzzle Toy,Best Gift for Kids ',
       price: 149,
       ideal: 'child',
+      type: 'toy',
       category:
         ' Einstein Box Science Experiment Kit | Chemistry Kit Toys for Boys and Girls Aged 6-12 Years Paper, Plastic Material No batteries Battery Width x Height: 240 mm x 330 mm',
       description:
@@ -715,6 +770,7 @@ export const Data = {
         ' luffies 3x3 SpeedCube High Speed Smooth Turning Magic Cube Puzzle Brainteaser-RUBIC CUBE',
       price: 109,
       ideal: 'child',
+      type: 'toy',
       category:
         ' Einstein Box Science Experiment Kit | Chemistry Kit Toys for Boys and Girls Aged 6-12 Years Paper, Plastic Material No batteries Battery Width x Height: 240 mm x 330 mm',
       description:
@@ -729,6 +785,7 @@ export const Data = {
         ' vtb retail stuffed toys 4 feet pink teddy bear / high quality / love teddy For girls valentine & Anniversary gift',
       price: 1703,
       ideal: 'child',
+      type: 'toy',
       category:
         ' Einstein Box Science Experiment Kit | Chemistry Kit Toys for Boys and Girls Aged 6-12 Years Paper, Plastic Material No batteries Battery Width x Height: 240 mm x 330 mm',
       description:
@@ -742,6 +799,7 @@ export const Data = {
       title: ' Einstein Box Science Experiment Kit',
       price: 1039,
       ideal: 'child',
+      type: 'toy',
       category:
         ' Einstein Box Science Experiment Kit | Chemistry Kit Toys for Boys and Girls Aged 6-12 Years Paper, Plastic Material No batteries Battery Width x Height: 240 mm x 330 mm',
       description:
@@ -755,6 +813,7 @@ export const Data = {
       title: ' Einstein Box Science Experiment Kit',
       price: 1109,
       ideal: 'child',
+      type: 'toy',
       category:
         ' Einstein Box Science Experiment Kit | Chemistry Kit Toys for Boys and Girls Aged 6-12 Years Paper, Plastic Material No batteries Battery Width x Height: 240 mm x 330 mm',
       description:
@@ -770,6 +829,7 @@ export const Data = {
       title: ' Embroidered Banarasi Jacquard Saree  (Dark Green)',
       price: 1019,
       ideal: 'Women',
+      type: 'dress',
       category:
         ' Einstein cress with good material Science Experimentt | Chemistry Kit dress for men and women at all age, good Material clothing',
       description:
@@ -783,6 +843,7 @@ export const Data = {
       title: ' Woven Bollywood Georgette, Cotton Silk Saree  (Pink, Beige)',
       price: 1000,
       ideal: 'Women',
+      type: 'dress',
       category:
         ' Einstein cress with good material Science Experimentt | Chemistry Kit dress for men and women at all age, good Material clothing',
       description:
@@ -796,6 +857,7 @@ export const Data = {
       title: ' Floral Print Bollywood Lycra Blend Saree  (Black)',
       price: 2000,
       ideal: 'Women',
+      type: 'dress',
       category:
         ' Einstein cress with good material Science Experimentt | Chemistry Kit dress for men and women at all age, good Material clothing',
       description:
@@ -809,6 +871,7 @@ export const Data = {
       title: ' EEmbellished Bollywood Lycra Blend Saree  (Black)',
       price: 11119,
       ideal: 'Women',
+      type: 'dress',
       category:
         ' Einstein cress with good material Science Experimentt | Chemistry Kit dress for men and women at all age, good Material clothing',
       description:
@@ -822,6 +885,7 @@ export const Data = {
       title: ' Men Typography V Neck Cotton Blend White T-Shirt',
       price: 599,
       ideal: 'Men',
+      type: 'dress',
       category:
         ' Einstein cress with good material Science Experimentt | Chemistry Kit dress for men and women at all age, good Material clothing',
       description:
@@ -835,6 +899,7 @@ export const Data = {
       title: ' Men Striped Round Neck Pure Cotton Maroon T-Shirt',
       price: 719,
       ideal: 'Men',
+      type: 'dress',
       category:
         ' Einstein cress with good material Science Experimentt | Chemistry Kit dress for men and women at all age, good Material clothing',
       description:
@@ -848,6 +913,7 @@ export const Data = {
       title: ' Men Regular Fit Solid Mandarin Collar Casual Shirt',
       price: 1019,
       ideal: 'Men',
+      type: 'dress',
       category:
         ' Einstein cress with good material Science Experimentt | Chemistry Kit dress for men and women at all age, good Material clothing',
       description:
@@ -861,6 +927,7 @@ export const Data = {
       title: ' Men Striped Round Neck Pure Maroon T-Shirt',
       price: 1019,
       ideal: 'Men',
+      type: 'dress',
       category:
         ' Einstein cress with good material Science Experimentt | Chemistry Kit dress for men and women at all age, good Material clothing',
       description:
@@ -877,6 +944,7 @@ export const Data = {
         ' FB 8 kg 5 Star 2X Power Steam, Hard Water Wash Fully Automatic Front Load Washing Machine with In-built Heater White  (Senator Neo VXS 8012)',
       price: 11019,
       ideal: 'user',
+      type: 'appliance',
       category:
         ' Einstein cress with good material Science Experimentt | Fully Automatic Front Load Washing Machines have Great Wash Quality with very less running cost',
       description:
@@ -890,6 +958,7 @@ export const Data = {
       title: ' USHA EI 3302 1100 W Dry Iron  (Grey)',
       price: 11019,
       ideal: 'user',
+      type: 'appliance',
       category:
         ' Einstein cress with good material Science Experimentt | Fully Automatic Front Load Washing Machines have Great Wash Quality with very less running cost',
       description:
@@ -904,6 +973,7 @@ export const Data = {
         'Orient Electric by orient Fabri Press DIFP10BP 1000 W Dry Iron  (Blue, Black) ',
       price: 11019,
       ideal: 'user',
+      type: 'appliance',
       category:
         ' Einstein cress with good material Science Experimentt | Fully Automatic Front Load Washing Machines have Great Wash Quality with very less running cost',
       description:
@@ -918,6 +988,7 @@ export const Data = {
         'BAJAJ Crest Neo 1200 mm Ultra High Speed 3 Blade Ceiling Fan  (Brown, Pack of 1) ',
       price: 1019,
       ideal: 'user',
+      type: 'appliance',
       category:
         ' Einstein cress with good material Science Experimentt | Fully Automatic Front Load Washing Machines have Great Wash Quality with very less running cost',
       description:
@@ -932,6 +1003,7 @@ export const Data = {
         'Pigeon Favourite IC 1800 W Induction Cooktop  (Black, Push Button) ',
       price: 1519,
       ideal: 'user',
+      type: 'appliance',
       category:
         ' Einstein cress with good material Science Experimentt | Fully Automatic Front Load Washing Machines have Great Wash Quality with very less running cost',
       description:
@@ -946,6 +1018,7 @@ export const Data = {
         ' Pureit by HUL Copper+Mineral RO+UV+MF 8 L RO + UV Water Purifier with Copper Charge Technology  (black & copper)',
       price: 11019,
       ideal: 'user',
+      type: 'appliance',
       category:
         ' Einstein cress with good material Science Experimentt | Fully Automatic Front Load Washing Machines have Great Wash Quality with very less running cost',
       description:
@@ -960,6 +1033,7 @@ export const Data = {
         'BuyerHub High-Speed USB Type C Adapter, Female USB A to USB C 3.0 Male OTG Adapter/Converter CAABSUSBHSBLK01 USB Hub  (Black) ',
       price: 11019,
       ideal: 'user',
+      type: 'appliance',
       category:
         ' Einstein cress with good material Science Experimentt | Fully Automatic Front Load Washing Machines have Great Wash Quality with very less running cost',
       description:
@@ -976,6 +1050,7 @@ export const Data = {
         ' Seventh Heaven Florida 4 Seater Sofa Bed, Chenille Molfino Fabric 72x44x16: 3 Year Warranty 4 Seater Double Solid Wood Pull Out Sofa Cum Bed  (Finish Color - Sky Blue Delivery Condition - DIY(Do-It-Yourself))',
       price: 11019,
       ideal: 'user',
+      type: 'home',
       category:
         ' Einstein cress with good material Science Experimentt | Fully Automatic Front Load Washing Machines have Great Wash Quality with very less cost',
       description:
@@ -990,6 +1065,7 @@ export const Data = {
         'Sofame Ritz 3 Seater Double Solid Wood, Metal Pull Out Sofa Cum Bed  (Finish Color - Beige Delivery Condition - DIY(Do-It-Yourself)) ',
       price: 11019,
       ideal: 'user',
+      type: 'home',
       category:
         ' Einstein cress with good material Science Experimentt | Fully Automatic Front Load Washing Machines have Great Wash Quality with very less cost',
       description:
@@ -1004,6 +1080,7 @@ export const Data = {
         ' Seventh Heaven 4 Seater Sofa cum Bed 78x36x14 inch Jute Fabric with 4 Cushions: 2 Year Warranty 4 Seater Single Foam Fold Out Sofa Cum Bed  ',
       price: 11019,
       ideal: 'user',
+      type: 'home',
       category:
         ' Einstein cress with good material Science Experimentt | Fully Automatic Front Load Washing Machines have Great Wash Quality with very less cost',
       description:
@@ -1018,6 +1095,7 @@ export const Data = {
         ' Torche (31 x 18.5 inches) Round cornered solid Wood Powder Coated Steel Wall-Mounted Folding Kitchen and Computer Table Office Table. (Matt White) Solid Wood Study Table  (Wall Mounted, Finish Color - Matt White, Pre-assembled)',
       price: 11019,
       ideal: 'user',
+      type: 'home',
       category:
         ' Einstein cress with good material Science Experimentt | Fully Automatic Front Load Washing Machines have Great Wash Quality with very less cost',
       description:
@@ -1032,6 +1110,7 @@ export const Data = {
         ' furlay Engineered Wood Study Table  (Free Standing, Finish Color - Black, Walnut Shelf, DIY(Do-It-Yourself))',
       price: 11019,
       ideal: 'user',
+      type: 'home',
       category:
         ' Einstein cress with good material Science Experimentt | Fully Automatic Front Load Washing Machines have Great Wash Quality with very less cost',
       description:
@@ -1046,6 +1125,7 @@ export const Data = {
         ' ukzer Laptop Study Table Office Home Workstation Modern Computer Desk Engineered Wood Study Table ',
       price: 11019,
       ideal: 'user',
+      type: 'home',
       category:
         ' Einstein cress with good material Science Experimentt | Fully Automatic Front Load Washing Machines have Great Wash Quality with very less cost',
       description:
@@ -1060,6 +1140,7 @@ export const Data = {
         ' Oakcraft Luxury HIGH Back Leatherette Office with Steel Base and Warranty Leatherette Office Executive Chair ',
       price: 11019,
       ideal: 'user',
+      type: 'home',
       category:
         ' Einstein cress with good material Science Experimentt | Fully Automatic Front Load Washing Machines have Great Wash Quality with very less cost',
       description:
@@ -1074,6 +1155,7 @@ export const Data = {
         'CELLBELL Desire C104 Mid Back Adjustable Comfortable Ergonomic Office Chair| Fabric, Mesh Office Executive Chair ',
       price: 11019,
       ideal: 'user',
+      type: 'home',
       category:
         ' Einstein cress with good material Science Experimentt | Fully Automatic Front Load Washing Machines have Great Wash Quality with very less cost',
       description:
@@ -1089,6 +1171,7 @@ export const Data = {
       title: 'Cadbury Dairy Milk Maha Pack 55g Bars  (15 x 55 g)',
       price: 19,
       ideal: 'user',
+      type: 'grosery',
       category:
         ' Einstein cress with good material Science Experimentt | Fully Automatic Front Load Washing Machines have Great Wash Quality with very less cost',
       description:
@@ -1103,6 +1186,7 @@ export const Data = {
         'Saffola Active Refined Cooking Rice Bran & Soyabean Blended Oil Pouch  (1 L)',
       price: 109,
       ideal: 'user',
+      type: 'grosery',
       category:
         ' Einstein cress with good material Science Experimentt | Fully Automatic Front Load Washing Machines have Great Wash Quality with very less cost',
       description:
@@ -1116,6 +1200,7 @@ export const Data = {
       title: 'Lipton Honey, Lemon Green Tea Bags Box  (100 Bags)',
       price: 200,
       ideal: 'user',
+      type: 'grosery',
       category:
         ' Einstein cress with good material Science Experimentt | Fully Automatic Front Load Washing Machines have Great Wash Quality with very less cost',
       description:
@@ -1129,6 +1214,7 @@ export const Data = {
       title: 'VEEBA Tomato Ketchup  (900 g)',
       price: 50,
       ideal: 'user',
+      type: 'grosery',
       category:
         ' Einstein cress with good material Science Experimentt | Fully Automatic Front Load Washing Machines have Great Wash Quality with very less cost',
       description:
@@ -1142,6 +1228,7 @@ export const Data = {
       title: 'Happilo Premium Afghani Seedless Black Raisins  (250 g)',
       price: 236,
       ideal: 'user',
+      type: 'grosery',
       category:
         ' Einstein cress with good material Science Experimentt | Fully Automatic Front Load Washing Machines have Great Wash Quality with very less cost',
       description:
@@ -1155,6 +1242,7 @@ export const Data = {
       title: 'hathmic Sunflower Oil Sunflower Oil Can  (2 L)',
       price: 178,
       ideal: 'user',
+      type: 'grosery',
       category:
         ' Einstein cress with good material Science Experimentt | Fully Automatic Front Load Washing Machines have Great Wash Quality with very less cost',
       description:
@@ -1168,6 +1256,7 @@ export const Data = {
       title: 'FIGARO Olive Oil Tin  (200 ml)',
       price: 671,
       ideal: 'user',
+      type: 'grosery',
       category:
         ' Einstein cress with good material Science Experimentt | Fully Automatic Front Load Washing Machines have Great Wash Quality with very less cost',
       description:

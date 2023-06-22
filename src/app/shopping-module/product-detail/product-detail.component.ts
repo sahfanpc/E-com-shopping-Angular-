@@ -22,7 +22,7 @@ import { Router, RouterLink } from '@angular/router';
     ReactiveFormsModule,
     MatButtonModule,
     NgForOf,
-    RouterLink
+    RouterLink,
   ], // Add CUSTOM_ELEMENTS_SCHEMA
 })
 export class ProductDetailComponent {
@@ -43,7 +43,6 @@ export class ProductDetailComponent {
     this.firstRowProducts = this.db.products.shoes;
     const chappel = this.db.products.chappel;
     const socks = this.db.products.socks;
-    // const lap = this.db.products.laptop;
     const appliance = this.db.products.appliance;
     const mobile = this.db.products.mobile;
     const home = this.db.products.home;
@@ -64,5 +63,37 @@ export class ProductDetailComponent {
     // console.log(data, 'sdsdfsfd');
     this.db.descriptionProduct(data);
     this.router.navigateByUrl('description-product');
+  }
+  Grosery() {
+    this.router.navigateByUrl('item-group');
+    this.db.itemgroup('grosery');
+  }
+  Home() {
+    this.router.navigateByUrl('item-group');
+    this.db.itemgroup('home');
+  }
+  Appliance() {
+    this.router.navigateByUrl('item-group');
+    this.db.itemgroup('appliance');
+  }
+  Fasion() {
+    this.router.navigateByUrl('item-group');
+    this.db.itemgroup('fasion');
+  }
+  Laptop() {
+    this.router.navigateByUrl('item-group');
+    this.db.itemgroup('laptop');
+  }
+  Protien() {
+    this.router.navigateByUrl('item-group');
+    this.db.itemgroup('protien');
+  }
+  Mobile() {
+    this.router.navigateByUrl('item-group');
+    this.db.itemgroup('mobile');
+  }
+  Toys() {
+    this.router.navigateByUrl('item-group');
+    this.db.itemgroup('toys');
   }
 }

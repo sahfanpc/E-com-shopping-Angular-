@@ -18,7 +18,8 @@
                     <a href="" class="more">More<span class="material-icons-outlined">
                             expand_more
                         </span></a>
-                    <aside [routerLink]="['/cart-page']" class="cart" style="color:white"><span class="material-icons-outlined">
+                    <aside [routerLink]="['/cart-page']" class="cart" style="color:white"><span
+                            class="material-icons-outlined">
                             shopping_cart
                         </span>Cart</aside>
                 </aside>
@@ -29,7 +30,7 @@
     <!-- down-nav-cards -->
     <section class="down-nav">
         <aside class="down-nav-container">
-            <aside class="card">
+            <aside class="card" (click)="Grosery()">
                 <mat-card class="example-card">
 
                     <img mat-card-image src="../../../assets/grosery.png" alt="Photo of a Shiba Inu">
@@ -40,7 +41,7 @@
                     </mat-card-content>
                 </mat-card>
             </aside>
-            <aside class="card">
+            <aside class="card" (click)="Home()">
                 <mat-card class="example-card">
                     <img mat-card-image src="../../../assets/home.png" alt="Photo of a Shiba Inu">
                     <mat-card-content>
@@ -50,7 +51,7 @@
                     </mat-card-content>
                 </mat-card>
             </aside>
-            <aside class="card">
+            <aside class="card" (click)="Appliance()">
                 <mat-card class="example-card">
                     <img mat-card-image src="../../../assets/acceseries.png" alt="Photo of a Shiba Inu">
                     <mat-card-content>
@@ -60,7 +61,7 @@
                     </mat-card-content>
                 </mat-card>
             </aside>
-            <aside class="card">
+            <aside class="card" (click)="Fasion()">
                 <mat-card class="example-card">
                     <img mat-card-image src="../../../assets/fashion.png" alt="Photo of a Shiba Inu">
                     <mat-card-content>
@@ -70,7 +71,7 @@
                     </mat-card-content>
                 </mat-card>
             </aside>
-            <aside class="card">
+            <aside class="card" (click)="Laptop()">
                 <mat-card class="example-card">
                     <br>
                     <img mat-card-image src="../../../assets/lap.png" alt="Photo of a Shiba Inu">
@@ -81,7 +82,7 @@
                     </mat-card-content>
                 </mat-card>
             </aside>
-            <aside class="card">
+            <aside class="card" (click)="Protien()">
                 <mat-card class="example-card">
                     <br>
                     <img mat-card-image src="../../../assets/protien.png" alt="Photo of a Shiba Inu">
@@ -93,7 +94,7 @@
                     </mat-card-content>
                 </mat-card>
             </aside>
-            <aside class="card">
+            <aside class="card" (click)="Mobile()">
                 <mat-card class="example-card">
                     <img mat-card-image src="../../../assets/mobiles.png" alt="Photo of a Shiba Inu">
                     <mat-card-content>
@@ -103,7 +104,7 @@
                     </mat-card-content>
                 </mat-card>
             </aside>
-            <aside class="card">
+            <aside class="card" (click)="Toys()">
                 <mat-card class="example-card">
                     <br>
                     <img mat-card-image src="../../../assets/toy.png" alt="Photo of a Shiba Inu">
