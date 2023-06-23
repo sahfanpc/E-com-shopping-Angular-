@@ -14,6 +14,8 @@ import { CartPageComponent } from './cart-page/cart-page.component';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatDividerModule } from '@angular/material/divider';
 import { ItemGroupComponent } from './item-group/item-group.component';
+import { MatListModule } from '@angular/material/list';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
 
 // import { UpperCasePipe } from '@angular/common';
 @NgModule({
@@ -39,6 +41,27 @@ import { ItemGroupComponent } from './item-group/item-group.component';
     MatBadgeModule,
     MatTabsModule,
     MatDividerModule,
+    MatListModule,
+    MatProgressBarModule,
+  ],
+  // /   UpperCasePipe,
+  //   CurrencyPipe,
+  //   NgSwitch,
+  //   NgSwitchCase,
+  //   MatProgressBarModule,
+  //   MatTabsModule,
+  //   MatButtonModule,
+  //   MatDividerModule,
+  //   MatListModule,
+  //   NgForOf,
+  //   NgSwitch,
+  //   NgSwitchCase,
+  //   NgSwitchDefault,
+  exports: [
+    ProductDetailComponent,
+    DescriptionProductComponent,
+    CartPageComponent,
+    ItemGroupComponent,
   ],
 })
 export class ShoppingModuleModule {}

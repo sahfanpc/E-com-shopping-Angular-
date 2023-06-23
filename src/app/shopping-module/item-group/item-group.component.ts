@@ -6,8 +6,8 @@ import { MatCardModule } from '@angular/material/card';
   selector: 'app-item-group',
   templateUrl: './item-group.component.html',
   styleUrls: ['./item-group.component.scss'],
-  standalone: true,
-  imports: [NgForOf, MatCardModule],
+  // standalone: true,
+  // imports: [NgForOf, MatCardModule],
 })
 export class ItemGroupComponent {
   data: any;

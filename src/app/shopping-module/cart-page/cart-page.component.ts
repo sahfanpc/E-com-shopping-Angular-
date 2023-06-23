@@ -15,18 +15,18 @@ import { Router, RouterLink } from '@angular/router';
   selector: 'app-cart-page',
   templateUrl: './cart-page.component.html',
   styleUrls: ['./cart-page.component.scss'],
-  imports: [
-    MatTabsModule,
-    MatButtonModule,
-    MatDividerModule,
-    MatListModule,
-    NgForOf,
-    NgSwitch,
-    NgSwitchCase,
-    NgSwitchDefault,
-    RouterLink,
-  ],
-  standalone: true,
+  // imports: [
+  //   MatTabsModule,
+  //   MatButtonModule,
+  //   MatDividerModule,
+  //   MatListModule,
+  //   NgForOf,
+  //   NgSwitch,
+  //   NgSwitchCase,
+  //   NgSwitchDefault,
+  //   RouterLink,
+  // ],
+  // standalone: true,
 })
 export class CartPageComponent {
   cartdata: any;
@@ -43,6 +43,8 @@ export class CartPageComponent {
   }
   getCartData() {
     this.cartdata = this.db.cart;
+    console.log(this.cartdata, 'y');
+
     this.cartlength = this.cartdata.length;
     console.log(this.cartdata, 'set');
     for (let i = 0; i < this.cartlength; i++) {
@@ -57,11 +59,10 @@ export class CartPageComponent {
     this.router.navigateByUrl('description-product');
   }
   Remove(index: number) {
-    this.cartprice -=this.cartdata[index].price;
-    this.realprice -=this.cartdata[index].realprice;
+    this.cartprice -= this.cartdata[index].price;
+    this.realprice -= this.cartdata[index].realprice;
     this.db.removeItem(index);
-    
-  
+
     // console.log(this.cartdata[index].price, 'remove');
   }
 }

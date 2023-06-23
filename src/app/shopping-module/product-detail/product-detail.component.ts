@@ -12,18 +12,18 @@ import { Router, RouterLink } from '@angular/router';
   selector: 'app-product-detail',
   templateUrl: './product-detail.component.html',
   styleUrls: ['./product-detail.component.scss'],
-  standalone: true,
+  // standalone: true,
 
-  imports: [
-    MatCardModule,
-    MatButtonModule,
-    MatStepperModule,
-    FormsModule,
-    ReactiveFormsModule,
-    MatButtonModule,
-    NgForOf,
-    RouterLink,
-  ], // Add CUSTOM_ELEMENTS_SCHEMA
+  // imports: [
+  // MatCardModule,
+  // MatButtonModule,
+  // MatStepperModule,
+  // FormsModule,
+  // ReactiveFormsModule,
+  // MatButtonModule,
+  // NgForOf,
+  // RouterLink,
+  // ], // Add CUSTOM_ELEMENTS_SCHEMA
 })
 export class ProductDetailComponent {
   firstRowProducts: any; //all products

@@ -60,293 +60,327 @@
             <li><a href="#" style="text-decoration: none;">More Details</a></li>
 
         </aside>
+        <aside class="numberOfItems">
+            <button (click)="decrement()"><i class="fa-solid fa-minus"></i></button>
+            <input type="number" [(ngModel)]="counter"><button (click)="increment()"><i
+                    class="fa-solid fa-plus"></i></button>
+        </aside>
         <aside [ngSwitch]="description.type">
             <aside class="size-section1" *ngSwitchCase="'dress'">
-            <aside class="size-section" >
-                <div>SIZE:</div>
-                <div class="container">
-                    <div class="radio-tile-group">
-                        <div class="input-container">
-                            <input id="walk" class="radio-button" type="radio" name="radio">
-                            <div class="radio-tile">
+                <aside class="size-section">
+                    <div>SIZE:</div>
+                    <div class="container">
+                        <div class="radio-tile-group">
+                            <div class="input-container">
+                                <input id="walk" class="radio-button" type="radio" name="radio"
+                                    [(ngModel)]="selectedOption" value="XS">
+                                <div class="radio-tile">
 
-                                <label for="walk" class="radio-tile-label">XS</label>
+                                    <label for="walk" class="radio-tile-label">XS</label>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="input-container">
-                            <input id="bike" class="radio-button" type="radio" name="radio">
-                            <div class="radio-tile">
+                            <div class="input-container">
+                                <input id="bike" class="radio-button" type="radio" name="radio"
+                                    [(ngModel)]="selectedOption" value="S">
+                                <div class="radio-tile">
 
-                                <label for="bike" class="radio-tile-label">S</label>
+                                    <label for="bike" class="radio-tile-label">S</label>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="input-container">
-                            <input id="drive" class="radio-button" type="radio" name="radio">
-                            <div class="radio-tile">
+                            <div class="input-container">
+                                <input id="drive" class="radio-button" type="radio" name="radio"
+                                    [(ngModel)]="selectedOption" value="M">
+                                <div class="radio-tile">
 
-                                <label for="drive" class="radio-tile-label">M</label>
+                                    <label for="drive" class="radio-tile-label">M</label>
+                                </div>
                             </div>
-                        </div>
-                        <div class="input-container">
-                            <input id="drive" class="radio-button" type="radio" name="radio">
-                            <div class="radio-tile">
+                            <div class="input-container">
+                                <input id="drive" class="radio-button" type="radio" name="radio"
+                                    [(ngModel)]="selectedOption" value="X">
+                                <div class="radio-tile">
 
-                                <label for="drive" class="radio-tile-label">X</label>
+                                    <label for="drive" class="radio-tile-label">X</label>
+                                </div>
                             </div>
-                        </div>
-                        <div class="input-container">
-                            <input id="drive" class="radio-button" type="radio" name="radio">
-                            <div class="radio-tile">
+                            <div class="input-container">
+                                <input id="drive" class="radio-button" type="radio" name="radio"
+                                    [(ngModel)]="selectedOption" value="L">
+                                <div class="radio-tile">
 
-                                <label for="drive" class="radio-tile-label">L</label>
+                                    <label for="drive" class="radio-tile-label">L</label>
+                                </div>
                             </div>
-                        </div>
-                        <div class="input-container">
-                            <input id="drive" class="radio-button" type="radio" name="radio">
-                            <div class="radio-tile">
+                            <div class="input-container">
+                                <input id="drive" class="radio-button" type="radio" name="radio"
+                                    [(ngModel)]="selectedOption" value="XL">
+                                <div class="radio-tile">
 
-                                <label for="drive" class="radio-tile-label">XL</label>
+                                    <label for="drive" class="radio-tile-label">XL</label>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
+                </aside>
+                <aside> <mat-progress-bar mode="indeterminate"></mat-progress-bar></aside>
             </aside>
-            <aside> <mat-progress-bar mode="indeterminate"></mat-progress-bar></aside>
-        </aside>
             <aside class="size-section1" *ngSwitchCase="'boot'">
-            <aside class="size-section"  >
-                <div>SIZE:</div>
-                <div class="container">
-                    <div class="radio-tile-group">
-                        <div class="input-container">
-                            <input id="walk" class="radio-button" type="radio" name="radio">
-                            <div class="radio-tile" style="border-radius: 50%;">
+                <aside class="size-section">
+                    <div>SIZE:</div>
+                    <div class="container">
+                        <div class="radio-tile-group">
+                            <div class="input-container">
+                                <input id="walk" class="radio-button" type="radio" name="radio"
+                                    [(ngModel)]="selectedOption" value="6">
+                                <div class="radio-tile" style="border-radius: 50%;">
 
-                                <label for="walk" class="radio-tile-label">6</label>
+                                    <label for="walk" class="radio-tile-label">6</label>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="input-container">
-                            <input id="bike" class="radio-button" type="radio" name="radio">
-                            <div class="radio-tile" style="border-radius: 50%;">
+                            <div class="input-container">
+                                <input id="bike" class="radio-button" type="radio" name="radio"
+                                    [(ngModel)]="selectedOption" value="7">
+                                <div class="radio-tile" style="border-radius: 50%;">
 
-                                <label for="bike" class="radio-tile-label">7</label>
+                                    <label for="bike" class="radio-tile-label">7</label>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="input-container">
-                            <input id="drive" class="radio-button" type="radio" name="radio">
-                            <div class="radio-tile" style="border-radius: 50%;">
+                            <div class="input-container">
+                                <input id="drive" class="radio-button" type="radio" name="radio"
+                                    [(ngModel)]="selectedOption" value="8">
+                                <div class="radio-tile" style="border-radius: 50%;">
 
-                                <label for="drive" class="radio-tile-label">8</label>
+                                    <label for="drive" class="radio-tile-label">8</label>
+                                </div>
                             </div>
-                        </div>
-                        <div class="input-container">
-                            <input id="drive" class="radio-button" type="radio" name="radio">
-                            <div class="radio-tile" style="border-radius: 50%;">
+                            <div class="input-container">
+                                <input id="drive" class="radio-button" type="radio" name="radio"
+                                    [(ngModel)]="selectedOption" value="9">
+                                <div class="radio-tile" style="border-radius: 50%;">
 
-                                <label for="drive" class="radio-tile-label">9</label>
+                                    <label for="drive" class="radio-tile-label">9</label>
+                                </div>
                             </div>
-                        </div>
-                        <div class="input-container">
-                            <input id="drive" class="radio-button" type="radio" name="radio">
-                            <div class="radio-tile" style="border-radius: 50%;">
+                            <div class="input-container">
+                                <input id="drive" class="radio-button" type="radio" name="radio"
+                                    [(ngModel)]="selectedOption" value="10">
+                                <div class="radio-tile" style="border-radius: 50%;">
 
-                                <label for="drive" class="radio-tile-label">10</label>
+                                    <label for="drive" class="radio-tile-label">10</label>
+                                </div>
                             </div>
-                        </div>
-                        <div class="input-container">
-                            <input id="drive" class="radio-button" type="radio" name="radio">
-                            <div class="radio-tile" style="border-radius: 50%;">
+                            <div class="input-container">
+                                <input id="drive" class="radio-button" type="radio" name="radio"
+                                    [(ngModel)]="selectedOption" value="11">
+                                <div class="radio-tile" style="border-radius: 50%;">
 
-                                <label for="drive" class="radio-tile-label">11</label>
+                                    <label for="drive" class="radio-tile-label">11</label>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
+                </aside>
+                <aside> <mat-progress-bar mode="indeterminate"></mat-progress-bar></aside>
             </aside>
-            <aside> <mat-progress-bar mode="indeterminate"></mat-progress-bar></aside>
+            <aside class="size-section1" *ngSwitchCase="'mobile'">
+                <aside class="size-section" style="border: none;">
+                    <div class="bg-size">RAM:</div>
+                    <div class="container">
+                        <div class="radio-tile-group" style="gap: 1rem;">
+                            <div class="input-container">
+                                <input id="walk" class="radio-button" type="radio" name="radio"
+                                    [(ngModel)]="selectedOption" value="16GB">
+                                <div class="radio-tile" style="padding: 1.4rem;margin-top: -.4rem;">
+
+                                    <label for="walk" class="radio-tile-label">16GB</label>
+                                </div>
+                            </div>
+
+                            <div class="input-container">
+                                <input id="bike" class="radio-button" type="radio" name="radio"
+                                    [(ngModel)]="selectedOption" value="32GB">
+                                <div class="radio-tile" style="padding: 1.4rem;margin-top: -.4rem;">
+
+                                    <label for="bike" class="radio-tile-label">32GB</label>
+                                </div>
+                            </div>
+
+                            <div class="input-container">
+                                <input id="drive" class="radio-button" type="radio" name="radio"
+                                    [(ngModel)]="selectedOption" value="64GB">
+                                <div class="radio-tile" style="padding: 1.4rem;margin-top: -.4rem;">
+
+                                    <label for="drive" class="radio-tile-label">64GB</label>
+                                </div>
+                            </div>
+
+                            <div class="input-container">
+                                <input id="drive" class="radio-button" type="radio" [(ngModel)]="selectedOption"
+                                    name="radio">
+                                <div class="radio-tile" style="padding: 1.4rem;margin-top: -.4rem;" value="124GB">
+
+                                    <label for="drive" class="radio-tile-label">124GB</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+                <aside> <mat-progress-bar mode="indeterminate"></mat-progress-bar></aside>
+            </aside>
+            <aside class="size-section1" *ngSwitchCase="'lap'">
+                <aside class="size-section" style="border: none;">
+                    <div class="bg-size">RAM:</div>
+                    <div class="container">
+                        <div class="radio-tile-group" style="gap: 1rem;">
+                            <div class="input-container">
+                                <input id="walk" class="radio-button" type="radio" name="radio"
+                                    [(ngModel)]="selectedOption" value="256GB">
+                                <div class="radio-tile" style="padding: 1.4rem;margin-top: -.4rem;">
+
+                                    <label for="walk" class="radio-tile-label">256GB</label>
+                                </div>
+                            </div>
+
+                            <div class="input-container">
+                                <input id="bike" class="radio-button" type="radio" name="radio"
+                                    [(ngModel)]="selectedOption" value="512GB">
+                                <div class="radio-tile" style="padding: 1.4rem;margin-top: -.4rem;">
+
+                                    <label for="bike" class="radio-tile-label">512GB</label>
+                                </div>
+                            </div>
+
+                            <div class="input-container">
+                                <input id="drive" class="radio-button" type="radio" name="radio"
+                                    [(ngModel)]="selectedOption" value="1TB">
+                                <div class="radio-tile" style="padding: 1.4rem;margin-top: -.4rem;">
+
+                                    <label for="drive" class="radio-tile-label">1TB</label>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </aside>
+                <aside> <mat-progress-bar mode="indeterminate"></mat-progress-bar></aside>
+            </aside>
+            <aside class="size-section1" *ngSwitchCase="'health'">
+                <aside class="size-section" style="border: none;">
+                    <div class="bg-size">WEIGHT:</div>
+                    <div class="container">
+                        <div class="radio-tile-group" style="gap: 1rem;">
+                            <div class="input-container">
+                                <input id="walk" class="radio-button" type="radio" name="radio"
+                                    [(ngModel)]="selectedOption" value=".5KG">
+                                <div class="radio-tile" style="padding: 1.4rem;margin-top: -.4rem;">
+
+                                    <label for="walk" class="radio-tile-label">.5KG</label>
+                                </div>
+                            </div>
+
+                            <div class="input-container">
+                                <input id="bike" class="radio-button" type="radio" name="radio"
+                                    [(ngModel)]="selectedOption" value="1KG">
+                                <div class="radio-tile" style="padding: 1.4rem;margin-top: -.4rem;">
+
+                                    <label for="bike" class="radio-tile-label">1KG</label>
+                                </div>
+                            </div>
+
+                            <div class="input-container">
+                                <input id="drive" class="radio-button" type="radio" name="radio"
+                                    [(ngModel)]="selectedOption" value="1.5KG">
+                                <div class="radio-tile" style="padding: 1.4rem;margin-top: -.4rem;">
+
+                                    <label for="drive" class="radio-tile-label">1.5KG</label>
+                                </div>
+                            </div>
+                            <div class="input-container">
+                                <input id="drive" class="radio-button" type="radio" name="radio"
+                                    [(ngModel)]="selectedOption" value="2KG">
+                                <div class="radio-tile" style="padding: 1.4rem;margin-top: -.4rem;">
+
+                                    <label for="drive" class="radio-tile-label">2KG</label>
+                                </div>
+                            </div>
+                            <div class="input-container">
+                                <input id="drive" class="radio-button" type="radio" name="radio"
+                                    [(ngModel)]="selectedOption" value="4KG">
+                                <div class="radio-tile" style="padding: 1.4rem;margin-top: -.4rem;">
+
+                                    <label for="drive" class="radio-tile-label">4KG</label>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </aside>
+                <aside> <mat-progress-bar mode="indeterminate"></mat-progress-bar></aside>
+            </aside>
+            <aside class="size-section1" *ngSwitchCase="'grosery'">
+                <aside class="size-section" style="border: none;">
+                    <div class="bg-size">WEIGHT:</div>
+                    <div class="container">
+                        <div class="radio-tile-group" style="gap: 1rem;">
+                            <div class="input-container">
+                                <input id="walk" class="radio-button" type="radio" [(ngModel)]="selectedOption"
+                                    name="radio">
+                                <div class="radio-tile" style="padding: 1.4rem;margin-top: -.4rem;" value="250GM">
+
+                                    <label for="walk" class="radio-tile-label">250GM</label>
+                                </div>
+                            </div>
+                            <div class="input-container">
+                                <input id="walk" class="radio-button" type="radio" [(ngModel)]="selectedOption"
+                                    name="radio" value="500GM">
+                                <div class="radio-tile" style="padding: 1.4rem;margin-top: -.4rem;">
+
+                                    <label for="walk" class="radio-tile-label">500GM</label>
+                                </div>
+                            </div>
+
+                            <div class="input-container">
+                                <input id="bike" class="radio-button" type="radio" [(ngModel)]="selectedOption"
+                                    name="radio" value="1KG">
+                                <div class="radio-tile" style="padding: 1.4rem;margin-top: -.4rem;">
+
+                                    <label for="bike" class="radio-tile-label">1KG</label>
+                                </div>
+                            </div>
+
+                            <div class="input-container">
+                                <input id="drive" class="radio-button" type="radio" [(ngModel)]="selectedOption"
+                                    name="radio">
+                                <div class="radio-tile" style="padding: 1.4rem;margin-top: -.4rem;" value="1.5KG">
+
+                                    <label for="drive" class="radio-tile-label">1.5KG</label>
+                                </div>
+                            </div>
+                            <div class="input-container">
+                                <input id="drive" class="radio-button" type="radio" name="radio"
+                                    [(ngModel)]="selectedOption" value="2KG">
+                                <div class="radio-tile" style="padding: 1.4rem;margin-top: -.4rem;">
+
+                                    <label for="drive" class="radio-tile-label">2KG</label>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </aside>
+                <aside> <mat-progress-bar mode="indeterminate"></mat-progress-bar></aside>
+            </aside>
+
         </aside>
-            <aside class="size-section1" *ngSwitchCase="'mobile'" >
-            <aside class="size-section" style="border: none;">
-                <div class="bg-size">RAM:</div>
-                <div class="container" >
-                    <div class="radio-tile-group" style="gap: 1rem;">
-                        <div class="input-container">
-                            <input id="walk" class="radio-button" type="radio" name="radio">
-                            <div class="radio-tile" style="padding: 1.4rem;margin-top: -.4rem;">
-
-                                <label for="walk" class="radio-tile-label">16GB</label>
-                            </div>
-                        </div>
-
-                        <div class="input-container">
-                            <input id="bike" class="radio-button" type="radio" name="radio">
-                            <div class="radio-tile" style="padding: 1.4rem;margin-top: -.4rem;">
-
-                                <label for="bike" class="radio-tile-label">32GB</label>
-                            </div>
-                        </div>
-
-                        <div class="input-container">
-                            <input id="drive" class="radio-button" type="radio" name="radio">
-                            <div class="radio-tile" style="padding: 1.4rem;margin-top: -.4rem;">
-
-                                <label for="drive" class="radio-tile-label">64GB</label>
-                            </div>
-                        </div>
-                      
-                        <div class="input-container">
-                            <input id="drive" class="radio-button" type="radio" name="radio">
-                            <div class="radio-tile" style="padding: 1.4rem;margin-top: -.4rem;">
-
-                                <label for="drive" class="radio-tile-label">124GB</label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </aside>
-            <aside> <mat-progress-bar mode="indeterminate"></mat-progress-bar></aside>
-         </aside>
-         <aside class="size-section1" *ngSwitchCase="'lap'" >
-            <aside class="size-section" style="border: none;">
-                <div class="bg-size">RAM:</div>
-                <div class="container" >
-                    <div class="radio-tile-group" style="gap: 1rem;">
-                        <div class="input-container">
-                            <input id="walk" class="radio-button" type="radio" name="radio">
-                            <div class="radio-tile" style="padding: 1.4rem;margin-top: -.4rem;">
-
-                                <label for="walk" class="radio-tile-label">256GB</label>
-                            </div>
-                        </div>
-
-                        <div class="input-container">
-                            <input id="bike" class="radio-button" type="radio" name="radio">
-                            <div class="radio-tile" style="padding: 1.4rem;margin-top: -.4rem;">
-
-                                <label for="bike" class="radio-tile-label">512GB</label>
-                            </div>
-                        </div>
-
-                        <div class="input-container">
-                            <input id="drive" class="radio-button" type="radio" name="radio">
-                            <div class="radio-tile" style="padding: 1.4rem;margin-top: -.4rem;">
-
-                                <label for="drive" class="radio-tile-label">1TB</label>
-                            </div>
-                        </div>
-                      
-                        
-                    </div>
-                </div>
-            </aside>
-            <aside> <mat-progress-bar mode="indeterminate"></mat-progress-bar></aside>
-         </aside>
-         <aside class="size-section1" *ngSwitchCase="'health'" >
-            <aside class="size-section" style="border: none;">
-                <div class="bg-size">WEIGHT:</div>
-                <div class="container">
-                    <div class="radio-tile-group" style="gap: 1rem;">
-                        <div class="input-container">
-                            <input id="walk" class="radio-button" type="radio" name="radio">
-                            <div class="radio-tile" style="padding: 1.4rem;margin-top: -.4rem;">
-
-                                <label for="walk" class="radio-tile-label">500GM</label>
-                            </div>
-                        </div>
-
-                        <div class="input-container">
-                            <input id="bike" class="radio-button" type="radio" name="radio">
-                            <div class="radio-tile" style="padding: 1.4rem;margin-top: -.4rem;">
-
-                                <label for="bike" class="radio-tile-label">1KG</label>
-                            </div>
-                        </div>
-
-                        <div class="input-container">
-                            <input id="drive" class="radio-button" type="radio" name="radio">
-                            <div class="radio-tile" style="padding: 1.4rem;margin-top: -.4rem;">
-
-                                <label for="drive" class="radio-tile-label">1.5KG</label>
-                            </div>
-                        </div>
-                        <div class="input-container">
-                            <input id="drive" class="radio-button" type="radio" name="radio">
-                            <div class="radio-tile" style="padding: 1.4rem;margin-top: -.4rem;">
-
-                                <label for="drive" class="radio-tile-label">2KG</label>
-                            </div>
-                        </div>
-                        <div class="input-container">
-                            <input id="drive" class="radio-button" type="radio" name="radio">
-                            <div class="radio-tile" style="padding: 1.4rem;margin-top: -.4rem;">
-
-                                <label for="drive" class="radio-tile-label">4KG</label>
-                            </div>
-                        </div>
-                      
-                        
-                    </div>
-                </div>
-            </aside>
-            <aside> <mat-progress-bar mode="indeterminate"></mat-progress-bar></aside>
-         </aside>
-         <aside class="size-section1" *ngSwitchCase="'grosery'" >
-            <aside class="size-section" style="border: none;">
-                <div class="bg-size">WEIGHT:</div>
-                <div class="container">
-                    <div class="radio-tile-group" style="gap: 1rem;">
-                        <div class="input-container">
-                            <input id="walk" class="radio-button" type="radio" name="radio">
-                            <div class="radio-tile" style="padding: 1.4rem;margin-top: -.4rem;">
-
-                                <label for="walk" class="radio-tile-label">250GM</label>
-                            </div>
-                        </div>
-                        <div class="input-container">
-                            <input id="walk" class="radio-button" type="radio" name="radio">
-                            <div class="radio-tile" style="padding: 1.4rem;margin-top: -.4rem;">
-
-                                <label for="walk" class="radio-tile-label">500GM</label>
-                            </div>
-                        </div>
-
-                        <div class="input-container">
-                            <input id="bike" class="radio-button" type="radio" name="radio">
-                            <div class="radio-tile" style="padding: 1.4rem;margin-top: -.4rem;">
-
-                                <label for="bike" class="radio-tile-label">1KG</label>
-                            </div>
-                        </div>
-
-                        <div class="input-container">
-                            <input id="drive" class="radio-button" type="radio" name="radio">
-                            <div class="radio-tile" style="padding: 1.4rem;margin-top: -.4rem;">
-
-                                <label for="drive" class="radio-tile-label">1.5KG</label>
-                            </div>
-                        </div>
-                        <div class="input-container">
-                            <input id="drive" class="radio-button" type="radio" name="radio">
-                            <div class="radio-tile" style="padding: 1.4rem;margin-top: -.4rem;">
-
-                                <label for="drive" class="radio-tile-label">2KG</label>
-                            </div>
-                        </div>
-
-                        
-                    </div>
-                </div>
-            </aside>
-            <aside> <mat-progress-bar mode="indeterminate"></mat-progress-bar></aside>
-         </aside>
-         
-            </aside>
     </section>
 </section>
 
