@@ -61,7 +61,8 @@
 
         </aside>
         <aside [ngSwitch]="description.type">
-            <aside class="size-section" *ngSwitchCase="'dress'">
+            <aside class="size-section1" *ngSwitchCase="'dress'">
+            <aside class="size-section" >
                 <div>SIZE:</div>
                 <div class="container">
                     <div class="radio-tile-group">
@@ -113,7 +114,10 @@
                 </div>
 
             </aside>
-            <aside class="size-section" *ngSwitchCase="'boot'">
+            <aside> <mat-progress-bar mode="indeterminate"></mat-progress-bar></aside>
+        </aside>
+            <aside class="size-section1" *ngSwitchCase="'boot'">
+            <aside class="size-section"  >
                 <div>SIZE:</div>
                 <div class="container">
                     <div class="radio-tile-group">
@@ -165,8 +169,184 @@
                 </div>
 
             </aside>
-
+            <aside> <mat-progress-bar mode="indeterminate"></mat-progress-bar></aside>
         </aside>
+            <aside class="size-section1" *ngSwitchCase="'mobile'" >
+            <aside class="size-section" style="border: none;">
+                <div class="bg-size">RAM:</div>
+                <div class="container" >
+                    <div class="radio-tile-group" style="gap: 1rem;">
+                        <div class="input-container">
+                            <input id="walk" class="radio-button" type="radio" name="radio">
+                            <div class="radio-tile" style="padding: 1.4rem;margin-top: -.4rem;">
+
+                                <label for="walk" class="radio-tile-label">16GB</label>
+                            </div>
+                        </div>
+
+                        <div class="input-container">
+                            <input id="bike" class="radio-button" type="radio" name="radio">
+                            <div class="radio-tile" style="padding: 1.4rem;margin-top: -.4rem;">
+
+                                <label for="bike" class="radio-tile-label">32GB</label>
+                            </div>
+                        </div>
+
+                        <div class="input-container">
+                            <input id="drive" class="radio-button" type="radio" name="radio">
+                            <div class="radio-tile" style="padding: 1.4rem;margin-top: -.4rem;">
+
+                                <label for="drive" class="radio-tile-label">64GB</label>
+                            </div>
+                        </div>
+                      
+                        <div class="input-container">
+                            <input id="drive" class="radio-button" type="radio" name="radio">
+                            <div class="radio-tile" style="padding: 1.4rem;margin-top: -.4rem;">
+
+                                <label for="drive" class="radio-tile-label">124GB</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <aside> <mat-progress-bar mode="indeterminate"></mat-progress-bar></aside>
+         </aside>
+         <aside class="size-section1" *ngSwitchCase="'lap'" >
+            <aside class="size-section" style="border: none;">
+                <div class="bg-size">RAM:</div>
+                <div class="container" >
+                    <div class="radio-tile-group" style="gap: 1rem;">
+                        <div class="input-container">
+                            <input id="walk" class="radio-button" type="radio" name="radio">
+                            <div class="radio-tile" style="padding: 1.4rem;margin-top: -.4rem;">
+
+                                <label for="walk" class="radio-tile-label">256GB</label>
+                            </div>
+                        </div>
+
+                        <div class="input-container">
+                            <input id="bike" class="radio-button" type="radio" name="radio">
+                            <div class="radio-tile" style="padding: 1.4rem;margin-top: -.4rem;">
+
+                                <label for="bike" class="radio-tile-label">512GB</label>
+                            </div>
+                        </div>
+
+                        <div class="input-container">
+                            <input id="drive" class="radio-button" type="radio" name="radio">
+                            <div class="radio-tile" style="padding: 1.4rem;margin-top: -.4rem;">
+
+                                <label for="drive" class="radio-tile-label">1TB</label>
+                            </div>
+                        </div>
+                      
+                        
+                    </div>
+                </div>
+            </aside>
+            <aside> <mat-progress-bar mode="indeterminate"></mat-progress-bar></aside>
+         </aside>
+         <aside class="size-section1" *ngSwitchCase="'health'" >
+            <aside class="size-section" style="border: none;">
+                <div class="bg-size">WEIGHT:</div>
+                <div class="container">
+                    <div class="radio-tile-group" style="gap: 1rem;">
+                        <div class="input-container">
+                            <input id="walk" class="radio-button" type="radio" name="radio">
+                            <div class="radio-tile" style="padding: 1.4rem;margin-top: -.4rem;">
+
+                                <label for="walk" class="radio-tile-label">500GM</label>
+                            </div>
+                        </div>
+
+                        <div class="input-container">
+                            <input id="bike" class="radio-button" type="radio" name="radio">
+                            <div class="radio-tile" style="padding: 1.4rem;margin-top: -.4rem;">
+
+                                <label for="bike" class="radio-tile-label">1KG</label>
+                            </div>
+                        </div>
+
+                        <div class="input-container">
+                            <input id="drive" class="radio-button" type="radio" name="radio">
+                            <div class="radio-tile" style="padding: 1.4rem;margin-top: -.4rem;">
+
+                                <label for="drive" class="radio-tile-label">1.5KG</label>
+                            </div>
+                        </div>
+                        <div class="input-container">
+                            <input id="drive" class="radio-button" type="radio" name="radio">
+                            <div class="radio-tile" style="padding: 1.4rem;margin-top: -.4rem;">
+
+                                <label for="drive" class="radio-tile-label">2KG</label>
+                            </div>
+                        </div>
+                        <div class="input-container">
+                            <input id="drive" class="radio-button" type="radio" name="radio">
+                            <div class="radio-tile" style="padding: 1.4rem;margin-top: -.4rem;">
+
+                                <label for="drive" class="radio-tile-label">4KG</label>
+                            </div>
+                        </div>
+                      
+                        
+                    </div>
+                </div>
+            </aside>
+            <aside> <mat-progress-bar mode="indeterminate"></mat-progress-bar></aside>
+         </aside>
+         <aside class="size-section1" *ngSwitchCase="'grosery'" >
+            <aside class="size-section" style="border: none;">
+                <div class="bg-size">WEIGHT:</div>
+                <div class="container">
+                    <div class="radio-tile-group" style="gap: 1rem;">
+                        <div class="input-container">
+                            <input id="walk" class="radio-button" type="radio" name="radio">
+                            <div class="radio-tile" style="padding: 1.4rem;margin-top: -.4rem;">
+
+                                <label for="walk" class="radio-tile-label">250GM</label>
+                            </div>
+                        </div>
+                        <div class="input-container">
+                            <input id="walk" class="radio-button" type="radio" name="radio">
+                            <div class="radio-tile" style="padding: 1.4rem;margin-top: -.4rem;">
+
+                                <label for="walk" class="radio-tile-label">500GM</label>
+                            </div>
+                        </div>
+
+                        <div class="input-container">
+                            <input id="bike" class="radio-button" type="radio" name="radio">
+                            <div class="radio-tile" style="padding: 1.4rem;margin-top: -.4rem;">
+
+                                <label for="bike" class="radio-tile-label">1KG</label>
+                            </div>
+                        </div>
+
+                        <div class="input-container">
+                            <input id="drive" class="radio-button" type="radio" name="radio">
+                            <div class="radio-tile" style="padding: 1.4rem;margin-top: -.4rem;">
+
+                                <label for="drive" class="radio-tile-label">1.5KG</label>
+                            </div>
+                        </div>
+                        <div class="input-container">
+                            <input id="drive" class="radio-button" type="radio" name="radio">
+                            <div class="radio-tile" style="padding: 1.4rem;margin-top: -.4rem;">
+
+                                <label for="drive" class="radio-tile-label">2KG</label>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </aside>
+            <aside> <mat-progress-bar mode="indeterminate"></mat-progress-bar></aside>
+         </aside>
+         
+            </aside>
     </section>
 </section>
 

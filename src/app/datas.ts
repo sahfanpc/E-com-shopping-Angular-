@@ -361,7 +361,7 @@ export const Data = {
       id: 1,
       base: 'MSI LAPTOP',
       title: 'MSI Core i5 11th Gen',
-      price: 109,
+      price: 10923,
       ideal: 'user',
       type: 'lap',
       category:
@@ -372,24 +372,10 @@ export const Data = {
         'https://rukminim1.flixcart.com/image/312/312/l2qhjm80/computer/l/t/g/gf63-thin-11uc-867in-gaming-laptop-msi-original-imageyk5hzuthuyf.jpeg?q=70',
     },
     {
-      id: 2,
-      base: 'MSI LAPTOP',
-      title: 'MSI Core i7 11th Gen',
-      price: 109,
-      ideal: 'user',
-      type: 'lap',
-      category:
-        ' MSI Core i7 11th Gen - (16 GB/512 GB SSD/Windows 11 Home/4 GB Graphics/NVIDIA GeForce RTX 3050) GF63 Thin 11UC-1293IN Gaming Laptop  (15.6 Inch, Black, 1.86 Kg)',
-      description:
-        'Your perfect pack for everyday and every time use in the day today. Stash your laptop in the padded high-quality',
-      image:
-        'https://rukminim1.flixcart.com/image/312/312/l2qhjm80/computer/l/t/g/gf63-thin-11uc-867in-gaming-laptop-msi-original-imageyk5hzuthuyf.jpeg?q=70',
-    },
-    {
       id: 3,
       base: 'ASUS LAPTOP',
       title: ' ASUS Vivobook 15 Core i3 11th Gen',
-      price: 109,
+      price: 13309,
       ideal: 'user',
       type: 'lap',
       category:
@@ -403,7 +389,7 @@ export const Data = {
       id: 4,
       base: 'realme Book',
       title: 'realme Book (Slim) Core i3 11th Gen',
-      price: 109,
+      price: 10989,
       ideal: 'user',
       type: 'lap',
       category:
@@ -417,7 +403,7 @@ export const Data = {
       id: 5,
       base: 'ASUS Vivobook',
       title: 'ASUS Vivobook 15 Core i5 11th Gen ',
-      price: 109,
+      price: 109783,
       ideal: 'user',
       type: 'lap',
       category:
@@ -431,7 +417,7 @@ export const Data = {
       id: 6,
       base: 'HP LAPTOP',
       title: 'HP 15s Intel Core i5 12th Gen',
-      price: 109,
+      price: 34567,
       ideal: 'user',
       type: 'lap',
       category:
@@ -442,10 +428,24 @@ export const Data = {
         'https://rukminim1.flixcart.com/image/312/312/xif0q/computer/j/y/9/-original-imagp7pfaztvgxv3.jpeg?q=70',
     },
     {
+      id: 2,
+      base: 'MSI LAPTOP',
+      title: 'MSI Core i7 11th Gen',
+      price: 72435,
+      ideal: 'user',
+      type: 'lap',
+      category:
+        ' MSI Core i7 11th Gen - (16 GB/512 GB SSD/Windows 11 Home/4 GB Graphics/NVIDIA GeForce RTX 3050) GF63 Thin 11UC-1293IN Gaming Laptop  (15.6 Inch, Black, 1.86 Kg)',
+      description:
+        'Your perfect pack for everyday and every time use in the day today. Stash your laptop in the padded high-quality',
+      image:
+        'https://rukminim1.flixcart.com/image/312/312/l2qhjm80/computer/l/t/g/gf63-thin-11uc-867in-gaming-laptop-msi-original-imageyk5hzuthuyf.jpeg?q=70',
+    },
+    {
       id: 7,
       base: 'APPLE LAPTOP',
       title: 'APPLE 2020 Macbook Air M1',
-      price: 109,
+      price: 12000,
       ideal: 'user',
       type: 'lap',
       category:
@@ -459,7 +459,7 @@ export const Data = {
       id: 8,
       base: 'LapLenovo IdeaPad',
       title: 'LapLenovo IdeaPad 3 Ryzen 5 Hexa Coretop',
-      price: 109,
+      price: 29099,
       ideal: 'user',
       type: 'lap',
       category:
@@ -1211,7 +1211,7 @@ export const Data = {
     {
       id: 4,
       base: 'Tomato Ketchup  ',
-      title: 'VEEBA Tomato Ketchup  (900 g)',
+      title: 'VEEBA Tomato Ketchup  ',
       price: 50,
       ideal: 'user',
       type: 'grosery',
@@ -1225,7 +1225,7 @@ export const Data = {
     {
       id: 5,
       base: 'Black Raisins ',
-      title: 'Happilo Premium Afghani Seedless Black Raisins  (250 g)',
+      title: 'Happilo Premium Afghani Seedless Black Raisins  ',
       price: 236,
       ideal: 'user',
       type: 'grosery',
@@ -1253,7 +1253,7 @@ export const Data = {
     {
       id: 7,
       base: 'Olive Oi',
-      title: 'FIGARO Olive Oil Tin  (200 ml)',
+      title: 'FIGARO Olive Oil Tin  ',
       price: 671,
       ideal: 'user',
       type: 'grosery',

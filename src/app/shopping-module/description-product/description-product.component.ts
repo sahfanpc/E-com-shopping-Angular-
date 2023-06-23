@@ -4,7 +4,7 @@ import { DatasarviceService } from 'src/app/datasarvice.service';
 import { MatButtonModule } from '@angular/material/button';
 import { UpperCasePipe, CurrencyPipe } from '@angular/common';
 import { NgSwitch, NgSwitchCase } from '@angular/common';
-
+import {MatProgressBarModule} from '@angular/material/progress-bar';
 @Component({
   selector: 'app-description-product',
   templateUrl: './description-product.component.html',
@@ -15,6 +15,7 @@ import { NgSwitch, NgSwitchCase } from '@angular/common';
     CurrencyPipe,
     NgSwitch,
     NgSwitchCase,
+    MatProgressBarModule
   ],
   standalone: true,
 })
