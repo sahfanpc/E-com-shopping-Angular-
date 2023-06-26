@@ -23,13 +23,16 @@ import { FormsModule } from '@angular/forms';
 })
 export class DescriptionProductComponent {
   description: any;
+  type:any;
   price: any;
+  alldatas:any;
   // alldata: any;
   counter: number = 1;
   selectedOption: any;
   constructor(private db: DatasarviceService, private router: Router) {}
   ngOnInit(): void {
     this.function();
+    this.type=this.description.type;
     // console.log(this.selectedOption);
   }
 
@@ -39,12 +42,8 @@ export class DescriptionProductComponent {
     console.log(this.description, 'v');
 
     this.price = 2.4 * this.description.price;
-    // console.log(this.alldata, 'all');
-  }
-  // routing to cart-page
-  Cart() {
-    // console.log(this.counter, this.selectedOption, 'cart');
-    let alldatas = {
+
+    this.alldatas = {
       id: this.description.id,
       price: this.description.price,
       bace: this.description.base,
@@ -58,20 +57,52 @@ export class DescriptionProductComponent {
       numberOfItem: this.counter,
       item: this.selectedOption,
     };
+    // console.log(this.alldata, 'all');
+  }
+  // routing to cart-page
+  Cart() {
+    // console.log(this.counter, this.selectedOption, 'cart');
 
     // console.log(this.description);
     // console.log(this.counter, 'counter', this.selectedOption, 'selectedoption');
-    if (this.selectedOption) {
-      // this.alldata.unshift();
-      const check = this.db.Cart(alldatas);
+    if(this.type == ('appliance')){
+      const check = this.db.Cart(this.alldatas);
       // this.router.navigateByUrl('cart-page');
       if (check) {
         alert('added');
       } else {
         alert('allready exist');
       }
-    } else {
-      alert('please select your option');
+    }else if(this.type == ('home')){
+      const check = this.db.Cart(this.alldatas);
+      // this.router.navigateByUrl('cart-page');
+      if (check) {
+        alert('added');
+      } else {
+        alert('allready exist');
+      }
+    }else if(this.type == ('toy')){
+      const check = this.db.Cart(this.alldatas);
+      // this.router.navigateByUrl('cart-page');
+      if (check) {
+        alert('added');
+      } else {
+        alert('allready exist');
+      }
+    }
+    else{
+      if (this.selectedOption) {
+        // this.alldata.unshift();
+        const check = this.db.Cart(this.alldatas);
+        // this.router.navigateByUrl('cart-page');
+        if (check) {
+          alert('added');
+        } else {
+          alert('allready exist');
+        }
+      } else {
+        alert('please select your option');
+      }
     }
   }
   increment() {
@@ -83,5 +114,28 @@ export class DescriptionProductComponent {
       this.counter--;
       // console.log('+');
     }
+  }
+  Order(){
+
+    if(this.type == 'appliance' ){
+      this.db.orderproduct(this.alldatas)
+      this.router.navigateByUrl('order-confirmation')
+    }else if(this.type == 'home' ){
+      this.db.orderproduct(this.alldatas)
+      this.router.navigateByUrl('order-confirmation')
+    }else if(this.type == 'toy' ){
+      this.db.orderproduct(this.alldatas)
+      this.router.navigateByUrl('order-confirmation')
+    }
+    else{
+
+    if(this.selectedOption){
+      console.log(this.alldatas,"rrr");
+      this.db.orderproduct(this.alldatas)
+      this.router.navigateByUrl('order-confirmation')
+    } else {
+      alert('please select your option');
+    }
+  }
   }
 }

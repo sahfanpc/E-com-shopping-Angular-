@@ -9,11 +9,15 @@ import { Data } from './datas';
 export class DatasarviceService {
   products = Data; //all products
   Userdatas: Array<any> = []; //datas of users
+  registerdata:any;
   alertcheck: any; //using check true or false for alert
   product: any; //current product detail
   cart: Array<any> = [];
   cartalert: any;
   Saparateddata: any;
+  token:any;
+  orderbefore:any;
+
   constructor(private http: HttpClient) {}
   // user detail
   userData(value: any) {
@@ -26,15 +30,21 @@ export class DatasarviceService {
       password: value.regpassword,
     });
     console.log(this.Userdatas);
+    localStorage.setItem('user',JSON.stringify(this.Userdatas))
   }
   // login
   userLogin(value: any) {
-    const usercheck = this.Userdatas.filter((e) => e.email == value.email);
+    const registereduser:any=localStorage.getItem('user');
+this.registerdata=JSON.parse(registereduser)
+    const usercheck = this.registerdata.filter((e:any) => e.email == value.email);
+    
     if (usercheck.length != 0) {
-      const usercheckpassword = this.Userdatas.filter(
-        (e) => e.password == value.password
+      const usercheckpassword = this.registerdata.filter(
+        (e:any) => e.password == value.password
       );
       if (usercheckpassword.length != 0) {
+        this.token=usercheck;
+        console.log(this.token,"usercheck");
         this.alertcheck = true;
       } else {
         this.alertcheck = false;
@@ -53,7 +63,10 @@ export class DatasarviceService {
     this.product = null;
     this.product = data;
   }
-
+descript(data:any){
+  this.product =null;
+  this.product=data;
+}
   // cart
   Cart(data: any) {
     // console.log(data, 'cart');
@@ -107,5 +120,11 @@ export class DatasarviceService {
     }
     // const product = this.products.filter((e:any) => e==data)
     console.log(data);
+  }
+  // ordered fn
+  orderproduct(data:any){
+this.orderbefore=data;
+console.log(this.orderbefore,"before");
+
   }
 }

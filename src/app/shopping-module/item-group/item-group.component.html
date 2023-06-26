@@ -1,15 +1,18 @@
-<aside class="main">
-    <aside class="container">
-        <mat-card class="product-card" *ngFor="let item of data,let i= index">
-            <aside class="img-sec">
-                <img src="{{item.image}}" alt="">
-            </aside>
-            <mat-card-title class="text-sec">
-                <span>{{item.base}}</span><br>
-                <span>{{item.price}}</span>
 
-                <p style="color: rgb(8, 168, 8);">Shop Now!</p>
-            </mat-card-title>
-        </mat-card>
+<aside class="main">
+
+    <aside class="container">
+        <aside class="product-card"  *ngFor="let item of data,let i= index" (click)="Product(item)">
+<aside class="left-side">
+<img src="{{item.image}}" alt="">
+</aside>
+<aside class="right-side">
+    <span>{{item.base}}</span><br>
+    <span>{{item.title}}</span><br>
+    <span style="font-size: 1.2rem;">{{item.category}}</span><br><br>
+    <span><i class="fa-solid fa-indian-rupee-sign" style="color: green;"></i>{{item.price}}</span>
+    
+</aside>
+        </aside>
     </aside>
 </aside>

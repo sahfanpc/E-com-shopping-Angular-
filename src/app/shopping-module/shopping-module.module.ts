@@ -16,6 +16,11 @@ import { MatDividerModule } from '@angular/material/divider';
 import { ItemGroupComponent } from './item-group/item-group.component';
 import { MatListModule } from '@angular/material/list';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { OrderConfirmationComponent } from './order-confirmation/order-confirmation.component';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatIconModule } from '@angular/material/icon';
+
 
 // import { UpperCasePipe } from '@angular/common';
 @NgModule({
@@ -24,6 +29,7 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
     DescriptionProductComponent,
     CartPageComponent,
     ItemGroupComponent,
+    OrderConfirmationComponent,
     // UpperCasePipe,
   ],
   imports: [
@@ -43,6 +49,9 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
     MatDividerModule,
     MatListModule,
     MatProgressBarModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatIconModule,
   ],
   // /   UpperCasePipe,
   //   CurrencyPipe,
@@ -62,6 +71,7 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
     DescriptionProductComponent,
     CartPageComponent,
     ItemGroupComponent,
+    
   ],
 })
 export class ShoppingModuleModule {}

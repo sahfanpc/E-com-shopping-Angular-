@@ -5,13 +5,29 @@
             <!-- <p>{{description.image}}</p> -->
         </aside>
 
-        <p style="font-size: 2rem;font-family: Poppins, sans-serif;font-weight: 700;">{{description.base}}</p>
+        <span style="font-size: 2rem;font-family: Poppins, sans-serif;font-weight: 700;display: flex;align-items: center;justify-content: space-between;">{{description.base}}
+            <div class="rating">
+                <input type="radio" id="star5" name="rate" value="5">
+                <label for="star5" title="text"></label>
+                <input type="radio" id="star4" name="rate" value="4">
+                <label for="star4" title="text"></label>
+                <input checked="" type="radio" id="star3" name="rate" value="3">
+                <label for="star3" title="text"></label>
+                <input type="radio" id="star2" name="rate" value="2">
+                <label for="star2" title="text"></label>
+                <input type="radio" id="star1" name="rate" value="1">
+                <label for="star1" title="text"></label>
+              </div></span>
+<!--  -->
+
+<!--  -->
+
 
         <aside class="button-sec">
             <button (click)="Cart()"><i class="fa-solid fa-cart-shopping fa-bounce" style="margin-right: .3rem;"></i>
                 ADD TO
                 CART</button>
-            <button style="background-color: rgba(255, 162, 0, 0.964)"><span class="material-icons-outlined">
+            <button style="background-color: rgba(255, 162, 0, 0.964)" (click)="Order()"><span class="material-icons-outlined">
                     flash_on
                 </span>BUY NOW</button>
         </aside>
@@ -60,11 +76,11 @@
             <li><a href="#" style="text-decoration: none;">More Details</a></li>
 
         </aside>
-        <aside class="numberOfItems">
+        <span class="numberOfItems">
             <button (click)="decrement()"><i class="fa-solid fa-minus"></i></button>
             <input type="number" [(ngModel)]="counter"><button (click)="increment()"><i
                     class="fa-solid fa-plus"></i></button>
-        </aside>
+            </span>
         <aside [ngSwitch]="description.type">
             <aside class="size-section1" *ngSwitchCase="'dress'">
                 <aside class="size-section">

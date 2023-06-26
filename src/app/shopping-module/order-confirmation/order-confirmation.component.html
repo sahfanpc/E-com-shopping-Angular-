@@ -1,0 +1,97 @@
+<section class="main">
+    <aside class="container">
+        <section class="child-sec">
+            <aside class="verification-map">
+                <mat-stepper>
+                    <mat-step label="Step 1" state="phone">
+                    </mat-step>
+                    <mat-step label="Step 2" state="chat">
+                    </mat-step>
+                    <mat-step label="Step 3">
+                    </mat-step>
+                  
+                    <!-- Icon overrides. -->
+                    <ng-template matStepperIcon="phone">
+                      <mat-icon>call_end</mat-icon>
+                    </ng-template>
+                    <ng-template matStepperIcon="chat">
+                      <mat-icon>forum</mat-icon>
+                    </ng-template>
+                  </mat-stepper>
+            </aside>
+            <aside  *ngIf=address class="address-detail">
+                <aside>ADDRESS:</aside>
+                <aside style="margin-top: 1rem;">{{address.username}}</aside>
+                <!-- <mat-divider></mat-divider> -->
+                <aside>{{address.number}}</aside>
+                <!-- <mat-divider></mat-divider> -->
+                <aside>{{address.email}}</aside>
+                <!-- <mat-divider></mat-divider> -->
+                <aside>{{address.address}},{{address.pincode}}</aside>
+            </aside>
+            <aside class="product">
+            <aside class="left-side">
+            <img src="{{product.image}}" alt="">
+            </aside>
+            <aside class="right-side">
+                <span>{{product.bace}}</span>
+                <span>{{product.title}}</span>
+                <span style="font-size: 1.2rem;">{{product.category}}</span>
+                <span><i class="fa-solid fa-indian-rupee-sign" style="color: green;"></i>{{product.price}}</span>
+                
+            </aside>
+
+            </aside>
+            <aside class="group">
+                <aside class="price-detail">
+                    <aside>
+                        <span>Price:</span><span>{{product.price}}</span>
+                    </aside>
+                    <aside>
+                        <span>Realprice:</span><span>{{product.realprice}}</span>
+                    </aside>
+                    <aside>
+                        <span>Descount:</span><span>{{product.realprice - product.price}}</span>
+                    </aside>
+                    <aside>
+                        <span>Shipping:</span><span>40</span>
+                    </aside>
+                    <aside>
+                        <span>Total:</span><span>{{product.price + 40}}</span>
+                    </aside>
+                </aside>
+                <!-- <aside class="peyment">
+                    <aside class="gpay">
+                    </aside>
+                    <aside class="ptm"></aside>
+                    <aside class="ppay"></aside>
+                    <aside class="cash"></aside>
+                </aside> -->
+
+                <div class="peyment">
+                    <div class="container1">
+                        <form>
+                            <label>
+                                <input type="radio" name="radio" checked="">
+                                <span>Gpay</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="radio">
+                                <span>Paytm</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="radio">
+                                <span>Ppay</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="radio">
+                                <span>Cashon Delivary</span>
+                            </label>
+                        </form>
+                    </div>
+                </div>
+            </aside>
+           
+        </section>
+    </aside>
+</section>

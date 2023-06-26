@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { DatasarviceService } from 'src/app/datasarvice.service';
 import { NgForOf } from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-item-group',
   templateUrl: './item-group.component.html',
@@ -12,7 +13,7 @@ import { MatCardModule } from '@angular/material/card';
 export class ItemGroupComponent {
   data: any;
 
-  constructor(private db: DatasarviceService) {}
+  constructor(private db: DatasarviceService,private router:Router) {}
 
   ngOnInit() {
     this.value();
@@ -21,5 +22,9 @@ export class ItemGroupComponent {
   value() {
     this.data = this.db.Saparateddata;
     console.log(this.data, 'item');
+  }
+  Product(data:any){
+    this.db.descript(data);
+    this.router.navigateByUrl('description-product')
   }
 }
