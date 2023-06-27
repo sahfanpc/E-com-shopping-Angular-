@@ -20,8 +20,8 @@ import { OrderConfirmationComponent } from './order-confirmation/order-confirmat
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
-
-
+import { OrderComponent } from './order/order.component';
+import { MatMenuModule } from '@angular/material/menu';
 // import { UpperCasePipe } from '@angular/common';
 @NgModule({
   declarations: [
@@ -30,6 +30,7 @@ import { MatIconModule } from '@angular/material/icon';
     CartPageComponent,
     ItemGroupComponent,
     OrderConfirmationComponent,
+    OrderComponent,
     // UpperCasePipe,
   ],
   imports: [
@@ -52,6 +53,7 @@ import { MatIconModule } from '@angular/material/icon';
     MatFormFieldModule,
     MatInputModule,
     MatIconModule,
+    MatMenuModule,
   ],
   // /   UpperCasePipe,
   //   CurrencyPipe,
@@ -71,7 +73,7 @@ import { MatIconModule } from '@angular/material/icon';
     DescriptionProductComponent,
     CartPageComponent,
     ItemGroupComponent,
-    
+    OrderComponent,
   ],
 })
 export class ShoppingModuleModule {}

@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatButtonModule } from '@angular/material/button';
 import { ShoppingModuleModule } from './shopping-module/shopping-module.module';
+import { MatMenuModule } from '@angular/material/menu';
 // import { UppercasePipe } from './uppercase.pipe';
 // import { IvyCarouselModule } from 'angular-responsive-carousel2';
 // import { MatCardModule } from '@angular/material/card';
@@ -27,6 +28,7 @@ import { ShoppingModuleModule } from './shopping-module/shopping-module.module';
     HttpClientModule,
     MatSnackBarModule,
     MatButtonModule,
+    MatMenuModule,
     // ShoppingModuleModule,
 
     // IvyCarouselModule,

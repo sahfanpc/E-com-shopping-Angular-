@@ -3,23 +3,23 @@
         <section class="child-sec">
             <aside class="verification-map">
                 <mat-stepper>
-                    <mat-step label="Step 1" state="phone">
+                    <mat-step label="Order">
                     </mat-step>
-                    <mat-step label="Step 2" state="chat">
+                    <mat-step label="Shipping">
                     </mat-step>
-                    <mat-step label="Step 3">
+                    <mat-step label="Delivary">
                     </mat-step>
-                  
+
                     <!-- Icon overrides. -->
-                    <ng-template matStepperIcon="phone">
-                      <mat-icon>call_end</mat-icon>
+                    <!-- <ng-template matStepperIcon="phone">
+                        <i class="fa-brands fa-first-order-alt"></i>
                     </ng-template>
                     <ng-template matStepperIcon="chat">
-                      <mat-icon>forum</mat-icon>
-                    </ng-template>
-                  </mat-stepper>
+                        <i class="fa-solid fa-truck-clock"></i>
+                    </ng-template> -->
+                </mat-stepper>
             </aside>
-            <aside  *ngIf=address class="address-detail">
+            <aside *ngIf=address class="address-detail">
                 <aside>ADDRESS:</aside>
                 <aside style="margin-top: 1rem;">{{address.username}}</aside>
                 <!-- <mat-divider></mat-divider> -->
@@ -30,16 +30,16 @@
                 <aside>{{address.address}},{{address.pincode}}</aside>
             </aside>
             <aside class="product">
-            <aside class="left-side">
-            <img src="{{product.image}}" alt="">
-            </aside>
-            <aside class="right-side">
-                <span>{{product.bace}}</span>
-                <span>{{product.title}}</span>
-                <span style="font-size: 1.2rem;">{{product.category}}</span>
-                <span><i class="fa-solid fa-indian-rupee-sign" style="color: green;"></i>{{product.price}}</span>
-                
-            </aside>
+                <aside class="left-side">
+                    <img src="{{product.image}}" alt="">
+                </aside>
+                <aside class="right-side">
+                    <span>{{product.bace}}</span>
+                    <span>{{product.title}}</span>
+                    <span style="font-size: 1.2rem;">{{product.category}}</span>
+                    <span><i class="fa-solid fa-indian-rupee-sign" style="color: green;"></i>{{product.price}}</span>
+
+                </aside>
 
             </aside>
             <aside class="group">
@@ -47,51 +47,48 @@
                     <aside>
                         <span>Price:</span><span>{{product.price}}</span>
                     </aside>
-                    <aside>
+                    <aside style="display: flex;justify-content: space-between;">
                         <span>Realprice:</span><span>{{product.realprice}}</span>
                     </aside>
-                    <aside>
+                    <aside style="display: flex;justify-content: space-between;">
                         <span>Descount:</span><span>{{product.realprice - product.price}}</span>
                     </aside>
-                    <aside>
+                    <aside style="display: flex;justify-content: space-between;">
                         <span>Shipping:</span><span>40</span>
                     </aside>
-                    <aside>
+                    <mat-divider></mat-divider>
+                    <aside style="display: flex;justify-content: space-between;">
                         <span>Total:</span><span>{{product.price + 40}}</span>
                     </aside>
                 </aside>
-                <!-- <aside class="peyment">
-                    <aside class="gpay">
-                    </aside>
-                    <aside class="ptm"></aside>
-                    <aside class="ppay"></aside>
-                    <aside class="cash"></aside>
-                </aside> -->
 
                 <div class="peyment">
                     <div class="container1">
                         <form>
                             <label>
-                                <input type="radio" name="radio" checked="">
+                                <input type="radio" name="same" [(ngModel)]="selectedValue" value="googlepay" checked>
                                 <span>Gpay</span>
                             </label>
                             <label>
-                                <input type="radio" name="radio">
+                                <input type="radio" name="same" [(ngModel)]="selectedValue" value="paytm">
                                 <span>Paytm</span>
                             </label>
                             <label>
-                                <input type="radio" name="radio">
+                                <input type="radio" name="same" [(ngModel)]="selectedValue" value="phonepay">
                                 <span>Ppay</span>
                             </label>
                             <label>
-                                <input type="radio" name="radio">
+                                <input type="radio" name="same" [(ngModel)]="selectedValue" value="cashondelivery">
                                 <span>Cashon Delivary</span>
                             </label>
                         </form>
                     </div>
                 </div>
             </aside>
-           
+            <aside class="button">
+                <button mat-raised-button color="primary" (click)="Submit()">Submit</button>
+            </aside>
+
         </section>
     </aside>
 </section>

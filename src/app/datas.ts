@@ -457,7 +457,7 @@ export const Data = {
     },
     {
       id: 8,
-      base: 'LapLenovo IdeaPad',
+      base: 'Lenovo IdeaPad',
       title: 'LapLenovo IdeaPad 3 Ryzen 5 Hexa Coretop',
       price: 29099,
       ideal: 'user',
@@ -529,7 +529,7 @@ export const Data = {
     },
     {
       id: 5,
-      base: 'Infinix SMART 7',
+      base: 'Infinix SMART',
       title: 'Infinix SMART 7 (Azure Blue, 64 GB)  (4 GB RAM)',
       price: 10000,
       ideal: 'user',
@@ -573,7 +573,7 @@ export const Data = {
   tablet: [
     {
       id: 1,
-      base: 'SAMSUNG Galaxy Tab',
+      base: 'SAMSUNG Tab',
       title:
         'SAMSUNG Galaxy Tab A8 4 GB RAM 64 GB ROM 10.5 inch with Wi-Fi+4G Tablet (Silver)',
       price: 11009,
@@ -588,7 +588,7 @@ export const Data = {
     },
     {
       id: 2,
-      base: 'realme Pad Mini',
+      base: 'realme Pad',
       title:
         'realme Pad Mini 3 GB RAM 32 GB ROM 8.7 inch with Wi-Fi Only Tablet (Grey)',
       price: 15003,
@@ -825,7 +825,7 @@ export const Data = {
   fasion: [
     {
       id: 1,
-      base: 'FASION DRESS for women',
+      base: 'FASION DRESS',
       title: ' Embroidered Banarasi Jacquard Saree  (Dark Green)',
       price: 1019,
       ideal: 'Women',
@@ -939,7 +939,7 @@ export const Data = {
   appliance: [
     {
       id: 1,
-      base: '5 Star 2X Power Steam',
+      base: ' Power Steam',
       title:
         ' FB 8 kg 5 Star 2X Power Steam, Hard Water Wash Fully Automatic Front Load Washing Machine with In-built Heater White  (Senator Neo VXS 8012)',
       price: 11019,
@@ -968,7 +968,7 @@ export const Data = {
     },
     {
       id: 3,
-      base: 'Orient Electric by orien',
+      base: 'Electric orien',
       title:
         'Orient Electric by orient Fabri Press DIFP10BP 1000 W Dry Iron  (Blue, Black) ',
       price: 11019,
@@ -983,7 +983,7 @@ export const Data = {
     },
     {
       id: 4,
-      base: 'BAJAJ Ceiling Fan',
+      base: 'Ceiling Fan',
       title:
         'BAJAJ Crest Neo 1200 mm Ultra High Speed 3 Blade Ceiling Fan  (Brown, Pack of 1) ',
       price: 1019,
@@ -998,7 +998,7 @@ export const Data = {
     },
     {
       id: 5,
-      base: 'Pigeon Favourite IC 1800 W',
+      base: 'Pigeon Favourite ',
       title:
         'Pigeon Favourite IC 1800 W Induction Cooktop  (Black, Push Button) ',
       price: 1519,
@@ -1013,7 +1013,7 @@ export const Data = {
     },
     {
       id: 6,
-      base: 'Copper Charge Technology  ',
+      base: 'Copper Charge',
       title:
         ' Pureit by HUL Copper+Mineral RO+UV+MF 8 L RO + UV Water Purifier with Copper Charge Technology  (black & copper)',
       price: 11019,
@@ -1028,7 +1028,7 @@ export const Data = {
     },
     {
       id: 7,
-      base: 'BuyerHub High-Speed USB Type C Adapter',
+      base: 'TypeC Adapter',
       title:
         'BuyerHub High-Speed USB Type C Adapter, Female USB A to USB C 3.0 Male OTG Adapter/Converter CAABSUSBHSBLK01 USB Hub  (Black) ',
       price: 11019,
@@ -1045,7 +1045,7 @@ export const Data = {
   home: [
     {
       id: 1,
-      base: '4 Seater Sofa Bed',
+      base: '4 Seater Sofa',
       title:
         ' Seventh Heaven Florida 4 Seater Sofa Bed, Chenille Molfino Fabric 72x44x16: 3 Year Warranty 4 Seater Double Solid Wood Pull Out Sofa Cum Bed  (Finish Color - Sky Blue Delivery Condition - DIY(Do-It-Yourself))',
       price: 11019,
@@ -1060,7 +1060,7 @@ export const Data = {
     },
     {
       id: 2,
-      base: ' Pull Out Sofa Cum Bed',
+      base: ' Pull Out Sofa',
       title:
         'Sofame Ritz 3 Seater Double Solid Wood, Metal Pull Out Sofa Cum Bed  (Finish Color - Beige Delivery Condition - DIY(Do-It-Yourself)) ',
       price: 11019,
@@ -1105,7 +1105,7 @@ export const Data = {
     },
     {
       id: 5,
-      base: 'Wood Study Table',
+      base: 'Study Table',
       title:
         ' furlay Engineered Wood Study Table  (Free Standing, Finish Color - Black, Walnut Shelf, DIY(Do-It-Yourself))',
       price: 11019,
@@ -1135,7 +1135,7 @@ export const Data = {
     },
     {
       id: 7,
-      base: 'Office Executive Chair',
+      base: 'Executive Chair',
       title:
         ' Oakcraft Luxury HIGH Back Leatherette Office with Steel Base and Warranty Leatherette Office Executive Chair ',
       price: 11019,
@@ -1167,7 +1167,7 @@ export const Data = {
   grosery: [
     {
       id: 1,
-      base: 'Cadbury Dairy Milk ',
+      base: ' Dairy Milk ',
       title: 'Cadbury Dairy Milk Maha Pack 55g Bars  (15 x 55 g)',
       price: 19,
       ideal: 'user',
@@ -1253,7 +1253,7 @@ export const Data = {
     {
       id: 7,
       base: 'Olive Oi',
-      title: 'FIGARO Olive Oil Tin  ',
+      title: 'FIGARO OliveOil',
       price: 671,
       ideal: 'user',
       type: 'grosery',

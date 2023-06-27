@@ -1,10 +1,4 @@
 import { Component, Input } from '@angular/core';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { MatButtonModule } from '@angular/material/button';
-import { MatCardModule } from '@angular/material/card';
-import { MatStepperModule } from '@angular/material/stepper';
-import { NgForOf } from '@angular/common';
-import { IvyCarouselModule } from 'angular-responsive-carousel/public-api';
 import { DatasarviceService } from 'src/app/datasarvice.service';
 import { Router, RouterLink } from '@angular/router';
 
@@ -60,7 +54,6 @@ export class ProductDetailComponent {
   }
 
   Detailpage(data: any) {
-    // console.log(data, 'sdsdfsfd');
     this.db.descriptionProduct(data);
     this.router.navigateByUrl('description-product');
   }

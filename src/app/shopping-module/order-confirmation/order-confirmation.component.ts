@@ -16,8 +16,9 @@ import { DatasarviceService } from 'src/app/datasarvice.service';
   // ],
 })
 export class OrderConfirmationComponent {
-address:any;
-product:any;
+  address: any;
+  product: any;
+  selectedValue: any;
   firstFormGroup = this._formBuilder.group({
     firstCtrl: ['', Validators.required],
   });
@@ -25,22 +26,32 @@ product:any;
     secondCtrl: ['', Validators.required],
   });
 
-  constructor(private _formBuilder: FormBuilder,private router:Router,private db:DatasarviceService) {}
+  constructor(
+    private _formBuilder: FormBuilder,
+    private router: Router,
+    private db: DatasarviceService
+  ) {}
 
-  ngOnInit(){
+  ngOnInit() {
     this.Orderdetails();
-    // console.log(this.address,"fuck");
-    
   }
-  Orderdetails(){
-    // console.log("sdcsdcsdcsdcdsc");
- this.address=this.db.token[0];
- console.log(this.address,"adres");
- this.product=this.db.orderbefore;
- console.log(this.product,"product");
- 
+  Orderdetails() {
+    this.address = this.db.token[0];
+    console.log(this.address, 'adres');
+    this.product = this.db.orderbefore;
+    console.log(this.product, 'product');
   }
-  
-
-
+  Submit() {
+    console.log(this.selectedValue, 'vlu');
+    this.db.Order({
+      address: this.address.address,
+      image: this.product.image,
+      paymentmode: this.selectedValue,
+      bace: this.product.bace,
+      title: this.product.title,
+    });
+    alert('Confirm Order');
+    this.router.navigateByUrl('description-product');
+    alert('order seccessfully');
+  }
 }

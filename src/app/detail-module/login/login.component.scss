@@ -179,7 +179,7 @@ section {
               rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
             border: 1px solid rgba(211, 206, 206, 0.493);
             @media only #{$desktop-max-lg} {
-              height: 56vh;
+              // height: 56vh;
             }
             @media only #{$desktop-max-md} {
               width: 35rem;
@@ -187,6 +187,7 @@ section {
             @media only #{$desktop-max-mob} {
               border: none;
               box-shadow: none;
+              background: none;
             }
             .form-register {
               @include main-flex(center, center);

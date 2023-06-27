@@ -8,6 +8,7 @@ import { DescriptionProductComponent } from './shopping-module/description-produ
 import { CartPageComponent } from './shopping-module/cart-page/cart-page.component';
 import { ItemGroupComponent } from './shopping-module/item-group/item-group.component';
 import { OrderConfirmationComponent } from './shopping-module/order-confirmation/order-confirmation.component';
+import { OrderComponent } from './shopping-module/order/order.component';
 // import { CarouselComponent } from './shopping-module/carousel/carousel.component';
 
 const routes: Routes = [
@@ -17,7 +18,8 @@ const routes: Routes = [
   { path: 'description-product', component: DescriptionProductComponent }, //description-product
   { path: 'cart-page', component: CartPageComponent },
   { path: 'item-group', component: ItemGroupComponent },
-  {path:'order-confirmation',component:OrderConfirmationComponent}
+  { path: 'order-confirmation', component: OrderConfirmationComponent },
+  { path: 'order', component: OrderComponent },
 ];
 
 @NgModule({
