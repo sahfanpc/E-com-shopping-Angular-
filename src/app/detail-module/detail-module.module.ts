@@ -9,6 +9,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { ShoppingDashboardComponent } from './shopping-dashboard/shopping-dashboard.component';
 import { RouterLink } from '@angular/router';
 import { MatCardModule } from '@angular/material/card';
+import { MatDividerModule } from '@angular/material/divider';
 @NgModule({
   declarations: [LoginComponent, ShoppingDashboardComponent],
   imports: [
@@ -22,6 +23,8 @@ import { MatCardModule } from '@angular/material/card';
     MatSnackBarModule,
     RouterLink,
     MatCardModule,
+    MatDividerModule,
   ],
+  exports: [ShoppingDashboardComponent],
 })
 export class DetailModuleModule {}

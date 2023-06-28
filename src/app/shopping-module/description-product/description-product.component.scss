@@ -1,33 +1,61 @@
+@import "../../../assets/scss/base/variables";
 .main {
   display: flex;
+  @media only #{$desktop-max-lg} {
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+  }
   .img-sec {
     width: 40%;
-    // background-color: rgba(255, 0, 0, 0.232);
     height: 100vh;
     padding: 5rem;
     display: flex;
     flex-direction: column;
     gap: 3rem;
+    @media only #{$desktop-max-lg-bgs} {
+      padding: 3rem;
+      gap: 2rem;
+    }
+    @media only #{$desktop-max-lg-bgs-1115} {
+      padding: 3rem 1rem;
+    }
+    @media only #{$desktop-max-lg} {
+      width: 100%;
+      align-items: center;
+    }
     img {
       width: 100%;
       height: 29rem;
+      @media only #{$desktop-max-lg-bgs} {
+        height: 26rem;
+      }
+      @media only #{$desktop-max-lg-bgs-1115} {
+        height: 24rem;
+      }
+      @media only #{$desktop-max-lg} {
+        width: 30rem;
+      }
+      @media only #{$desktop-max-mob} {
+        width: 25rem;
+      }
     }
     .rating:not(:checked) > input {
       position: absolute;
       appearance: none;
     }
-    
+
     .rating:not(:checked) > label {
       float: right;
       cursor: pointer;
       font-size: 50px;
       color: #666;
     }
-    
+
     .rating:not(:checked) > label:before {
-      content: '★';
+      content: "★";
     }
-    
+
     .rating > input:checked + label:hover,
     .rating > input:checked + label:hover ~ label,
     .rating > input:checked ~ label:hover,
@@ -35,17 +63,16 @@
     .rating > label:hover ~ input:checked ~ label {
       color: #118a1b;
     }
-    
+
     .rating:not(:checked) > label:hover,
     .rating:not(:checked) > label:hover ~ label {
       color: #ff9e0b;
     }
-    
+
     .rating > input:checked ~ label {
       color: #ffa723;
     }
-    
-    
+
     .button-sec {
       display: flex;
       gap: 1rem;
@@ -61,7 +88,9 @@
         border-radius: 0.2rem;
         color: white;
         width: 16rem;
-        // opacity: 0.9;
+        @media only #{$desktop-max-mob} {
+          width: 11rem;
+        }
       }
       button:hover {
         opacity: 0.8;
@@ -73,11 +102,22 @@
     // background-color: rgba(0, 255, 255, 0.166);
     height: 100vh;
     padding: 3rem;
-    line-height: 2rem;
+    // line-height: 2rem;
     font-family: Poppins, sans-serif;
     overflow-y: scroll;
-    // font-size: 1.7rem;
-    // font-weight: 400;
+    @media only #{$desktop-max-lg-big} {
+      padding: 3rem 0.4rem;
+    }
+    @media only #{$desktop-max-lg} {
+      width: 85%;
+      height: auto;
+      overflow: auto;
+      // padding: 1rem 5rem;
+    }
+    @media only #{$desktop-max-mob} {
+      width: 100%;
+    }
+
     .nav-bar {
       padding: 0.8rem;
       box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
@@ -99,22 +139,24 @@
     .offer-sec {
       text-decoration: none;
       list-style: none;
-      i {
-        padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      li {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
       }
     }
     .numberOfItems {
-      border: 1px solid rgb(138, 132, 132);
-      // width: 8rem;
-      padding: .4rem 0;
-      border-radius: .3rem;
+      padding: 0.4rem 0;
+      border-radius: 0.3rem;
       overflow: hidden;
       button {
         border: none;
         background-color: #079ad9;
         padding: 0.1rem 0.7rem;
         color: white;
-        
       }
       button:hover {
         background-color: black;
@@ -131,10 +173,13 @@
       }
     }
     .size-section1 {
-      width: 60%;
+      width: 30rem;
       height: auto;
       border: 1px solid rgb(184, 178, 178);
       border-radius: 0.3rem;
+      @media only #{$desktop-max-mob} {
+        width: 90%;
+      }
       .size-section {
         width: 100%;
         padding: 1rem;
@@ -143,7 +188,10 @@
         align-items: center;
         font-size: 1.5rem;
         font-weight: 500;
-        // background-color: rgba(255, 0, 0, 0.744);
+        @media only #{$desktop-max-mob} {
+          padding: 1rem 0.2rem;
+        }
+
         .container {
           display: flex;
           justify-content: center;

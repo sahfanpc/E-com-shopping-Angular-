@@ -5,7 +5,8 @@
             <!-- <p>{{description.image}}</p> -->
         </aside>
 
-        <span style="font-size: 2rem;font-family: Poppins, sans-serif;font-weight: 700;display: flex;align-items: center;justify-content: space-between;">{{description.base}}
+        <span
+            style="font-size: 2rem;font-family: Poppins, sans-serif;font-weight: 700;display: flex;align-items: center;justify-content: space-between;">{{description.base}}
             <div class="rating">
                 <input type="radio" id="star5" name="rate" value="5">
                 <label for="star5" title="text"></label>
@@ -17,17 +18,19 @@
                 <label for="star2" title="text"></label>
                 <input type="radio" id="star1" name="rate" value="1">
                 <label for="star1" title="text"></label>
-              </div></span>
-<!--  -->
+            </div>
+        </span>
+        <!--  -->
 
-<!--  -->
+        <!--  -->
 
 
         <aside class="button-sec">
             <button (click)="Cart()"><i class="fa-solid fa-cart-shopping fa-bounce" style="margin-right: .3rem;"></i>
                 ADD TO
                 CART</button>
-            <button style="background-color: rgba(255, 162, 0, 0.964)" (click)="Order()"><span class="material-icons-outlined">
+            <button style="background-color: rgba(255, 162, 0, 0.964)" (click)="Order()"><span
+                    class="material-icons-outlined">
                     flash_on
                 </span>BUY NOW</button>
         </aside>
@@ -52,35 +55,40 @@
         </aside>
         <aside class="offer-sec">
             <li>
-                <i class="fa-sharp fa-solid fa-circle-check"></i><strong>Special price</strong>get extra 12%
+                <i class="fa-sharp fa-solid fa-circle-check"></i><strong style="width: 7rem;">Special price</strong>get
+                extra 12%
                 off(price inclusive of cashback)
             </li>
             <li>
-                <i class="fa-sharp fa-solid fa-circle-check"></i> <strong>Bank Offer</strong>10% on instant discount on
+                <i class="fa-sharp fa-solid fa-circle-check"></i> <strong style="width: 7rem;">Bank Offer</strong>10% on
+                instant discount on
                 HDFC
                 bank credit card EMI taxins up to rs
                 1000
             </li>
             <li>
-                <i class="fa-sharp fa-solid fa-circle-check"></i> <strong>Bank Offer</strong>15% on instant discount on
+                <i class=" fa-sharp fa-solid fa-circle-check"></i> <strong style="width: 7rem;">Bank Offer</strong>15%
+                on instant discount on
                 HDFC
                 bank credit card EMI taxins up to rs
                 6000
             </li>
             <li>
-                <i class="fa-sharp fa-solid fa-circle-check"></i> <strong>Bank Offer</strong>extra 400 discount on HDFC
+                <i class=" fa-sharp fa-solid fa-circle-check"></i> <strong style="width: 7rem;">Bank Offer</strong>extra
+                400 discount on HDFC
                 bank
                 credit card EMI with credit value rs
                 25000
             </li>
-            <li><a href="#" style="text-decoration: none;">More Details</a></li>
+            <li><a href=" #" style="text-decoration: none;">More Details</a>
+            </li>
 
         </aside>
         <span class="numberOfItems">
             <button (click)="decrement()"><i class="fa-solid fa-minus"></i></button>
             <input type="number" [(ngModel)]="counter"><button (click)="increment()"><i
                     class="fa-solid fa-plus"></i></button>
-            </span>
+        </span>
         <aside [ngSwitch]="description.type">
             <aside class="size-section1" *ngSwitchCase="'dress'">
                 <aside class="size-section">

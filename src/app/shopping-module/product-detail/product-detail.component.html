@@ -2,7 +2,7 @@
     <!-- navbar -->
     <nav class="navbar">
         <nav class="nav-container">
-            <aside class="center-content">
+            <aside class=" center-content">
                 <aside class="left-content">
                     <aside class="nav-text">E-com</aside>
                     <aside class="search">
@@ -28,14 +28,49 @@
                             shopping_cart
                         </span>Cart</aside>
                 </aside>
+                <!-- responsive button -->
+                <aside class="responsive-buttom" style="position: absolute;right: 1rem;">
+                    <i class="fa-solid fa-bars fa-2xl" [matMenuTriggerFor]="menu1"></i>
+                </aside>
+                <mat-menu #menu1="matMenu">
+                    <button mat-menu-item>become a seller</button>
+                    <button mat-menu-item>
+                        <i class="fa-solid fa-caret-down" style="letter-spacing: 1rem;"></i>
+                        <span>More</span></button>
+                    <button mat-menu-item [matMenuTriggerFor]="menu2">
+                        <i class="fa-sharp fa-solid fa-compass" style="letter-spacing: 1rem;"></i>
+                        <span>Menu</span></button>
+                    <mat-menu #menu2="matMenu">
+                        <button mat-menu-item>Order History</button>
+                        <button mat-menu-item>Mammals</button>
+                    </mat-menu>
+                    <button mat-menu-item>
+                        <i class="fa-solid fa-cart-shopping" style="letter-spacing: 1rem;"></i>
+                        <span>Cart</span>
+                    </button>
+                </mat-menu>
+                <!--  -->
             </aside>
 
         </nav>
     </nav>
+    <!-- search -->
+    <aside class="search-responsive-block">
+        <aside class="search">
+            <div class="input-container">
+                <span class="material-icons-outlined icon">search</span>
+                <input class="input-field" type="text" placeholder="Search">
+                <!-- (keyup)="search()"   [(ngModel)]="searchTerm" -->
+            </div>
+        </aside>
+    </aside>
+    <!--  -->
     <!-- down-nav-cards -->
+
+
     <section class="down-nav">
         <aside class="down-nav-container">
-            <aside class="card" (click)="Grosery()">
+            <aside class="card " (click)="Grosery()">
                 <mat-card class="example-card">
 
                     <img mat-card-image src="../../../assets/grosery.png" alt="Photo of a Shiba Inu">
@@ -121,6 +156,8 @@
                     </mat-card-content>
                 </mat-card>
             </aside>
+
+
         </aside>
     </section>
     <!--slider  -->
@@ -137,6 +174,18 @@
                     </div>
                     <div class="carousel-item">
                         <img src="../../../assets/stepper-3.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="../../../assets/carosel1.jpg" class="d-block " alt="...">
+                        <div class="img"></div>
+                    </div>
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="../../../assets/carosel2.jpg" class="d-block " alt="...">
+                        <div class="img"></div>
+                    </div>
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="../../../assets/carosel3.jpg" class="d-block " alt="...">
+                        <div class="img"></div>
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"

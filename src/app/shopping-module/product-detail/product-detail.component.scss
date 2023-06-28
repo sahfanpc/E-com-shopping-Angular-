@@ -1,15 +1,15 @@
+@import "../../../assets/scss/base/variables";
 .main {
   .navbar {
     height: 3.6rem;
     .nav-container {
       z-index: 100;
-      //   padding: 1.3rem;
       position: fixed;
       width: 100%;
-      background-color: rgba(18, 109, 184, 0.867);
+      background-color: rgb(18, 109, 184);
       .center-content {
         margin: 0 auto;
-        width: 80rem;
+        // width: 9%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -26,6 +26,9 @@
           }
           .search {
             box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+            @media only #{$desktop-max-mob} {
+              display: none;
+            }
             .input-container {
               display: -ms-flexbox;
               display: flex;
@@ -92,7 +95,75 @@
             display: flex;
             align-items: center;
           }
+          @media only #{$desktop-max-lg} {
+            display: none;
+          }
         }
+        .responsive-buttom {
+          display: none;
+          color: white;
+          @media only #{$desktop-max-lg} {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  .search-responsive-block {
+    display: none;
+    // height: 3.6rem;
+    width: 100%;
+    @media only #{$desktop-max-mob} {
+      display: block;
+    }
+    .search {
+      box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+      .input-container {
+        display: -ms-flexbox;
+        display: flex;
+        // justify-content: center;
+        width: 100%;
+        border: 1px ridge #e7eaf4;
+        border-radius: 3px;
+        position: relative;
+        border: 1px solid #e7eaf4;
+        background-color: #ffffff;
+      }
+
+      .icon {
+        padding: 13px 0px;
+        min-width: 19.3rem;
+        text-align: center;
+      }
+
+      .material-icons-outlined {
+        color: #a7a7a7;
+        position: relative;
+        right: 7.8rem;
+        transform: rotate(0deg);
+        transition: 0.2s;
+        font-size: 1.1rem;
+      }
+
+      .input-container:hover .material-icons-outlined {
+        transition: 0.2s;
+        transform: rotatey(180deg);
+        -webkit-transform: rotatey(180deg);
+        -ms-transform: rotatey(180deg);
+      }
+
+      .input-field {
+        width: 20rem;
+        padding: 10px;
+        outline: none;
+        border: none;
+        background: transparent;
+        position: relative;
+        right: 17rem;
+      }
+      ::placeholder {
+        color: #a7a7a7;
+        font-size: 0.8rem;
       }
     }
   }
@@ -104,19 +175,21 @@
       rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     .down-nav-container {
       margin: 0 auto;
-      width: 85rem;
-      // background-color: rebeccapurple;
+      width: 90%;
       display: flex;
       justify-content: space-between;
       align-items: center;
       //   gap: 4rem;
       padding: 1rem;
       height: 8rem;
+      @media only #{$tab-max} {
+        width: 100%;
+        flex-wrap: wrap;
+        height: auto;
+      }
+
       .card {
         width: 5.4rem;
-        // height: 7rem;
-        // background-color: red;
-
         .example-card {
           height: 6.2rem;
           // background-color: green;
@@ -174,11 +247,15 @@
   }
   .slider {
     width: 100%;
-    height: 29rem;
+    height: 25rem;
     background-color: rgba(202, 204, 207, 0.37);
-    padding: 0.5rem 0;
+    // padding: 0.5rem 0;
+    @media only #{$desktop-max-mob} {
+      height: 18rem;
+    }
     .slider-sec {
-      width: 99%;
+      width: 100%;
+      height: 100%;
       // height: 30rem;
       margin: 0 auto;
       // background-color: red;
@@ -194,13 +271,14 @@
         }
         // height: 30rem;
         .carousel-inner {
-          height: 28rem;
+          height: 100%;
           .carousel-item {
             img {
-              height: 28rem;
+              height: 25rem;
               width: 100%;
-              border-radius: 0.5rem;
-              // object-fit: contain;
+              @media only #{$desktop-max-mob} {
+                height: 18rem;
+              }
             }
           }
         }
@@ -208,8 +286,7 @@
     }
   }
   .product-container {
-    // border: 4px solid rgba(128, 128, 128, 0.399);
-    padding: 0rem 0.8rem;
+    padding: 0rem 0.3rem;
     background-color: rgba(202, 204, 207, 0.37);
     // padding: 0.3rem;
     color: grey;
@@ -221,12 +298,8 @@
       overflow-x: scroll;
       gap: 3rem;
       padding: 0.6rem 0;
-      // border: 4px solid red;
 
       .product-card {
-        // border: 1px solid red;
-        // width: 20rem;
-        // border: none;
         box-shadow: none;
         padding: 0.5rem 1rem;
         display: flex;

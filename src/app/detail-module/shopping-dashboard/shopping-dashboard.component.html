@@ -1,12 +1,46 @@
 <section class="main">
-    <nav class="navbar">
-        <aside class="nav-left">E-COM SHOP</aside>
-        <aside class="nav-right">
-            <button mat-stroked-button color="primary" class="button" [routerLink]="['']">Log-in</button>
-
-
-        </aside>
+    <!--  -->
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid navbar">
+            <a class="navbar-brand " href="#" style="font-size: 2.2rem;font-weight: 700;">ECOM-SHOP</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li><mat-divider></mat-divider>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li><mat-divider></mat-divider>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li><mat-divider></mat-divider>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li><mat-divider></mat-divider>
+                </ul>
+                <button mat-stroked-button color="primary" class="button" [routerLink]="['']"
+                    style="padding: 1.5rem;">Login</button>
+            </div>
+        </div>
     </nav>
+    <!--  -->
+
     <section class="content-container">
         <aside class="content">
 
@@ -24,3 +58,4 @@
         </aside>
     </section>
 </section>
+<!--  -->

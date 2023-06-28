@@ -22,6 +22,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { OrderComponent } from './order/order.component';
 import { MatMenuModule } from '@angular/material/menu';
+import { MatToolbarModule } from '@angular/material/toolbar';
 // import { UpperCasePipe } from '@angular/common';
 @NgModule({
   declarations: [
@@ -54,6 +55,7 @@ import { MatMenuModule } from '@angular/material/menu';
     MatInputModule,
     MatIconModule,
     MatMenuModule,
+    MatToolbarModule,
   ],
   // /   UpperCasePipe,
   //   CurrencyPipe,
