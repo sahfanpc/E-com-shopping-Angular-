@@ -1,3 +1,4 @@
+@import "../../../assets/scss/base/variables";
 .main {
   height: 100vh;
   position: relative;
@@ -19,6 +20,11 @@
       display: flex;
       justify-content: space-between;
       box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+      @media only #{$desktop-max-lg-1023} {
+        flex-direction: column;
+        height: calc(100vh - 7rem);
+        overflow-y: scroll;
+      }
       .left-part {
         box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
           rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
@@ -26,7 +32,10 @@
         width: 56rem;
         height: 100%;
         // background-color: rgb(130, 121, 108);
-
+        @media only #{$desktop-max-lg-1023} {
+          width: 100%;
+          // overflow-y: scroll;
+        }
         ::ng-deep {
           .mat-mdc-tab-group.mat-mdc-tab-group-stretch-tabs
             > .mat-mdc-tab-header
@@ -63,7 +72,10 @@
               width: 100%;
               height: calc(100% - 4rem);
               overflow-y: scroll;
-
+overflow-x: hidden;
+// @media only #{$desktop-max-mob}{
+//   height: auto;
+// }
                 // background-color: forestgreen;
               .cart-card {
                 height: 18rem;
@@ -74,17 +86,25 @@
                 justify-content: flex-start;
                 box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
                 // border: 5px solid yellow;
+                @media only #{$desktop-max-mob}{
+                     height: auto;
+                   }
                 .cart-cardsec {
                   width: 45rem;
                   height: 100%;
                   // background-color: red;
                   display: flex;
                   gap: 1.5rem;
+                  
                   .image {
                     width: 35%;
                     height: 100%;
                     // background-color: white;
                     padding:1rem .5rem;
+                    @media only #{$desktop-max-mob}{
+                      width: 7rem;
+                      height: 7rem;
+                    }
                   }
                   .content {
                     padding: 2rem 0;
@@ -93,10 +113,19 @@
                     // background-color: rgba(0, 0, 0, 0.504);
                     position: relative;
                     .top {
+                      line-height: 2rem;
+                      @media only #{$desktop-max-mob}{
+                        display: none;
+                      }
                     }
                     .bottom {
                       position: absolute;
                       bottom: 1rem;
+                      font-size: 1.5rem;
+                      @media only #{$desktop-max-mob}{
+                        top:2rem;
+                        font-size: 1rem;
+                      }
                     }
                   }
                 }
@@ -125,7 +154,10 @@
         width: 27rem;
         height: 65%;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-        // background-color: cadetblue;
+        @media only #{$desktop-max-lg-1023} {
+          width: 100%;
+          // overflow-y: scroll;
+        }
       }
     }
   }

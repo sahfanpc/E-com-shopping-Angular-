@@ -1,3 +1,4 @@
+@import "../../../assets/scss/base/variables";
 .main {
   width: 100%;
   height: 100vh;
@@ -17,6 +18,9 @@
       background-color: white;
       overflow: hidden;
       border-radius: 0.5rem;
+      @media only #{$desktop-max-md}{
+        width: 100%;
+      }
       .verification-map {
         border: 1px solid rgb(211, 208, 208);
         display: flex;
@@ -44,6 +48,9 @@
         // background-color: rgba(255, 255, 0, 0.692);
         display: flex;
         gap: 5rem;
+        @media only #{$desktop-max-mob}{
+            gap: .3rem;
+          }
         .left-side {
           img {
             // width: ;
@@ -88,6 +95,9 @@
           font-size: 1.2rem;
           background-color: rgba(0, 0, 0, 0.821);
           color: white;
+          @media only #{$desktop-max-mob}{
+            padding: 2rem .1rem;
+          }
         }
         .peyment {
           border: 1px solid rgb(211, 208, 208);
@@ -95,7 +105,9 @@
           // background-color: rgba(42, 157, 165, 0.808);
           width: 50%;
           padding: 0.3rem 2rem;
-          //
+          @media only #{$desktop-max-mob}{
+            padding: 2rem .1rem;
+          }
           .container1 form {
             display: flex;
             flex-wrap: wrap;

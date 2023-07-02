@@ -126,6 +126,7 @@ section {
         @media only #{$desktop-max-mob} {
           width: 100%;
         }
+        // @media only #{$}
         .login-container {
           @include main-flex(center, center);
           @include wth-ht-bg(100%, 65vh, none);
@@ -193,9 +194,13 @@ section {
               @include main-flex(center, center);
               width: 100%;
               flex-direction: column;
-              @media only #{$desktop-max-mob} {
-                margin-top: 20rem;
+              @media only #{$desktop-max-md} {
+               margin-top:4rem;
               }
+              @media only #{$desktop-max-mob} {
+                margin-top: 24rem;
+              }
+
               ::ng-deep {
                 .mat-mdc-form-field-infix {
                   min-width: 8rem;

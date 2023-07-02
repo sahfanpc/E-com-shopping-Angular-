@@ -43,6 +43,7 @@ export class OrderConfirmationComponent {
   }
   Submit() {
     console.log(this.selectedValue, 'vlu');
+    if(this.selectedValue){
     this.db.Order({
       address: this.address.address,
       image: this.product.image,
@@ -51,7 +52,10 @@ export class OrderConfirmationComponent {
       title: this.product.title,
     });
     alert('Confirm Order');
-    this.router.navigateByUrl('description-product');
+    this.router.navigateByUrl('product-detail');
     alert('order seccessfully');
+  }else{
+    alert("select option")
   }
+}
 }
