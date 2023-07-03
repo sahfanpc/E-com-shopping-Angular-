@@ -4,9 +4,7 @@
             <img src={{description.image}} alt="">
             <!-- <p>{{description.image}}</p> -->
         </aside>
-
-        <span
-            style="font-size: 2rem;font-family: Poppins, sans-serif;font-weight: 700;display: flex;align-items: center;justify-content: space-between;">{{description.base}}
+        <span class="downside-image">{{description.base}}
             <div class="rating">
                 <input type="radio" id="star5" name="rate" value="5">
                 <label for="star5" title="text"></label>
@@ -246,8 +244,8 @@
 
                             <div class="input-container">
                                 <input id="drive" class="radio-button" type="radio" [(ngModel)]="selectedOption"
-                                    name="radio">
-                                <div class="radio-tile" style="padding: 1.4rem;margin-top: -.4rem;" value="124GB">
+                                    name="radio" value="124GB">
+                                <div class="radio-tile" style="padding: 1.4rem;margin-top: -.4rem;">
 
                                     <label for="drive" class="radio-tile-label">124GB</label>
                                 </div>
@@ -356,8 +354,8 @@
                         <div class="radio-tile-group" style="gap: 1rem;">
                             <div class="input-container">
                                 <input id="walk" class="radio-button" type="radio" [(ngModel)]="selectedOption"
-                                    name="radio">
-                                <div class="radio-tile" style="padding: 1.4rem;margin-top: -.4rem;" value="250GM">
+                                    name="radio" value="250GM">
+                                <div class="radio-tile" style="padding: 1.4rem;margin-top: -.4rem;">
 
                                     <label for="walk" class="radio-tile-label">250GM</label>
                                 </div>
@@ -382,8 +380,8 @@
 
                             <div class="input-container">
                                 <input id="drive" class="radio-button" type="radio" [(ngModel)]="selectedOption"
-                                    name="radio">
-                                <div class="radio-tile" style="padding: 1.4rem;margin-top: -.4rem;" value="1.5KG">
+                                    name="radio" value="1.5KG">
+                                <div class="radio-tile" style="padding: 1.4rem;margin-top: -.4rem;">
 
                                     <label for="drive" class="radio-tile-label">1.5KG</label>
                                 </div>

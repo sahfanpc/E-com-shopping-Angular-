@@ -9,11 +9,15 @@ import { CartPageComponent } from './shopping-module/cart-page/cart-page.compone
 import { ItemGroupComponent } from './shopping-module/item-group/item-group.component';
 import { OrderConfirmationComponent } from './shopping-module/order-confirmation/order-confirmation.component';
 import { OrderComponent } from './shopping-module/order/order.component';
+import { AdminComponent } from './detail-module/admin/admin.component';
+import { BiodataComponent } from './detail-module/biodata/biodata.component';
 // import { CarouselComponent } from './shopping-module/carousel/carousel.component';
 
 const routes: Routes = [
   { path: '', component: LoginComponent },
   { path: 'shopping-dashboard', component: ShoppingDashboardComponent },
+  { path: 'admin', component: AdminComponent },
+  { path: 'biodata', component: BiodataComponent },
   { path: 'product-detail', component: ProductDetailComponent }, //product-detail
   { path: 'description-product', component: DescriptionProductComponent }, //description-product
   { path: 'cart-page', component: CartPageComponent },

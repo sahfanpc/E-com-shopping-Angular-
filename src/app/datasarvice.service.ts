@@ -101,6 +101,8 @@ export class DatasarviceService {
   }
 
   itemgroup(data: any) {
+    // console.log(this.products,"mmm");
+    
     if (data == 'grosery') {
       this.Saparateddata = this.products.grosery;
       console.log(this.Saparateddata, 'ww');

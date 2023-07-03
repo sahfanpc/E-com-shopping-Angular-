@@ -10,8 +10,10 @@ import { ShoppingDashboardComponent } from './shopping-dashboard/shopping-dashbo
 import { RouterLink } from '@angular/router';
 import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
+import { AdminComponent } from './admin/admin.component';
+import { BiodataComponent } from './biodata/biodata.component';
 @NgModule({
-  declarations: [LoginComponent, ShoppingDashboardComponent],
+  declarations: [LoginComponent, ShoppingDashboardComponent, AdminComponent, BiodataComponent],
   imports: [
     CommonModule,
     MatTabsModule,

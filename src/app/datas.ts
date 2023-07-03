@@ -359,7 +359,7 @@ export const Data = {
   laptop: [
     {
       id: 1,
-      base: 'MSI LAPTOP',
+      base: 'MSI',
       title: 'MSI Core i5 11th Gen',
       price: 10923,
       ideal: 'user',
@@ -373,7 +373,7 @@ export const Data = {
     },
     {
       id: 3,
-      base: 'ASUS LAPTOP',
+      base: 'ASUS',
       title: ' ASUS Vivobook 15 Core i3 11th Gen',
       price: 13309,
       ideal: 'user',
@@ -387,7 +387,7 @@ export const Data = {
     },
     {
       id: 4,
-      base: 'realme Book',
+      base: 'REALME',
       title: 'realme Book (Slim) Core i3 11th Gen',
       price: 10989,
       ideal: 'user',
@@ -401,7 +401,7 @@ export const Data = {
     },
     {
       id: 5,
-      base: 'ASUS Vivobook',
+      base: 'ASUS',
       title: 'ASUS Vivobook 15 Core i5 11th Gen ',
       price: 109783,
       ideal: 'user',
@@ -415,7 +415,7 @@ export const Data = {
     },
     {
       id: 6,
-      base: 'HP LAPTOP',
+      base: 'HP',
       title: 'HP 15s Intel Core i5 12th Gen',
       price: 34567,
       ideal: 'user',
@@ -429,7 +429,7 @@ export const Data = {
     },
     {
       id: 2,
-      base: 'MSI LAPTOP',
+      base: 'MSI',
       title: 'MSI Core i7 11th Gen',
       price: 72435,
       ideal: 'user',
@@ -443,7 +443,7 @@ export const Data = {
     },
     {
       id: 7,
-      base: 'APPLE LAPTOP',
+      base: 'APPLE',
       title: 'APPLE 2020 Macbook Air M1',
       price: 12000,
       ideal: 'user',
@@ -457,7 +457,7 @@ export const Data = {
     },
     {
       id: 8,
-      base: 'Lenovo IdeaPad',
+      base: 'Lenovo',
       title: 'LapLenovo IdeaPad 3 Ryzen 5 Hexa Coretop',
       price: 29099,
       ideal: 'user',
@@ -473,7 +473,7 @@ export const Data = {
   mobile: [
     {
       id: 1,
-      base: 'SAMSUNG Galaxy',
+      base: 'SAMSUNG',
       title: 'SAMSUNG Galaxy F13 (Waterfall Blue, 64 GB)  (4 GB RAM)',
       price: 10009,
       ideal: 'user',
@@ -487,7 +487,7 @@ export const Data = {
     },
     {
       id: 2,
-      base: 'GREENBERRI G370',
+      base: 'GREENBERRI',
       title: 'GREENBERRI G370  (CORAL BLUE)  (4 GB RAM)',
       price: 1019,
       ideal: 'user',
@@ -501,7 +501,7 @@ export const Data = {
     },
     {
       id: 3,
-      base: 'APPLE iPhone',
+      base: 'IPHONE',
       title: 'APPLE iPhone 13 (Blue, 128 GB)',
       price: 110110,
       ideal: 'user',
@@ -515,7 +515,7 @@ export const Data = {
     },
     {
       id: 4,
-      base: 'MOTOROLA G32',
+      base: 'MOTOROLA',
       title: 'MOTOROLA G32 (Mineral Gray, 128 GB)  (8 GB RAM)',
       price: 11000,
       ideal: 'user',
@@ -529,7 +529,7 @@ export const Data = {
     },
     {
       id: 5,
-      base: 'Infinix SMART',
+      base: 'INFINIX',
       title: 'Infinix SMART 7 (Azure Blue, 64 GB)  (4 GB RAM)',
       price: 10000,
       ideal: 'user',
@@ -543,7 +543,7 @@ export const Data = {
     },
     {
       id: 6,
-      base: 'POCO C51',
+      base: 'POCO',
       title: 'POCO C51 (Royal Blue, 64 GB)  (4 GB RAM)',
       price: 20019,
       ideal: 'user',
@@ -557,7 +557,7 @@ export const Data = {
     },
     {
       id: 7,
-      base: 'GREENBERRI G370',
+      base: 'GREENBERRI',
       title: 'GREENBERRI G370  (CORAL BLUE)  (4 GB RAM)',
       price: 10129,
       ideal: 'user',
@@ -573,7 +573,7 @@ export const Data = {
   tablet: [
     {
       id: 1,
-      base: 'SAMSUNG Tab',
+      base: 'Tab',
       title:
         'SAMSUNG Galaxy Tab A8 4 GB RAM 64 GB ROM 10.5 inch with Wi-Fi+4G Tablet (Silver)',
       price: 11009,
@@ -706,7 +706,7 @@ export const Data = {
     },
     {
       id: 8,
-      base: 'WHEY PROTIEN',
+      base: 'WHEY',
       title: 'BIGMUSCLES NUTRITION Essential Whey Protein  ',
       price: 2500,
       ideal: 'user',
@@ -825,7 +825,7 @@ export const Data = {
   fasion: [
     {
       id: 1,
-      base: 'FASION DRESS',
+      base: 'DRESS',
       title: ' Embroidered Banarasi Jacquard Saree  (Dark Green)',
       price: 1019,
       ideal: 'Women',
@@ -839,7 +839,7 @@ export const Data = {
     },
     {
       id: 2,
-      base: 'FASION DRESS',
+      base: 'FASIONS',
       title: ' Woven Bollywood Georgette, Cotton Silk Saree  (Pink, Beige)',
       price: 1000,
       ideal: 'Women',
@@ -867,7 +867,7 @@ export const Data = {
     },
     {
       id: 4,
-      base: 'FASION DRESS',
+      base: 'FASION',
       title: ' EEmbellished Bollywood Lycra Blend Saree  (Black)',
       price: 11119,
       ideal: 'Women',
@@ -881,7 +881,7 @@ export const Data = {
     },
     {
       id: 5,
-      base: 'FASION DRESS',
+      base: 'FASIONS',
       title: ' Men Typography V Neck Cotton Blend White T-Shirt',
       price: 599,
       ideal: 'Men',
@@ -895,7 +895,7 @@ export const Data = {
     },
     {
       id: 6,
-      base: 'FASION DRESS',
+      base: 'FASIONS',
       title: ' Men Striped Round Neck Pure Cotton Maroon T-Shirt',
       price: 719,
       ideal: 'Men',
@@ -909,7 +909,7 @@ export const Data = {
     },
     {
       id: 7,
-      base: 'FASION DRESS',
+      base: 'FASION',
       title: ' Men Regular Fit Solid Mandarin Collar Casual Shirt',
       price: 1019,
       ideal: 'Men',
@@ -923,7 +923,7 @@ export const Data = {
     },
     {
       id: 8,
-      base: 'FASION DRESS',
+      base: 'FASIONS',
       title: ' Men Striped Round Neck Pure Maroon T-Shirt',
       price: 1019,
       ideal: 'Men',
@@ -939,7 +939,7 @@ export const Data = {
   appliance: [
     {
       id: 1,
-      base: ' Power Steam',
+      base: ' Wash M',
       title:
         ' FB 8 kg 5 Star 2X Power Steam, Hard Water Wash Fully Automatic Front Load Washing Machine with In-built Heater White  (Senator Neo VXS 8012)',
       price: 11019,
@@ -968,7 +968,7 @@ export const Data = {
     },
     {
       id: 3,
-      base: 'Electric orien',
+      base: 'Elc orien',
       title:
         'Orient Electric by orient Fabri Press DIFP10BP 1000 W Dry Iron  (Blue, Black) ',
       price: 11019,
@@ -998,7 +998,7 @@ export const Data = {
     },
     {
       id: 5,
-      base: 'Pigeon Favourite ',
+      base: 'Favourite ',
       title:
         'Pigeon Favourite IC 1800 W Induction Cooktop  (Black, Push Button) ',
       price: 1519,
@@ -1013,7 +1013,7 @@ export const Data = {
     },
     {
       id: 6,
-      base: 'Copper Charge',
+      base: 'Cpr Charge',
       title:
         ' Pureit by HUL Copper+Mineral RO+UV+MF 8 L RO + UV Water Purifier with Copper Charge Technology  (black & copper)',
       price: 11019,
@@ -1028,7 +1028,7 @@ export const Data = {
     },
     {
       id: 7,
-      base: 'TypeC Adapter',
+      base: 'Adapter',
       title:
         'BuyerHub High-Speed USB Type C Adapter, Female USB A to USB C 3.0 Male OTG Adapter/Converter CAABSUSBHSBLK01 USB Hub  (Black) ',
       price: 11019,
@@ -1045,7 +1045,7 @@ export const Data = {
   home: [
     {
       id: 1,
-      base: '4 Seater Sofa',
+      base: 'Seater Sofa',
       title:
         ' Seventh Heaven Florida 4 Seater Sofa Bed, Chenille Molfino Fabric 72x44x16: 3 Year Warranty 4 Seater Double Solid Wood Pull Out Sofa Cum Bed  (Finish Color - Sky Blue Delivery Condition - DIY(Do-It-Yourself))',
       price: 11019,
@@ -1060,7 +1060,7 @@ export const Data = {
     },
     {
       id: 2,
-      base: ' Pull Out Sofa',
+      base: ' PullOut Sofa',
       title:
         'Sofame Ritz 3 Seater Double Solid Wood, Metal Pull Out Sofa Cum Bed  (Finish Color - Beige Delivery Condition - DIY(Do-It-Yourself)) ',
       price: 11019,
@@ -1075,7 +1075,7 @@ export const Data = {
     },
     {
       id: 3,
-      base: 'Sofa cum Bed',
+      base: 'Sofa Bed',
       title:
         ' Seventh Heaven 4 Seater Sofa cum Bed 78x36x14 inch Jute Fabric with 4 Cushions: 2 Year Warranty 4 Seater Single Foam Fold Out Sofa Cum Bed  ',
       price: 11019,
@@ -1090,7 +1090,7 @@ export const Data = {
     },
     {
       id: 4,
-      base: 'Computer Table',
+      base: 'Table',
       title:
         ' Torche (31 x 18.5 inches) Round cornered solid Wood Powder Coated Steel Wall-Mounted Folding Kitchen and Computer Table Office Table. (Matt White) Solid Wood Study Table  (Wall Mounted, Finish Color - Matt White, Pre-assembled)',
       price: 11019,
@@ -1135,7 +1135,7 @@ export const Data = {
     },
     {
       id: 7,
-      base: 'Executive Chair',
+      base: 'Chair',
       title:
         ' Oakcraft Luxury HIGH Back Leatherette Office with Steel Base and Warranty Leatherette Office Executive Chair ',
       price: 11019,
@@ -1210,7 +1210,7 @@ export const Data = {
     },
     {
       id: 4,
-      base: 'Tomato Ketchup  ',
+      base: 'Tomatosos  ',
       title: 'VEEBA Tomato Ketchup  ',
       price: 50,
       ideal: 'user',
@@ -1224,7 +1224,7 @@ export const Data = {
     },
     {
       id: 5,
-      base: 'Black Raisins ',
+      base: 'BlackRaisins ',
       title: 'Happilo Premium Afghani Seedless Black Raisins  ',
       price: 236,
       ideal: 'user',
@@ -1238,7 +1238,7 @@ export const Data = {
     },
     {
       id: 6,
-      base: 'Sunflower Oil',
+      base: 'Sunflower',
       title: 'hathmic Sunflower Oil Sunflower Oil Can  (2 L)',
       price: 178,
       ideal: 'user',
