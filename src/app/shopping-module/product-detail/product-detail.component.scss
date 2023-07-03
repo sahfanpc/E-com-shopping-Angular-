@@ -249,17 +249,13 @@
     width: 100%;
     height: 25rem;
     background-color: rgba(202, 204, 207, 0.37);
-    // padding: 0.5rem 0;
     @media only #{$desktop-max-mob} {
       height: 18rem;
     }
     .slider-sec {
       width: 100%;
       height: 100%;
-      // height: 30rem;
       margin: 0 auto;
-      // background-color: red;
-      // border-radius: 0.9rem;
       .carousel {
         .carousel-control-prev-icon {
           width: 5rem;
