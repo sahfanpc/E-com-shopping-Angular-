@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./biodata.component.scss']
 })
 export class BiodataComponent {
-
+  showFiller = false;
 }

@@ -1,3 +1,4 @@
+@import "../../../assets/scss/base/variables";
 .main {
   width: 100%;
   font-family: "Poppins", sans-serif;
@@ -5,7 +6,7 @@
     width: 100%;
     .first-container {
       width: 100%;
-      height: 50rem;
+       height: auto;
       background-color: rgba(102, 51, 153, 0.864);
       .nav {
         width: 100%;
@@ -29,17 +30,28 @@
             .left-content {
               display: flex;
               align-items: center;
-              gap: 5rem;
+              // gap: 8rem;
               .logo {
                 font-size: 2rem;
                 font-weight: 700;
+                @media only #{$desktop-max-mob} {
+                  font-size: 1.5rem;
+                }
+              }
+            }
+            .center-content{
+              @media only #{$desktop-max-mob} {
+                display: none;
               }
               .lists {
                 display: flex;
-                gap: 1.5rem;
+                gap: 2rem;
               }
             }
             .right-content {
+              @media only #{$desktop-max-mob} {
+                display: none;
+              }
               ::ng-deep {
                 button {
                   background-color: black;
@@ -47,9 +59,73 @@
                 }
               }
             }
+            .responsive-button{
+              display: none;
+              @media only #{$desktop-max-mob} {
+                display: block;
+              }
+            }
           }
         }
       }
+      .main-contentsection{
+        width:100%;
+        height: 600px;
+        // background-color: rgba(201, 201, 115, 0.863);
+        position: relative;
+        .example-container {
+          height: 100%;
+          background-color: yellow;
+          // position: absolute;
+          // display: flex;
+          // justify-content: center;
+          // align-items: center;
+          .content-img{
+            margin: auto;
+            width: 85%;
+            height: 85%;
+            background-image: url(../../../assets/boidata13.jpg);
+            border-bottom-right-radius: 1rem ;
+            border-bottom-left-radius: 1rem ;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+
+          }
+          .content-text{
+            position: absolute;
+            width: 20%;
+            height: 15rem;
+            background-color: red;
+            right: 8rem;
+            top: 20rem;
+          }
+    // border: 1px solid rgba(0, 0, 0, 0.5);
+  }
+  
+  .example-sidenav-content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .example-sidenav {
+    width: 15rem;
+    // padding: 20px;
+    .center-content{
+      .lists {
+        display: flex;
+        // gap: 2rem;
+        flex-direction: column;
+        span{
+          padding: 1rem;
+        }
+      }
+    }
+  }
+      }
+    
     }
   }
 }

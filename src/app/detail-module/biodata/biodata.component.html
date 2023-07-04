@@ -5,7 +5,9 @@
                 <nav class="nav-bar">
                     <nav class="nav-container">
                         <aside class="left-content">
-                            <aside class="logo">ECOM.WEB</aside>
+                            <aside class="logo">ECOM-SHOP</aside>
+                        </aside>
+                        <aside class="center-content">
                             <aside class="lists">
                                 <span>content1</span>
                                 <span>content2</span>
@@ -15,9 +17,36 @@
                         <aside class="right-content">
                             <button mat-raised-button>Login</button>
                         </aside>
+                        <aside class="responsive-button" (click)="drawer.toggle()"><i class="fa-solid fa-bars fa-xl"></i></aside>
                     </nav>
                 </nav>
             </nav>
+            <aside class="main-contentsection">
+                <mat-drawer-container class="example-container" autosize hasBackdrop="true">
+                    <mat-drawer #drawer class="example-sidenav" mode="side">
+                        <aside class="center-content">
+                            <aside class="lists">
+                                <span>content1</span>
+                                <mat-divider></mat-divider>
+                                <span>content2</span>
+                                <mat-divider></mat-divider>
+                                <span>content3</span>
+                                <mat-divider></mat-divider>
+                            </aside>
+                        </aside>
+                        <aside class="right-content">
+                            <button mat-raised-button>Login</button>
+                        </aside>
+                    </mat-drawer>
+                    <aside class="content-img" aria-label=""></aside>
+                  <aside  class="content-text"></aside>
+                  
+                  </mat-drawer-container>
+
+            </aside>
+            
         </aside>
+      
     </aside>
+    
 </aside>
