@@ -9,7 +9,7 @@ import {
 } from '@angular/forms';
 import { from } from 'rxjs';
 // custom-vallidation
-import { passwordRegexModel, passwordValid } from '../custom-valid';
+import { passwordRegexModel } from '../custom-valid';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { DatasarviceService } from 'src/app/datasarvice.service';
 import { Router } from '@angular/router';

@@ -22,14 +22,30 @@ export class DatasarviceService {
   constructor(private http: HttpClient) {}
   // user detail
   userData(value: any) {
-    this.Userdatas.push({
-      username: value.username,
-      email: value.regemail,
-      number: value.number,
-      pincode: value.pin,
-      address: value.address,
-      password: value.regpassword,
-    });
+    if (this.Userdatas.length == 0) {
+      this.Userdatas.push({
+        username: value.username,
+        email: value.regemail,
+        number: value.number,
+        pincode: value.pin,
+        address: value.address,
+        password: value.regpassword,
+      });
+    } else {
+      const data = this.Userdatas.filter((e: any) => e.email == value.regemail);
+      if (data.length == 0) {
+        this.Userdatas.push({
+          username: value.username,
+          email: value.regemail,
+          number: value.number,
+          pincode: value.pin,
+          address: value.address,
+          password: value.regpassword,
+        });
+      } else {
+        alert('allready exist');
+      }
+    }
     console.log(this.Userdatas);
     localStorage.setItem('user', JSON.stringify(this.Userdatas));
   }
@@ -102,7 +118,7 @@ export class DatasarviceService {
 
   itemgroup(data: any) {
     // console.log(this.products,"mmm");
-    
+
     if (data == 'grosery') {
       this.Saparateddata = this.products.grosery;
       console.log(this.Saparateddata, 'ww');

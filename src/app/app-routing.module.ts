@@ -14,10 +14,10 @@ import { BiodataComponent } from './detail-module/biodata/biodata.component';
 // import { CarouselComponent } from './shopping-module/carousel/carousel.component';
 
 const routes: Routes = [
-  { path: '', component: LoginComponent },
+  { path: '', component: BiodataComponent },
+  { path: 'login', component: LoginComponent },
   { path: 'shopping-dashboard', component: ShoppingDashboardComponent },
   { path: 'admin', component: AdminComponent },
-  { path: 'biodata', component: BiodataComponent },
   { path: 'product-detail', component: ProductDetailComponent }, //product-detail
   { path: 'description-product', component: DescriptionProductComponent }, //description-product
   { path: 'cart-page', component: CartPageComponent },
