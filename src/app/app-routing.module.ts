@@ -11,6 +11,8 @@ import { OrderConfirmationComponent } from './shopping-module/order-confirmation
 import { OrderComponent } from './shopping-module/order/order.component';
 import { AdminComponent } from './detail-module/admin/admin.component';
 import { BiodataComponent } from './detail-module/biodata/biodata.component';
+import { CarouselComponent } from 'angular-responsive-carousel';
+import { CardsComponent } from './detail-module/cards/cards.component';
 // import { CarouselComponent } from './shopping-module/carousel/carousel.component';
 
 const routes: Routes = [
@@ -24,6 +26,8 @@ const routes: Routes = [
   { path: 'item-group', component: ItemGroupComponent },
   { path: 'order-confirmation', component: OrderConfirmationComponent },
   { path: 'order', component: OrderComponent },
+  { path: 'carousel', component: CarouselComponent },
+  { path: 'card', component: CardsComponent },
 ];
 
 @NgModule({

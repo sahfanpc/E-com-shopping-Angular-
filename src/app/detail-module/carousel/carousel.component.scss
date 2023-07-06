@@ -1,0 +1,64 @@
+.main {
+  width: 100%;
+  height: 400px;
+  padding: 1rem;
+  .carousel {
+    margin: auto;
+    border-radius: 0.8rem;
+    width: 80%;
+    height: 100%;
+    background-image: url("../../../assets/boidata11.jpg");
+    background-size: cover;
+    background-position: center;
+    //   position: relative;
+    overflow: hidden;
+  }
+
+  .carousel img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 1s;
+    opacity: 1;
+  }
+
+  .carousel img.split {
+    opacity: 0;
+    transition: opacity 0.5s, transform 0.5s;
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+}
+// ///////
+
+// .carousel {
+//   width: 100%;
+//   height: 400px;
+//   background-image: url("../../../assets/boidata12.jpg");
+//   background-size: cover;
+//   position: relative;
+//   overflow: hidden;
+// }
+
+// .carousel img {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 50%;
+//   height: 100%;
+//   transition: opacity 1s, transform 1s;
+//   opacity: 1;
+// }
+
+// .carousel img.split {
+//   opacity: 0;
+//   transition: opacity 0.5s, transform 0.5s;
+//   transform-origin: left;
+// }
+
+// .carousel img:nth-child(2) {
+//   left: 50%;
+//   transform-origin: right;
+// }

@@ -13,8 +13,10 @@ import { MatDividerModule } from '@angular/material/divider';
 import { AdminComponent } from './admin/admin.component';
 import { BiodataComponent } from './biodata/biodata.component';
 import {MatSidenavModule} from '@angular/material/sidenav';
+import { CarouselComponent } from './carousel/carousel.component';
+import { CardsComponent } from './cards/cards.component';
 @NgModule({
-  declarations: [LoginComponent, ShoppingDashboardComponent, AdminComponent, BiodataComponent],
+  declarations: [LoginComponent, ShoppingDashboardComponent, AdminComponent, BiodataComponent, CarouselComponent, CardsComponent],
   imports: [
     CommonModule,
     MatTabsModule,
