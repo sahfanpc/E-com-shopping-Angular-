@@ -1,5 +1,5 @@
 <section class="main">
-    <aside class="container">
+    <aside class="container1">
         <aside class="content">
             <p>browser the Range</p>
             <p class="small-content">just a few clicks, you can browse and purchase products from the comfort of your
@@ -7,12 +7,29 @@
         </aside>
         <aside class="cards">
 
-            <aside class="card" id="card1">
+            <aside class="card" id="card1" data-aos="fade-down-right">
             </aside>
-            <aside class="card" id="card2">
+            <aside class="card" id="card2" data-aos="flip-up">
             </aside>
-            <aside class="card" id="card3">
+            <aside class="card" id="card3" data-aos="fade-down-left">
             </aside>
         </aside>
+    </aside>
+    <aside class="container2">
+<p class="header">Features Online Shoppers</p>
+<p class="content">Online shoppers need to be offered convenience and instant ease-of-access to your online store, no matter what device they’re using. Your online store should be built on a responsive design template and its features need to be available to all users, at any time, and from anywhere. Older design templates were not structured to be flexible enough for the various screen sizes that are available nowadays so responsive design has taken over and is becoming standard with mobile websites of any merit. This is important your website and its content need to be supported on all devices that access the internet. </p>
+    </aside>
+    <aside class="container3">
+        <aside class="card1">
+            <p class="content-header" style="font-size: 3rem;font-weight: 700;">Fetures</p>
+            <p class="content">Online shoppers need to be offered convenience and instant ease-of-access to your online store, no matter what device they’re using. Your online store should be built on a responsive design template and its features need to be available to all users, at any time, and from anywhere. </p>
+        </aside>
+        <aside class="card2">
+                <div class="carousel">
+                    <img [src]="currentImage" [class.split]="splitting" (load)="imageLoaded()" />
+                    <img [src]="nextImage" [class.split]="splitting" (load)="imageLoaded()" />
+                </div>
+        </aside>
+        
     </aside>
 </section>

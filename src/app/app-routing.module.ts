@@ -13,10 +13,12 @@ import { AdminComponent } from './detail-module/admin/admin.component';
 import { BiodataComponent } from './detail-module/biodata/biodata.component';
 import { CarouselComponent } from 'angular-responsive-carousel';
 import { CardsComponent } from './detail-module/cards/cards.component';
+import { MapComponent } from './detail-module/map/map.component';
 // import { CarouselComponent } from './shopping-module/carousel/carousel.component';
 
 const routes: Routes = [
   { path: '', component: BiodataComponent },
+  {path:'map',component:MapComponent},
   { path: 'login', component: LoginComponent },
   { path: 'shopping-dashboard', component: ShoppingDashboardComponent },
   { path: 'admin', component: AdminComponent },

@@ -15,8 +15,10 @@ import { BiodataComponent } from './biodata/biodata.component';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { CarouselComponent } from './carousel/carousel.component';
 import { CardsComponent } from './cards/cards.component';
+import { GoogleMapsModule } from '@angular/google-maps';
+import { MapComponent } from './map/map.component';
 @NgModule({
-  declarations: [LoginComponent, ShoppingDashboardComponent, AdminComponent, BiodataComponent, CarouselComponent, CardsComponent],
+  declarations: [LoginComponent, ShoppingDashboardComponent, AdminComponent, BiodataComponent, CarouselComponent, CardsComponent,MapComponent],
   imports: [
     CommonModule,
     MatTabsModule,
@@ -29,7 +31,7 @@ import { CardsComponent } from './cards/cards.component';
     RouterLink,
     MatCardModule,
     MatDividerModule,
-    MatSidenavModule
+    MatSidenavModule,GoogleMapsModule
   ],
   exports: [ShoppingDashboardComponent],
 })

@@ -13,9 +13,13 @@ export class CarouselComponent {
   nextImage: any;
   splitting: boolean = false;
   imageUrl: string[] = [
-    '/assets/boidata11.jpg',
-    '/assets/boidata12.jpg',
-    '/assets/boidata13.jpg',
+    '/assets/carousel/carousel--3.jpg',
+    '/assets/carousel/carousel--4.jpg',
+    '/assets/carousel/carousel--5.jpg',
+    '/assets/carousel/carousel--6.jpg',
+    '/assets/carousel/carousel--7.jpg',
+    '/assets/carousel/carousel--8.jpg',
+    '/assets/carousel/carousel--9.jpg',
   ];
   constructor(private router: Router, private db: DatasarviceService) {}
   ngOnInit() {
