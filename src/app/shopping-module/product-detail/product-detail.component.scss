@@ -346,6 +346,13 @@ transform-origin: right;
         }
       }
     }
+    #div-column{
+      // overflow-x: hidden;
+      width: 100%;
+      flex-wrap: wrap;
+      height: auto;
+      justify-content: space-between;
+    }
     ::-webkit-scrollbar {
       height: 5px;
     }

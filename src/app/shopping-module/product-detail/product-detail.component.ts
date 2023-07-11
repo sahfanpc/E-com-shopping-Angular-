@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { DatasarviceService } from 'src/app/datasarvice.service';
 import { Router, RouterLink } from '@angular/router';
+import { Data } from '../alldatas';
 
 @Component({
   selector: 'app-product-detail',
@@ -29,6 +30,7 @@ export class ProductDetailComponent {
   seventhRowProducts: any;
   searchitem:any;
   searchResults:Array<any>=[];
+  searchresult:any
   currentImage: any;
   nextImage: any;
   splitting: boolean = false;
@@ -44,6 +46,7 @@ export class ProductDetailComponent {
   ngOnInit() {
     this.productData();
     this.startCarousel();
+    this.searchresult=Data;
   }
 
   productData() {
@@ -64,8 +67,7 @@ export class ProductDetailComponent {
     this.fifthRowProducts = protien.concat(grosery);
     this.sixthRowProducts = fasion.concat(toy);
     this.seventhRowProducts = this.db.products.laptop;
-    this.searchResults.push(this.db.products.shoes)
-    this.searchResults.push(this.secondRowProducts)
+    this.searchResults.push(Data[0])
     console.log(this.searchResults,"fuck");
     
   }
@@ -127,12 +129,12 @@ export class ProductDetailComponent {
     this.splitting = false;
   }
   search() {
-    // if (this.searchitem.trim()) {
-      // this.searchResults = this.data.filter((item: any) =>
-    //     item.base.toLowerCase().includes(this.searchitem.toLowerCase())
-    //   );
-    // } else {
-    //   this.searchResults = this.data;
-    // }
+    if (this.searchitem.trim()) {
+      this.searchresult = Data.filter((item: any) =>
+        item.base.toLowerCase().includes(this.searchitem.toLowerCase())
+      );
+    } else {
+      this.searchresult = Data;
+    }
   }
 }
