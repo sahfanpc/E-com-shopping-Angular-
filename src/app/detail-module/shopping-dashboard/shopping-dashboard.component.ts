@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {MatDialog} from '@angular/material/dialog';
+import { UserdataComponent } from '../userdata/userdata.component';
 
 @Component({
   selector: 'app-shopping-dashboard',
@@ -7,4 +9,13 @@ import { Component } from '@angular/core';
 })
 export class ShoppingDashboardComponent {
 
+  constructor(public dialog: MatDialog){}
+
+  openDialog(){
+    const dialogRef = this.dialog.open(UserdataComponent);
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    });
+  }
 }

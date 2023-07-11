@@ -25,6 +25,6 @@ export class ItemGroupComponent {
   }
   Product(data:any){
     this.db.descript(data);
-    this.router.navigateByUrl('description-product')
+    this.router.navigateByUrl('shopping/description-product')
   }
 }

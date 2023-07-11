@@ -53,6 +53,7 @@ export class DatasarviceService {
   userLogin(value: any) {
     const registereduser: any = localStorage.getItem('user');
     this.registerdata = JSON.parse(registereduser);
+    if(this.registerdata){
     const usercheck = this.registerdata.filter(
       (e: any) => e.email == value.email
     );
@@ -71,7 +72,10 @@ export class DatasarviceService {
     } else {
       this.alertcheck = false;
     }
-    return this.alertcheck;
+  }else{
+    this.alertcheck =false;
+  }
+  return this.alertcheck;
   }
   //single product detail
   descriptionProduct(data: any) {

@@ -119,20 +119,20 @@ export class DescriptionProductComponent {
 
     if(this.type == 'appliance' ){
       this.db.orderproduct(this.alldatas)
-      this.router.navigateByUrl('order-confirmation')
+      this.router.navigateByUrl('shopping/order-confirmation')
     }else if(this.type == 'home' ){
       this.db.orderproduct(this.alldatas)
-      this.router.navigateByUrl('order-confirmation')
+      this.router.navigateByUrl('shopping/order-confirmation')
     }else if(this.type == 'toy' ){
       this.db.orderproduct(this.alldatas)
-      this.router.navigateByUrl('order-confirmation')
+      this.router.navigateByUrl('shopping/order-confirmation')
     }
     else{
 
     if(this.selectedOption){
       console.log(this.alldatas,"rrr");
       this.db.orderproduct(this.alldatas)
-      this.router.navigateByUrl('order-confirmation')
+      this.router.navigateByUrl('shopping/order-confirmation')
     } else {
       alert('please select your option');
     }

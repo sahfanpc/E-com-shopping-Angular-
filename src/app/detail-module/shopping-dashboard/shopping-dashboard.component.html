@@ -11,7 +11,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <span class="nav-link active" aria-current="page" [routerLink]="['/biodata']">Biodata</span>
+                        <!-- <span class="nav-link active" aria-current="page" [routerLink]="['']">Biodata</span> -->
                     </li><mat-divider></mat-divider>
                     <li class="nav-item">
                         <span class="nav-link" [routerLink]="['/admin']">Adminpanel</span>
@@ -23,7 +23,7 @@
                         </a>
                         <ul class="dropdown-menu">
 
-                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" (click)="openDialog()">user detail</a></li>
                             <li><a class="dropdown-item" href="#">Another action</a></li>
                             <li>
                                 <hr class="dropdown-divider">
@@ -35,7 +35,7 @@
                         <a class="nav-link disabled">Disabled</a>
                     </li><mat-divider></mat-divider>
                 </ul>
-                <button mat-stroked-button color="primary" class="button" [routerLink]="['']"
+                <button mat-stroked-button color="primary" class="button" [routerLink]="['/login']"
                     style="padding: 1.5rem;">Login</button>
             </div>
         </div>
@@ -53,7 +53,7 @@
                 </aside>
             </aside>
             <aside class="footer-button">
-                <button mat-raised-button class="f-button" [routerLink]="['/product-detail']">Start</button>
+                <button mat-raised-button class="f-button" [routerLink]="['/shopping']">Start</button>
                 <button mat-raised-button color="warn" class="f-button" id="f-button" [routerLink]="['']">Leave</button>
             </aside>
         </aside>

@@ -5,9 +5,8 @@ import { MatCard, MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatStepperModule } from '@angular/material/stepper';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { AppRoutingModule } from '../app-routing.module';
+// import { AppRoutingModule } from '../app-routing.module';
 import { DescriptionProductComponent } from './description-product/description-product.component';
 import { MatBadgeModule } from '@angular/material/badge';
 import { CartPageComponent } from './cart-page/cart-page.component';
@@ -23,6 +22,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { OrderComponent } from './order/order.component';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { ShoppingModuleRoutingModule } from './shopping-module-routing.module';
+import {MatDialogModule} from '@angular/material/dialog';
 // import { UpperCasePipe } from '@angular/common';
 @NgModule({
   declarations: [
@@ -39,13 +40,10 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     MatCardModule,
     MatButtonModule,
     MatStepperModule,
-    BrowserModule,
-    BrowserAnimationsModule,
+    // BrowserModule,
     FormsModule,
     ReactiveFormsModule,
-    NgFor,
-    NgForOf,
-    AppRoutingModule,
+    // AppRoutingModule,
     MatBadgeModule,
     MatTabsModule,
     MatDividerModule,
@@ -56,26 +54,12 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     MatIconModule,
     MatMenuModule,
     MatToolbarModule,
+    MatDialogModule,
+    ShoppingModuleRoutingModule,
   ],
-  // /   UpperCasePipe,
-  //   CurrencyPipe,
-  //   NgSwitch,
-  //   NgSwitchCase,
-  //   MatProgressBarModule,
-  //   MatTabsModule,
-  //   MatButtonModule,
-  //   MatDividerModule,
-  //   MatListModule,
-  //   NgForOf,
-  //   NgSwitch,
-  //   NgSwitchCase,
-  //   NgSwitchDefault,
   exports: [
-    ProductDetailComponent,
-    DescriptionProductComponent,
-    CartPageComponent,
-    ItemGroupComponent,
-    OrderComponent,
+    // ProductDetailComponent,
+    
   ],
 })
 export class ShoppingModuleModule {}

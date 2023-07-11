@@ -17,23 +17,15 @@ import { MapComponent } from './detail-module/map/map.component';
 // import { CarouselComponent } from './shopping-module/carousel/carousel.component';
 
 const routes: Routes = [
-  { path: '', component: BiodataComponent },
-  {path:'map',component:MapComponent},
-  { path: 'login', component: LoginComponent },
-  { path: 'shopping-dashboard', component: ShoppingDashboardComponent },
-  { path: 'admin', component: AdminComponent },
-  { path: 'product-detail', component: ProductDetailComponent }, //product-detail
-  { path: 'description-product', component: DescriptionProductComponent }, //description-product
-  { path: 'cart-page', component: CartPageComponent },
-  { path: 'item-group', component: ItemGroupComponent },
-  { path: 'order-confirmation', component: OrderConfirmationComponent },
-  { path: 'order', component: OrderComponent },
-  { path: 'carousel', component: CarouselComponent },
-  { path: 'card', component: CardsComponent },
+  { path: '', redirectTo: '', pathMatch: 'full' },
+  { path: '', loadChildren: () => import('./detail-module/detail-module.module').then(mod => mod.DetailModuleModule) },
+  { path: 'shopping', loadChildren: () => import('./shopping-module/shopping-module.module').then(mod => mod.ShoppingModuleModule) }
+
+
 ];
 
 @NgModule({
   imports: [BrowserModule, RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }

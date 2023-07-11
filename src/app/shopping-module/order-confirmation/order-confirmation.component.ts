@@ -52,7 +52,7 @@ export class OrderConfirmationComponent {
       title: this.product.title,
     });
     alert('Confirm Order');
-    this.router.navigateByUrl('product-detail');
+    this.router.navigateByUrl('shopping');
     alert('order seccessfully');
   }else{
     alert("select option")

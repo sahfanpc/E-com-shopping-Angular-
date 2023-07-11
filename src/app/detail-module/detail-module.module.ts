@@ -17,8 +17,11 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { CardsComponent } from './cards/cards.component';
 import { GoogleMapsModule } from '@angular/google-maps';
 import { MapComponent } from './map/map.component';
+import { DetailModuleRoutingModule } from './detail-module-routing.module';
+import {MatDialogModule} from '@angular/material/dialog';
+import { UserdataComponent } from './userdata/userdata.component';
 @NgModule({
-  declarations: [LoginComponent, ShoppingDashboardComponent, AdminComponent, BiodataComponent, CarouselComponent, CardsComponent,MapComponent],
+  declarations: [LoginComponent, ShoppingDashboardComponent, AdminComponent, BiodataComponent, CarouselComponent, CardsComponent,MapComponent, UserdataComponent],
   imports: [
     CommonModule,
     MatTabsModule,
@@ -31,7 +34,8 @@ import { MapComponent } from './map/map.component';
     RouterLink,
     MatCardModule,
     MatDividerModule,
-    MatSidenavModule,GoogleMapsModule
+    MatDialogModule,
+    MatSidenavModule,GoogleMapsModule, DetailModuleRoutingModule
   ],
   exports: [ShoppingDashboardComponent],
 })

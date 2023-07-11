@@ -46,7 +46,7 @@
                         </aside>
                         <aside class="content-text">
                             <p>LET'S <br> <mark style="background-color: hidden;">EXPLORE</mark><br> UNIQUE...</p>
-                            <button>shop now</button>
+                            <button [routerLink]="['/login']">shop now</button>
                         </aside>
 
                     </mat-drawer-container>
@@ -94,27 +94,27 @@
                 <aside class="card">
 <aside class="img1" id="image1"></aside>
 <aside class="descrip1">Shoes</aside>
-<div class="overlay"> <button mat-stroked-button style="color: white;border-color: white;">Shop Now</button></div>
+<div class="overlay"> <button mat-stroked-button style="color: white;border-color: white;" [routerLink]="['/login']">Shop Now</button></div>
                 </aside>
                 <aside class="card">
                     <aside class="img1" id="image2"></aside>
                     <aside class="descrip1">Laptop</aside>
-                    <div class="overlay"><button mat-stroked-button style="color: white;border-color: white;">Shop Now</button></div>
+                    <div class="overlay"><button mat-stroked-button style="color: white;border-color: white;" [routerLink]="['/login']">Shop Now</button></div>
                                     </aside>
                                     <aside class="card">
                                         <aside class="img1" id="image3"></aside>
                                         <aside class="descrip1">Mobile</aside>
-                                        <div class="overlay"><button mat-stroked-button style="color: white;border-color: white;">Shop Now</button></div>
+                                        <div class="overlay"><button mat-stroked-button style="color: white;border-color: white;" [routerLink]="['/login']">Shop Now</button></div>
                                                         </aside>
                                                         <aside class="card">
                                                             <aside class="img1" id="image4"></aside>
                                                             <aside class="descrip1">Clothes</aside>
-                                                            <div class="overlay"><button mat-stroked-button style="color: white;border-color: white;">Shop Now</button></div>
+                                                            <div class="overlay"><button mat-stroked-button style="color: white;border-color: white;" [routerLink]="['/login']">Shop Now</button></div>
                                                                             </aside>
                                                                             <aside class="card">
                                                                                 <aside class="img1" id="image5"></aside>
                                                                                 <aside class="descrip1">Protien</aside>
-                                                                                <div class="overlay"><button mat-stroked-button style="color: white;border-color: white;">Shop Now</button></div>
+                                                                                <div class="overlay"><button mat-stroked-button style="color: white;border-color: white;" [routerLink]="['/login']">Shop Now</button></div>
                                                                                                 </aside>
                                                                                     
             </aside>
@@ -122,7 +122,7 @@
             <aside class="forth-container">
                 <aside class="main-condent">JOIN WITH OUR SHOPPING COMMUNITY</aside>
                 <P>If you have already a user or sailer.please login</P>
-                <button>
+                <button [routerLink]="['/login']">
                     <span class="circle1"></span>
                     <span class="circle2"></span>
                     <span class="circle3"></span>
@@ -136,6 +136,7 @@
                 <!-- <P>If you have already a user or sailer.please login</P> -->
                 <app-map></app-map>
             </aside>
+            <!-- footer -->
             <aside class="footer">
                 <aside class="container1">
                     <aside class="footer-left">

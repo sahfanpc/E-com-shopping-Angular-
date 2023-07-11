@@ -8,7 +8,7 @@
                     <aside class="search">
                         <div class="input-container">
                             <span class="material-icons-outlined icon">search</span>
-                            <input class="input-field" type="text" placeholder="Search">
+                            <input class="input-field" type="text" placeholder="Search" [(ngModel)]="searchitem" (keyup)="search()">
                             <!-- (keyup)="search()"   [(ngModel)]="searchTerm" -->
                         </div>
                     </aside>
@@ -20,10 +20,10 @@
                         </span></a>
                     <button mat-button [matMenuTriggerFor]="menu" style="color: white;">Menu</button>
                     <mat-menu #menu="matMenu">
-                        <button mat-menu-item [routerLink]="['/order']">Order histary</button>
+                        <button mat-menu-item [routerLink]="['/shopping/order']">Order histary</button>
                         <button mat-menu-item>Item 2</button>
                     </mat-menu>
-                    <aside [routerLink]="['/cart-page']" class="cart" style="color:white"><span
+                    <aside [routerLink]="['/shopping/cart-page']" class="cart" style="color:white"><span
                             class="material-icons-outlined">
                             shopping_cart
                         </span>Cart</aside>
@@ -41,12 +41,12 @@
                         <i class="fa-sharp fa-solid fa-compass" style="letter-spacing: 1rem;"></i>
                         <span>Menu</span></button>
                     <mat-menu #menu2="matMenu">
-                        <button mat-menu-item>Order History</button>
+                        <button mat-menu-item [routerLink]="['/shopping/order']">Order History</button>
                         <button mat-menu-item>Mammals</button>
                     </mat-menu>
                     <button mat-menu-item>
                         <i class="fa-solid fa-cart-shopping" style="letter-spacing: 1rem;"></i>
-                        <span>Cart</span>
+                        <span [routerLink]="['/shopping/cart-page']">Cart</span>
                     </button>
                 </mat-menu>
                 <!--  -->
@@ -161,46 +161,13 @@
         </aside>
     </section>
     <!--slider  -->
-    <aside class="slider">
-        <aside class="slider-sec">
-            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="10000">
-                        <img src="../../../assets/stepper-1.png" class="d-block " alt="...">
-                        <div class="img"></div>
-                    </div>
-                    <div class="carousel-item" data-bs-interval="2000">
-                        <img src="../../../assets/stepper-2.png" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../../../assets/stepper-3.png" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item active" data-bs-interval="10000">
-                        <img src="../../../assets/carosel1.jpg" class="d-block " alt="...">
-                        <div class="img"></div>
-                    </div>
-                    <div class="carousel-item active" data-bs-interval="10000">
-                        <img src="../../../assets/carosel2.jpg" class="d-block " alt="...">
-                        <div class="img"></div>
-                    </div>
-                    <div class="carousel-item active" data-bs-interval="10000">
-                        <img src="../../../assets/carosel3.jpg" class="d-block " alt="...">
-                        <div class="img"></div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </aside>
-    </aside>
+    <aside class="card2">
+        <div class="carousel">
+            <img [src]="currentImage" [class.split]="splitting" (load)="imageLoaded()" />
+            <img [src]="nextImage" [class.split]="splitting" (load)="imageLoaded()" />
+        </div>
+</aside>
+
     <!-- products -->
     <!-- frist row -->
     <section class="product-container">

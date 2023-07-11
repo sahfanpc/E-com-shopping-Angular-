@@ -43,25 +43,6 @@
 
             </aside>
             <aside class="group">
-                <aside class="price-detail">
-                    <aside>
-                        <span>Price:</span><span>{{product.price}}</span>
-                    </aside>
-                    <aside style="display: flex;justify-content: space-between;">
-                        <span>Realprice:</span><span>{{product.realprice}}</span>
-                    </aside>
-                    <aside style="display: flex;justify-content: space-between;">
-                        <span>Descount:</span><span>{{product.realprice - product.price}}</span>
-                    </aside>
-                    <aside style="display: flex;justify-content: space-between;">
-                        <span>Shipping:</span><span>40</span>
-                    </aside>
-                    <mat-divider></mat-divider>
-                    <aside style="display: flex;justify-content: space-between;">
-                        <span>Total:</span><span>{{product.price + 40}}</span>
-                    </aside>
-                </aside>
-
                 <div class="peyment">
                     <div class="container1">
                         <form>
@@ -84,10 +65,31 @@
                         </form>
                     </div>
                 </div>
+                <aside class="price-detail">
+                    <aside>
+                        <span>Price:</span><span>{{product.price}}</span>
+                    </aside>
+                    <aside style="display: flex;justify-content: space-between;">
+                        <span>Realprice:</span><span>{{product.realprice}}</span>
+                    </aside>
+                    <aside style="display: flex;justify-content: space-between;">
+                        <span>Descount:</span><span>{{product.realprice - product.price}}</span>
+                    </aside>
+                    <aside style="display: flex;justify-content: space-between;">
+                        <span>Shipping:</span><span>40</span>
+                    </aside>
+                    <mat-divider></mat-divider>
+                    <aside style="display: flex;justify-content: space-between;">
+                        <span>Total:</span><span>{{product.price + 40}}</span>
+                    </aside>
+                </aside>
+
             </aside>
             <aside class="button">
                 <button mat-raised-button color="primary" (click)="Submit()">Submit</button>
             </aside>
+
+        
 
         </section>
     </aside>

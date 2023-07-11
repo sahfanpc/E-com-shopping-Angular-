@@ -11,6 +11,7 @@
       .nav {
         width: 100%;
         height: 5rem;
+        
         .nav-bar {
           width: 100%;
           height: 5rem;
@@ -74,20 +75,34 @@
         // z-index: 3;
         width: 100%;
         height: 710px;
+        
         .main-contentsection {
+          // display: none;
           width: 100%;
-          height: 750px;
+          height: 700px;
           // background-color: rgba(201, 201, 115, 0.863);
           position: relative;
           position: fixed;
+          @media only #{$desktop-max-lg} {
+           height: 580px;
+          }
+          @media only #{$desktop-max-mob}{
+            height: 540px;
+            }
           .example-container {
             height: 100%;
             background-color: rgba(20, 19, 19, 0.753);
+            
             .img-hover {
               margin: auto;
               height: 94%;
               width: 90%;
               background-color: white;
+              @media only #{$desktop-max-mob}{
+                width: 100%;
+                height: 100%;
+                
+                }
               .content-img {
                 margin: auto;
                 width: 95%;
@@ -98,6 +113,9 @@
                 background-repeat: no-repeat;
                 background-position: top;
                 background-size: cover;
+                @media only #{$desktop-max-mob}{
+                 width: 100%;
+                 }
               }
             }
             .content-text {
@@ -107,10 +125,18 @@
               // background-color: rgba(255, 0, 0, 0.778);
               color: white;
               right: 3rem;
-              top: 15rem;
+              top: 12rem;
               border-radius: 0.3rem;
               font-size: 4rem;
               font-weight: 1000;
+              @media only #{$desktop-max-lg} {
+                top: 7rem;
+               }
+               @media only #{$desktop-max-mob}{
+                left: 6rem;
+                // display: none;
+               }
+               
               // button
               button {
                 padding: 0.8em 1.8em;
@@ -127,6 +153,10 @@
                 z-index: 1;
                 font-family: inherit;
                 color: #f0f3f3;
+                @media only #{$desktop-max-mob}{
+                  bottom: 3rem;
+                  width: 12rem;
+                 }
                }
                
                button::before {
@@ -189,10 +219,10 @@
         }
         .content-img {
           width: 50%;
-          background-image: url(../../../assets/boidata12-removebg-preview.png);
+          background-image: url(../../../assets/carousel/tryone.jpg);
           height: 36rem;
           background-repeat: no-repeat;
-          background-position: center;
+          background-position: top;
           background-size: cover;
           @media only #{$desktop-max-md} {
             width: 100%;
@@ -214,7 +244,7 @@
           }
           .child-text-overlap {
             // box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-            width: 40rem;
+            width: 90%;
             padding: 1rem;
             background-color: rgba(255, 255, 255, 0.76);
             height: 34rem;
@@ -228,9 +258,17 @@
               font-size: 4.5rem;
               line-height: 5.3rem;
               font-weight: 1000;
+              @media #{$desktop-max-lg} {
+                font-size: 4rem;
+                // background-color: rebeccapurple;
+              }
             }
             .child-content {
               font-size: 1.3rem;
+              @media #{$desktop-max-lg} {
+                font-size: 1.2rem;
+                // background-color: rebeccapurple;
+              }
             }
           }.child-text-overlap:hover{
             background-color: rgba(0, 174, 255, 0.795);
@@ -239,6 +277,7 @@
         }
       }
       .card-description{
+        
         position: relative;
         height: auto;
         z-index: 1;
@@ -248,15 +287,31 @@
           display: flex;
           justify-content: space-between;
           background-color: rgb(230, 225, 225);
+          @media #{$desktop-max-md} {
+            height: 28rem;
+          }
+          
           .descristion-1{
             padding: 1rem;
             display: flex;
             align-items: center;
+            justify-content: center;
             width: 60rem;
             height: 100%;
             font-size: 1.6rem;
             font-weight: 200;
             // color: white;
+           
+            @media #{$desktop-max-lg} {
+              font-size: 1.3rem;
+              // background-color: rebeccapurple;
+            }
+            @media #{$desktop-max-md} {
+              font-size: 1rem;
+            }
+            @media only #{$desktop-max-mob} {
+              font-size: .8rem;
+             }
           }
           .card-1{
             width: 30rem;
@@ -270,6 +325,7 @@
       }
     }
     .second-container {
+      
       .cerousel-first {
         position: relative;
         z-index: 1;
@@ -373,6 +429,7 @@ color: white;
 .main-condent{
   font-size: 3rem;
   font-weight: 700;
+  text-align: center;
 }
 p{
   font-size: 1.3rem;
@@ -472,6 +529,10 @@ p{
           width: 90%;
           display: flex;
           justify-content: space-between;
+          @media only #{$desktop-max-mob} {
+            gap: 1rem;
+            flex-wrap: wrap;
+          }
           .footer-left{
             .button-group{
               color: white;
@@ -494,6 +555,10 @@ p{
 display: flex;
 gap: 4rem;
 color: white;
+@media only #{$desktop-max-mob} {
+  gap: 1rem;
+  // flex-wrap: wrap;
+}
           }
         }
       }

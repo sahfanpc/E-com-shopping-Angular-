@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,11 +12,6 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatButtonModule } from '@angular/material/button';
 import { ShoppingModuleModule } from './shopping-module/shopping-module.module';
 import { MatMenuModule } from '@angular/material/menu';
-// import { MapComponent } from './detail-module/map/map.component';
-// import { UppercasePipe } from './uppercase.pipe';
-// import { IvyCarouselModule } from 'angular-responsive-carousel2';
-// import { MatCardModule } from '@angular/material/card';
-// import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [AppComponent],
@@ -30,9 +26,6 @@ import { MatMenuModule } from '@angular/material/menu';
     MatSnackBarModule,
     MatButtonModule,
     MatMenuModule,
-    // ShoppingModuleModule,
-
-    // IvyCarouselModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

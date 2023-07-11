@@ -72,28 +72,25 @@
             </section>
             <section class="right-part">
                 <mat-list>
-                    <aside style="height: 4rem;display: flex;align-items: center;padding: 1.3rem">
+                    <aside  class="mat-list">
                         <h3 style="color:rgba(128, 128, 128, 0.899)">PRICE DETAILS</h3>
                     </aside>
                     <mat-divider></mat-divider>
-                    <aside
-                        style="height: calc(100% - 20rem);display: flex;gap: 2rem;flex-direction: column;padding: 1.3rem 2rem;">
-                        <aside style="display: flex;justify-content: space-between;">
+                    <aside class="mat-list-cardmain">
+                        <aside class="cardmain-line">
                             <span>Price({{cartdata.length}} item)</span><span>{{cartprice}}</span>
                         </aside>
-                        <aside style="display: flex;justify-content: space-between;"  [ngSwitch]="cartdata.length">
+                        <aside class="cardmain-line"  [ngSwitch]="cartdata.length">
                             <span>Discound</span><span *ngSwitchCase="0">Nill</span><span *ngSwitchDefault>{{realprice - cartprice}}</span>
                         </aside>
-                        <aside style="display: flex;justify-content: space-between;" [ngSwitch]="cartdata.length">
+                        <aside class="cardmain-line" [ngSwitch]="cartdata.length">
                             <span>Delivery Charges</span><span *ngSwitchCase="0">Nill</span><span
                                 *ngSwitchDefault>40</span>
                         </aside>
 
                     </aside>
                     <mat-divider></mat-divider>
-                    <aside
-                        style="display: flex;justify-content: space-between;padding: 1rem;font-size: 1.7rem;height: 5rem;"
-                        [ngSwitch]="cartdata.length">
+                    <aside class="cardmain-lastline" [ngSwitch]="cartdata.length">
                         <span>Total Amount</span><span *ngSwitchCase="0">0</span><span
                             *ngSwitchDefault>{{cartprice + 40}}</span>
                     </aside>

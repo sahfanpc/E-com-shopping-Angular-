@@ -1,3 +1,4 @@
+@import "../../../assets/scss/base/variables";
 .main {
   width: 100%;
   height: auto;
@@ -30,6 +31,10 @@
         background-size: cover;
         overflow: hidden;
         border: 1px solid white;
+        @media only #{$desktop-max-mob}{
+          width: 80%;
+          height: 20rem;
+         }
       }
       #card1 {
         background-image: url("../../../assets/card1.jpg");
@@ -73,11 +78,14 @@ font-size: 1.7rem;
 padding: 2rem;
 overflow: hidden;
 font-weight: 200;
+@media only #{$desktop-max-mob} {
+  font-size: 1.3rem;
+ }
     }
     .card2{
       width: 40rem;
       height: 30rem;
-      background-color: rgba(0, 0, 255, 0.781);
+      // background-color: rgba(0, 0, 255, 0.781);
       border-radius: 2rem;
     
 
@@ -89,6 +97,7 @@ font-weight: 200;
   background-size: cover;
   position: relative;
   overflow: hidden;
+
 }
 
 .carousel img {
