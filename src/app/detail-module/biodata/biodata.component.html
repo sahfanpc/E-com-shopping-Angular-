@@ -85,40 +85,83 @@
         </aside>
         <aside class="second-container">
             <aside class="cerousel-first" aria-label="">
-                <app-carousel></app-carousel>
-                <app-cards></app-cards>
-            </aside>
-            <aside class="third-container">
-            <p class="third-container-header">Our Products</p>
-            <aside class="product">
-                <aside class="card">
-<aside class="img1" id="image1"></aside>
-<aside class="descrip1">Shoes</aside>
-<div class="overlay"> <button mat-stroked-button style="color: white;border-color: white;" [routerLink]="['/login']">Shop Now</button></div>
+                <!-- <app-carousel></app-carousel> -->
+                <aside class="main1">
+                    <div class="carousel">
+                        <img [src]="currentImage" [class.split]="splitting" (load)="imageLoaded()" />
+                        <img [src]="nextImage" [class.split]="splitting" (load)="imageLoaded()" />
+                    </div>
                 </aside>
-                <aside class="card">
-                    <aside class="img1" id="image2"></aside>
-                    <aside class="descrip1">Laptop</aside>
-                    <div class="overlay"><button mat-stroked-button style="color: white;border-color: white;" [routerLink]="['/login']">Shop Now</button></div>
-                                    </aside>
-                                    <aside class="card">
-                                        <aside class="img1" id="image3"></aside>
-                                        <aside class="descrip1">Mobile</aside>
-                                        <div class="overlay"><button mat-stroked-button style="color: white;border-color: white;" [routerLink]="['/login']">Shop Now</button></div>
-                                                        </aside>
-                                                        <aside class="card">
-                                                            <aside class="img1" id="image4"></aside>
-                                                            <aside class="descrip1">Clothes</aside>
-                                                            <div class="overlay"><button mat-stroked-button style="color: white;border-color: white;" [routerLink]="['/login']">Shop Now</button></div>
-                                                                            </aside>
-                                                                            <aside class="card">
-                                                                                <aside class="img1" id="image5"></aside>
-                                                                                <aside class="descrip1">Protien</aside>
-                                                                                <div class="overlay"><button mat-stroked-button style="color: white;border-color: white;" [routerLink]="['/login']">Shop Now</button></div>
-                                                                                                </aside>
-                                                                                    
+                <!-- <app-cards></app-cards> -->
+                <section class="main2">
+                    <aside class="container1">
+                        <aside class="content">
+                            <p>browser the Range</p>
+                            <p class="small-content">just a few clicks, you can browse and purchase products from the comfort of your
+                                own</p>
+                        </aside>
+                        <aside class="cards">
+                
+                            <aside class="card" id="card1" data-aos="fade-down-right">
+                            </aside>
+                            <aside class="card" id="card2" data-aos="flip-up">
+                            </aside>
+                            <aside class="card" id="card3" data-aos="fade-down-left">
+                            </aside>
+                        </aside>
+                    </aside>
+                    <aside class="container2">
+                <p class="header">Features Online Shoppers</p>
+                <p class="content">Online shoppers need to be offered convenience and instant ease-of-access to your online store, no matter what device they’re using. Your online store should be built on a responsive design template and its features need to be available to all users, at any time, and from anywhere. Older design templates were not structured to be flexible enough for the various screen sizes that are available nowadays so responsive design has taken over and is becoming standard with mobile websites of any merit. This is important your website and its content need to be supported on all devices that access the internet. </p>
+                    </aside>
+                    <aside class="container3">
+                        <aside class="card1">
+                            <p class="content-header" style="font-size: 3rem;font-weight: 700;">Fetures</p>
+                            <p class="content">Online shoppers need to be offered convenience and instant ease-of-access to your online store, no matter what device they’re using. Your online store should be built on a responsive design template and its features need to be available to all users, at any time, and from anywhere. </p>
+                        </aside>
+                        <aside class="card2">
+                                <div class="carousel">
+                                    <img [src]="currentImage" [class.split]="splitting" (load)="imageLoaded()" />
+                                    <img [src]="nextImage" [class.split]="splitting" (load)="imageLoaded()" />
+                                </div>
+                        </aside>
+                        
+                    </aside>
+                </section>
+                <!-- <app-simplecards></app-simplecards> -->
+                <aside class="third-container">
+                    <p class="third-container-header">Our Products</p>
+                    <aside class="product">
+                        <aside class="card">
+            <aside class="img1" id="image1"></aside>
+            <aside class="descrip1">Shoes</aside>
+            <div class="overlay"> <button mat-stroked-button style="color: white;border-color: white;" [routerLink]="['/login']">Shop Now</button></div>
+                        </aside>
+                        <aside class="card">
+                            <aside class="img1" id="image2"></aside>
+                            <aside class="descrip1">Laptop</aside>
+                            <div class="overlay"><button mat-stroked-button style="color: white;border-color: white;" [routerLink]="['/login']">Shop Now</button></div>
+                                            </aside>
+                                            <aside class="card">
+                                                <aside class="img1" id="image3"></aside>
+                                                <aside class="descrip1">Mobile</aside>
+                                                <div class="overlay"><button mat-stroked-button style="color: white;border-color: white;" [routerLink]="['/login']">Shop Now</button></div>
+                                                                </aside>
+                                                                <aside class="card">
+                                                                    <aside class="img1" id="image4"></aside>
+                                                                    <aside class="descrip1">Clothes</aside>
+                                                                    <div class="overlay"><button mat-stroked-button style="color: white;border-color: white;" [routerLink]="['/login']">Shop Now</button></div>
+                                                                                    </aside>
+                                                                                    <aside class="card">
+                                                                                        <aside class="img1" id="image5"></aside>
+                                                                                        <aside class="descrip1">Protien</aside>
+                                                                                        <div class="overlay"><button mat-stroked-button style="color: white;border-color: white;" [routerLink]="['/login']">Shop Now</button></div>
+                                                                                                        </aside>
+                                                                                            
+                    </aside>
+                    </aside>
             </aside>
-            </aside>
+            
             <aside class="forth-container">
                 <aside class="main-condent">JOIN WITH OUR SHOPPING COMMUNITY</aside>
                 <P>If you have already a user or sailer.please login</P>
@@ -133,8 +176,9 @@
             </aside>
             <aside class="fifth-container">
                 <aside class="main-condent">WE PROVIDE SARVICE FOR ALL OVER</aside>
-                <!-- <P>If you have already a user or sailer.please login</P> -->
-                <app-map></app-map>
+                <!-- <app-map></app-map> -->
+                
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30773372.380620293!2d61.02452930232927!3d19.690678745166895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1688902575857!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </aside>
             <!-- footer -->
             <aside class="footer">

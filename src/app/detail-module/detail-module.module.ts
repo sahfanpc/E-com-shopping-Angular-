@@ -13,15 +13,12 @@ import { MatDividerModule } from '@angular/material/divider';
 import { AdminComponent } from './admin/admin.component';
 import { BiodataComponent } from './biodata/biodata.component';
 import {MatSidenavModule} from '@angular/material/sidenav';
-import { CarouselComponent } from './carousel/carousel.component';
-import { CardsComponent } from './cards/cards.component';
 import { GoogleMapsModule } from '@angular/google-maps';
-import { MapComponent } from './map/map.component';
 import { DetailModuleRoutingModule } from './detail-module-routing.module';
 import {MatDialogModule} from '@angular/material/dialog';
 import { UserdataComponent } from './userdata/userdata.component';
 @NgModule({
-  declarations: [LoginComponent, ShoppingDashboardComponent, AdminComponent, BiodataComponent, CarouselComponent, CardsComponent,MapComponent, UserdataComponent],
+  declarations: [LoginComponent, ShoppingDashboardComponent, AdminComponent, BiodataComponent,UserdataComponent],
   imports: [
     CommonModule,
     MatTabsModule,

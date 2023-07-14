@@ -12,8 +12,6 @@ import { OrderComponent } from './shopping-module/order/order.component';
 import { AdminComponent } from './detail-module/admin/admin.component';
 import { BiodataComponent } from './detail-module/biodata/biodata.component';
 import { CarouselComponent } from 'angular-responsive-carousel';
-import { CardsComponent } from './detail-module/cards/cards.component';
-import { MapComponent } from './detail-module/map/map.component';
 // import { CarouselComponent } from './shopping-module/carousel/carousel.component';
 
 const routes: Routes = [
