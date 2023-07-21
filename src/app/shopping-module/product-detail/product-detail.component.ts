@@ -35,11 +35,14 @@ export class ProductDetailComponent {
   nextImage: any;
   splitting: boolean = false;
   imageUrl: string[] = [
-    '/assets/carousel/carousel2--1.jpg',
-    '/assets/carousel/carousel2--3.jpg',
-    '/assets/carousel/carousel2--4.jpg',
-    '/assets/carousel/carousel2--5.jpg',
-    '/assets/carousel/carousel2--6.jpg'
+    'https://images.pexels.com/photos/1159670/pexels-photo-1159670.jpeg?auto=compress&cs=tinysrgb&w=400',
+    'https://images.pexels.com/photos/125779/pexels-photo-125779.jpeg?auto=compress&cs=tinysrgb&w=400',
+    'https://images.pexels.com/photos/277390/pexels-photo-277390.jpeg?auto=compress&cs=tinysrgb&w=400',
+    'https://images.pexels.com/photos/2373730/pexels-photo-2373730.jpeg?auto=compress&cs=tinysrgb&w=400',
+    'https://images.pexels.com/photos/996329/pexels-photo-996329.jpeg?auto=compress&cs=tinysrgb&w=400',
+    'https://images.pexels.com/photos/3527572/pexels-photo-3527572.jpeg?auto=compress&cs=tinysrgb&w=400',
+    'https://images.pexels.com/photos/6461325/pexels-photo-6461325.jpeg?auto=compress&cs=tinysrgb&w=400',
+    'https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg?auto=compress&cs=tinysrgb&w=400'
   ];
   constructor(private db: DatasarviceService, private router: Router) {}
 
